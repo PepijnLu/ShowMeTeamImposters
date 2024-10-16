@@ -1,0 +1,114 @@
+{
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "Debug",
+            "id": "14b2e299-0068-4e48-a697-493da679644d",
+            "actions": [
+                {
+                    "name": "PressA",
+                    "type": "Button",
+                    "id": "b0ef887b-c3fd-4069-a3b4-1eb5aeb8bf94",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PressB",
+                    "type": "Button",
+                    "id": "8a9d2edb-fa2e-4e48-ae70-cca88d248293",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PressY",
+                    "type": "Button",
+                    "id": "b0a2e482-6246-4ed7-aea5-a28b0c1e982c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PressX",
+                    "type": "Button",
+                    "id": "2a27f0c6-9485-43d3-a720-a461fb9af2e1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "0de6bc13-c4cf-4a12-aa2b-2997da686fbd",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b5c865b4-ca0e-4188-9507-2e826b1cc36a",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressA",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa8d8f9f-2043-4b1d-85e8-1d0e6e53180b",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d56cb74-253e-4596-97c7-61aa3ee32e08",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "313e3c49-8637-4749-9496-b2ed33286732",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressX",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ee21d616-ac58-4760-8b6d-0f6283e7470d",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
