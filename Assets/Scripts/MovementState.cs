@@ -22,6 +22,7 @@ public class MovementState : AState
         isGrounded = Physics2D.OverlapCircle(character.groundCheck.position, character.groundCheckRadius, character.groundLayer);
         if(isGrounded) character.stateMachine.SetState(new Grounded());
     }
+    
     public virtual void APress(InputAction.CallbackContext context)
     {
         Debug.Log("A button pressed");
