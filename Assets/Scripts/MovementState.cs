@@ -20,7 +20,7 @@ public class MovementState : AState
     {
         Debug.Log("Character: " + character);
         isGrounded = Physics2D.OverlapCircle(character.groundCheck.position, character.groundCheckRadius, character.groundLayer);
-        if(isGrounded) character.stateMachine.SetState(new Grounded());
+        if(isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
     }
     public virtual void APress(InputAction.CallbackContext context)
     {
@@ -59,7 +59,7 @@ public class Airborne : MovementState
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        if(isGrounded) character.stateMachine.SetState(new Grounded());
+        if(isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
     }
 
     private void DoubleJump()
@@ -91,8 +91,8 @@ public class Grounded : MovementState
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        if(!isGrounded) character.stateMachine.SetState(new Airborne());
-        if(character.moveInput.y < -0.50f) Debug.Log("Should switch to crouching"); character.stateMachine.SetState(new Crouching());
+        if(!isGrounded) character.stateMachine.SetState("MovementState", new Airborne());
+        if(character.moveInput.y < -0.50f) Debug.Log("Should switch to crouching"); character.stateMachine.SetState("MovementState", new Crouching());
     }
 
     private void Jump()
@@ -115,8 +115,8 @@ public class Crouching : MovementState
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        if(!isGrounded) character.stateMachine.SetState(new Airborne());
-        if(character.moveInput.y > -0.50f) character.stateMachine.SetState(new Grounded());
+        if(!isGrounded) character.stateMachine.SetState("MovementState", new Airborne());
+        if(character.moveInput.y > -0.50f) character.stateMachine.SetState("MovementState", new Grounded());
     }
 
     public override void StateComplete(GameObject runner)
@@ -125,3 +125,5 @@ public class Crouching : MovementState
         //character.playerCollider.transform.localScale = character.originalSize;
     }
 }
+
+
