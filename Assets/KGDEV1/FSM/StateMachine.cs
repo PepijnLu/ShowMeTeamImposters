@@ -7,60 +7,83 @@ using UnityEngine.InputSystem;
 public class StateMachine
 {
     private GameObject owner;
-    private MovementState currentState;
+    public MovementState currentMovementState;
+    public AttackState currentAttackState;
 
     public StateMachine( GameObject _owner )
     {
         owner = _owner;
-        SetState(new Grounded());
+        SetState("MovementState", new Grounded());
+        SetState("AttackState", new Idle());
     }
 
     public void Update()
     {
-        if ( currentState != null )
+        if ( currentMovementState != null )
         {
-            currentState.StateUpdate(owner);
+            currentMovementState.StateUpdate(owner);
         }
     }
 
     public void FixedUpdate()
     {
-        if ( currentState != null )
+        if ( currentMovementState != null )
         {
-            currentState.StateFixedUpdate(owner);
+            currentMovementState.StateFixedUpdate(owner);
         }
     }
 
-    public void SetState( MovementState newState )
+    public void SetState(string stateToChange, AState newState)
     {
-        if ( currentState != null )
+        switch(stateToChange)
         {
-            currentState.StateComplete(owner);
+            case "MovementState":
+                if ( currentMovementState != null )
+                {
+                    currentMovementState.StateComplete(owner);
+                }
+                break;
+            case "AttackState":
+                if ( currentAttackState != null )
+                {
+                    currentAttackState.StateComplete(owner);
+                }
+                break;
         }
 
         newState.StateStart(owner);
 
-        currentState = newState;
+        switch(stateToChange)
+        {
+            case "MovementState":
+                MovementState newMovementState = newState as MovementState;
+                currentMovementState = newMovementState;
+                break;
+            case "AttackState":
+                AttackState newAttackState = newState as AttackState;
+                currentAttackState = newAttackState;
+                break;
+        }
     }
 
     public void APress(InputAction.CallbackContext context)
     {
-        currentState.APress(context);
+        currentMovementState.APress(context);
     }
 
     public void BPress(InputAction.CallbackContext context)
     {
-        currentState.BPress(context);
+        currentMovementState.BPress(context);
     }
 
     public void XPress(InputAction.CallbackContext context)
     {
-        currentState.XPress(context);
+        currentMovementState.XPress(context);
     }
 
     public void YPress(InputAction.CallbackContext context)
     {
-        currentState.YPress(context);
+        currentMovementState.YPress(context);
     }
 
 }
