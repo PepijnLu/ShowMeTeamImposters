@@ -12,7 +12,7 @@ public class PianoMan : MonoBehaviour
     public StateMachine stateMachine;
     public CapsuleCollider2D playerCollider;
     public Vector2 moveInput, originalSize;
-    [SerializeField] bool inHitStun;
+    private bool inHitStun;
     [SerializeField] public float moveSpeed, jumpForce;
     [SerializeField] public float groundCheckRadius;
     [SerializeField] public Transform groundCheck;
@@ -41,13 +41,13 @@ public class PianoMan : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Space) && gameObject.name == "PianoMan")
             {
                 Vector2 movePosition = new Vector2(transform.position.x, transform.position.y) + new Vector2(2, 0);
-                stateMachine.currentAttackState.Attack(movePosition, 20, 60, 60, 0.5f, 15, new Vector2(1, 0), 250, 120, false);
+                stateMachine.currentAttackState.Attack(movePosition, 0, 60, 60, 0.5f, 15, new Vector2(1, 0), 250, 120, 30, false);
             }
 
             if(Input.GetKeyDown(KeyCode.Return) && gameObject.name == "CPU")
             {
                 Vector2 movePosition = new Vector2(transform.position.x, transform.position.y) + new Vector2(2, 0);
-                stateMachine.currentAttackState.Attack(movePosition, 20, 60, 60, 0.5f, 15, new Vector2(1, 0), 250, 30, false);
+                stateMachine.currentAttackState.Attack(movePosition, 20, 60, 60, 0.5f, 15, new Vector2(1, 0), 250, 30, 30, false);
             }
         }
     }
@@ -97,12 +97,12 @@ public class PianoMan : MonoBehaviour
         }
     }
 
-    public void StartAttackMove(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, bool multiHit)
+    public void StartAttackMove(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
     {
-        StartCoroutine(AttackMove(position, startupFrames, activeFrames, recoveryFrames, hitbox, damage, launchAngle, launchStrength, hitstunFrames, false));
+        StartCoroutine(AttackMove(position, startupFrames, activeFrames, recoveryFrames, hitbox, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames, false));
     }
 
-    public IEnumerator AttackMove(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, bool multiHit)
+    public IEnumerator AttackMove(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
     {
         Collider2D[] hitColliders;
         List<string> hitCharacters = new();
@@ -131,7 +131,7 @@ public class PianoMan : MonoBehaviour
                     Debug.Log("Collision detected with: " + hitCollider.gameObject.name);
                     if ((!hitCharacters.Contains(hitCollider.gameObject.name) || multiHit) && (!hitCollider.gameObject != gameObject))
                     {
-                        HitCharacter(position, hitCollider.gameObject, damage, launchAngle, launchStrength, hitstunFrames);
+                        StartCoroutine(HitCharacter(position, hitCollider.gameObject, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames));
                         hitCharacters.Add(hitCollider.gameObject.name);
                         Debug.Log("111" + hitCharacters[0]);
                     }
@@ -154,7 +154,7 @@ public class PianoMan : MonoBehaviour
         yield return null;
     }
 
-    private void HitCharacter(Vector2 position, GameObject character, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames)
+    IEnumerator HitCharacter(Vector2 position, GameObject character, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames)
     {
         Debug.Log($" HitDetection: {character.name} hit");
 
@@ -171,9 +171,26 @@ public class PianoMan : MonoBehaviour
 
         if(character.TryGetComponent<PianoMan>(out PianoMan component))
         {
+            //Handle hitstop
+            Rigidbody2D rb2D = component.GetComponent<Rigidbody2D>();
+            rb2D.velocity = Vector2.zero;
+            rb2D.angularVelocity = 0f;
+            Coroutine hitstopRoutine = StartCoroutine(GameManager.instance.HandleHitStop(hitstopFrames));
+            yield return hitstopRoutine; 
             StartCoroutine(HandleHitStun(component, hitstunFrames));
         }
         character.GetComponent<Rigidbody2D>().AddForce(direction * launchStrength);
+
+        yield return null;
+    }
+
+    IEnumerator HandleHitStop(float frames)
+    {
+        // Stop the physics simulation
+        Physics.simulationMode = SimulationMode.Script;
+        for(int i = 0; i < frames; i++) yield return new WaitForFixedUpdate();
+        // Resume the physics simulation
+        Physics.simulationMode = SimulationMode.FixedUpdate;
     }
 
     private IEnumerator HandleHitStun(PianoMan character, float hitstunFrames)

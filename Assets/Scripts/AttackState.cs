@@ -10,7 +10,7 @@ public class AttackState : AState
     {
         if(character == null) character = runner.gameObject.GetComponent<PianoMan>();
     }
-    public virtual void Attack(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, bool multiHit)
+    public virtual void Attack(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
     {
 
     }
@@ -18,9 +18,9 @@ public class AttackState : AState
 
 public class Idle : AttackState
 {
-    public override void Attack(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, bool multiHit)
+    public override void Attack(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
     {
-        character.StartAttackMove(position, startupFrames, activeFrames, recoveryFrames, hitbox, damage, launchAngle, launchStrength, hitstunFrames, multiHit);
+        character.StartAttackMove(position, startupFrames, activeFrames, recoveryFrames, hitbox, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames, multiHit);
     }
 }
 

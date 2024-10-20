@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class StateMachine
 {
     private GameObject owner;
-    private MovementState currentMovementState;
+    public MovementState currentMovementState;
     public AttackState currentAttackState;
 
     public StateMachine( GameObject _owner )
