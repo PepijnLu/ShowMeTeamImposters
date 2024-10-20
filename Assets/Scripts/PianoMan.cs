@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -21,7 +19,6 @@ public class PianoMan : MonoBehaviour
     private Vector2 gizmoPos;
     private float gizmoSize;
 
-    // Start is called before the first frame update
     void Start()
     {   
         stateMachine = new StateMachine(gameObject);
@@ -30,7 +27,6 @@ public class PianoMan : MonoBehaviour
         //originalSize = gameObject.transform.localScale;
     }
 
-    // Update is called once per frame
     void Update()
     {
         stateMachine.Update();

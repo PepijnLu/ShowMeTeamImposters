@@ -4348,19 +4348,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.09365776, y: 0.00001513958, z: 1.224469}
     m_Extent: {x: 0.35895446, y: 0.5434449, z: 1.2434838}
   m_DirtyAABB: 0
---- !u!114 &1867338185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877025833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f7ef17c21ec457409514db055acb92a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1877391370}
 --- !u!95 &1869774935
 Animator:
   serializedVersion: 5
@@ -4394,7 +4381,6 @@ GameObject:
   - component: {fileID: 1877391372}
   - component: {fileID: 1877391371}
   - component: {fileID: 1877391370}
-  - component: {fileID: 1867338185}
   - component: {fileID: 1361684193}
   m_Layer: 0
   m_Name: Berserker
