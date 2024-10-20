@@ -18,6 +18,12 @@ public class CharacterAnimator
         }
     }
 
+    public void Idle() 
+    {
+        animator.SetBool("Walk Forward", false);
+        animator.SetBool("Walk Backward", false);
+    }
+
     public void WalkForwardAnim() 
     {
         animator.SetBool("Idle", false);

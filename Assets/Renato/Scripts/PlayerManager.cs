@@ -35,6 +35,10 @@ public class PlayerManager : MonoBehaviour
             WalkForward(false);
             characterCombat.animator.WalkBackwardAnim();
         }
+        else 
+        {
+            characterCombat.animator.Idle();
+        }
 
         // Attack
         if(Input.GetKeyDown(KeyCode.Q)) 
