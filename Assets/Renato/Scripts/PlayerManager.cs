@@ -1,17 +1,19 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerManager : MonoBehaviour
 {
-    private CharacterCombat characterCombat;
-    private float movementSpeed = 7.5f;
+    public CharacterCombat characterCombat;
+    public CharacterStats stats;
+    public bool isAttacking = false;
 
     void Awake() 
     {
-        characterCombat = new();
+        characterCombat = new(this);
     }
 
     void Start()
     {
+        name = stats.Name;
         characterCombat.animator.Start(transform);
     }
 
@@ -19,7 +21,7 @@ public class Player : MonoBehaviour
     {
         InputManagement();
     }
-
+    
     private void InputManagement() 
     {
         // Movement
@@ -41,10 +43,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void ResetAttack() 
+    {
+        isAttacking = false;
+    }
+
     private void WalkForward(bool _bool) 
     {
         float direction = _bool ? 1f : -1f; 
-        Vector2 move = new(direction * movementSpeed * Time.deltaTime, 0f);
+        Vector2 move = new(direction * stats.walkSpeed.GetValue() * Time.deltaTime, 0f);
         transform.position += (Vector3)move;
     }
 }

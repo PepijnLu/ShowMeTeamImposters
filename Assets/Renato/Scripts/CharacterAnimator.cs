@@ -6,7 +6,8 @@ public class CharacterAnimator
 
     public void Start(Transform transform)
     {
-        animator = transform.GetChild(0).gameObject.GetComponent<Animator>();
+        // animator = transform.GetChild(0).gameObject.GetComponent<Animator>();
+        animator = transform.GetComponent<Animator>();
         if(animator != null) 
         {
             Debug.Log($"Animator: {animator.name} found!");
@@ -34,8 +35,6 @@ public class CharacterAnimator
     public void PunchAnim() 
     {
         animator.SetBool("Idle", false);
-        // animator.SetBool("Walk Forward", false);
-        // animator.SetBool("Walk Backward", false);
         animator.SetTrigger("PunchTrigger");
     }
 }

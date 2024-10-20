@@ -1,16 +1,33 @@
 public class CharacterCombat
 {
+    private PlayerManager playerManager;
     public CharacterAnimator animator;
+    // public bool isAttacking = false;
 
-    public CharacterCombat() 
+    public CharacterCombat(PlayerManager playerManager) 
     {
+        this.playerManager = playerManager;
         animator = new();
     }
     
     public void Punch() 
     {
-        animator.PunchAnim();
+        if(!playerManager.isAttacking) 
+        {
+            playerManager.isAttacking = true;
 
-        // Other logic...
+            animator.PunchAnim();
+
+            // Other logic...
+            
+            // Do Damage (done in another script: ApplyDamage, might change this)
+
+            // Apply knockback if condition is met
+        }
+    }
+
+    public void ResetAttack()
+    {
+        playerManager.isAttacking = false;
     }
 }
