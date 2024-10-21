@@ -4,6 +4,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PianoMan : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class PianoMan : MonoBehaviour
     [SerializeField] public float groundCheckRadius;
     [SerializeField] public Transform groundCheck;
     [SerializeField] public LayerMask groundLayer;
+    public float health;
+    public Slider healthSlider;
 
     private Vector2 gizmoPos;
     private float gizmoSize;
@@ -24,6 +27,8 @@ public class PianoMan : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
+        healthSlider.maxValue = health;
+        healthSlider.value = health;
         stateMachine = new StateMachine(gameObject);
         rb = GetComponent<Rigidbody2D>();
         originalSize = playerCollider.size;
@@ -52,10 +57,22 @@ public class PianoMan : MonoBehaviour
         }
     }
 
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        healthSlider.value = health;
+
+        if(health <= 0)
+        {
+            health = 0;
+            //Die logic
+        }
+    }
+
     public void InitiateAttack()
     {
         Vector2 movePosition = new Vector2(transform.position.x, transform.position.y) + new Vector2(2, 0);
-        stateMachine.currentAttackState.Attack(movePosition, 0, 60, 60, 0.5f, 15, new Vector2(1, 0), 250, 120, 30, false);
+        stateMachine.currentAttackState.Attack(movePosition, 0, 60, 60, 0.5f, 1, new Vector2(1, 0), 250, 120, 30, false);
     }
 
     void FixedUpdate()  // Use FixedUpdate for physics-based movement
@@ -164,6 +181,7 @@ public class PianoMan : MonoBehaviour
 
     IEnumerator HitCharacter(Vector2 position, GameObject character, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames)
     {
+        GameManager.instance.snare.Play();
         Debug.Log($" HitDetection: {character.name} hit");
         string accuracy = GameManager.instance.GetAccuracyOnBeat();
 
@@ -171,6 +189,7 @@ public class PianoMan : MonoBehaviour
         float launchStrengthMult = 0;
         float hitstunFramesMult = 0;
         float hitstopFramesMult = 0;
+        float hitstopBeats = 0;
 
         switch(accuracy)
         {
@@ -180,6 +199,7 @@ public class PianoMan : MonoBehaviour
                 launchStrengthMult = 3;
                 hitstunFramesMult = 3;
                 hitstopFramesMult = 3;
+                hitstopBeats = 2;
                 break;
             case "OK":
                 Debug.Log("Hit: OK");
@@ -187,6 +207,7 @@ public class PianoMan : MonoBehaviour
                 launchStrengthMult = 1.5f;
                 hitstunFramesMult = 1.5f;
                 hitstopFramesMult = 1.5f;
+                hitstopBeats = 1;
                 break;
             case "Bad":
                 Debug.Log("Hit: Bad");
@@ -194,6 +215,7 @@ public class PianoMan : MonoBehaviour
                 launchStrengthMult = .5f;
                 hitstunFramesMult = .5f;
                 hitstopFramesMult = .5f;
+                hitstopBeats = .5f;
                 break;
         }
 
@@ -215,11 +237,12 @@ public class PianoMan : MonoBehaviour
 
         if(character.TryGetComponent<PianoMan>(out PianoMan component))
         {
+            component.TakeDamage(damage);
             //Handle hitstop
             Rigidbody2D rb2D = component.GetComponent<Rigidbody2D>();
             rb2D.velocity = Vector2.zero;
             rb2D.angularVelocity = 0f;
-            Coroutine hitstopRoutine = StartCoroutine(GameManager.instance.HandleHitStop(hitstopFrames));
+            Coroutine hitstopRoutine = StartCoroutine(GameManager.instance.HandleHitStop(hitstopFrames, hitstopBeats));
             yield return hitstopRoutine; 
             StartCoroutine(HandleHitStun(component, hitstunFrames));
         }
