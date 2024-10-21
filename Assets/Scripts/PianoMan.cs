@@ -40,8 +40,8 @@ public class PianoMan : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Space) && gameObject.name == "PianoMan")
             {
-                Vector2 movePosition = new Vector2(transform.position.x, transform.position.y) + new Vector2(2, 0);
-                stateMachine.currentAttackState.Attack(movePosition, 0, 60, 60, 0.5f, 15, new Vector2(1, 0), 250, 120, 30, false);
+                Debug.Log("Space input");
+                InitiateAttack();
             }
 
             if(Input.GetKeyDown(KeyCode.Return) && gameObject.name == "CPU")
@@ -50,6 +50,12 @@ public class PianoMan : MonoBehaviour
                 stateMachine.currentAttackState.Attack(movePosition, 20, 60, 60, 0.5f, 15, new Vector2(1, 0), 250, 30, 30, false);
             }
         }
+    }
+
+    public void InitiateAttack()
+    {
+        Vector2 movePosition = new Vector2(transform.position.x, transform.position.y) + new Vector2(2, 0);
+        stateMachine.currentAttackState.Attack(movePosition, 0, 60, 60, 0.5f, 15, new Vector2(1, 0), 250, 120, 30, false);
     }
 
     void FixedUpdate()  // Use FixedUpdate for physics-based movement
@@ -104,6 +110,7 @@ public class PianoMan : MonoBehaviour
 
     public IEnumerator AttackMove(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
     {
+        // GameManager.instance.audioSource.Play();
         Collider2D[] hitColliders;
         List<string> hitCharacters = new();
 
@@ -112,6 +119,7 @@ public class PianoMan : MonoBehaviour
         for(int i = 0; i < startupFrames; i++) 
         {
             //during startup logic
+            Debug.Log("WAIT A FRAME");
             yield return new WaitForFixedUpdate();
         }
         //become active logic
@@ -157,6 +165,42 @@ public class PianoMan : MonoBehaviour
     IEnumerator HitCharacter(Vector2 position, GameObject character, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames)
     {
         Debug.Log($" HitDetection: {character.name} hit");
+        string accuracy = GameManager.instance.GetAccuracyOnBeat();
+
+        float damageMult = 0;
+        float launchStrengthMult = 0;
+        float hitstunFramesMult = 0;
+        float hitstopFramesMult = 0;
+
+        switch(accuracy)
+        {
+            case "Perfect":
+                Debug.Log("Hit: Perfect");
+                damageMult = 3;
+                launchStrengthMult = 3;
+                hitstunFramesMult = 3;
+                hitstopFramesMult = 3;
+                break;
+            case "OK":
+                Debug.Log("Hit: OK");
+                damageMult = 1.5f;
+                launchStrengthMult = 1.5f;
+                hitstunFramesMult = 1.5f;
+                hitstopFramesMult = 1.5f;
+                break;
+            case "Bad":
+                Debug.Log("Hit: Bad");
+                damageMult = .5f;
+                launchStrengthMult = .5f;
+                hitstunFramesMult = .5f;
+                hitstopFramesMult = .5f;
+                break;
+        }
+
+        damage *= damageMult;
+        launchStrength *= launchStrengthMult;
+        hitstunFrames *= hitstunFramesMult;
+        hitstopFrames *= hitstopFramesMult;
 
         // Step 1: Calculate the direction from object1 to object2
         Vector2 direction = new Vector2(character.transform.position.x, character.transform.position.x) - position;
@@ -182,15 +226,6 @@ public class PianoMan : MonoBehaviour
         character.GetComponent<Rigidbody2D>().AddForce(direction * launchStrength);
 
         yield return null;
-    }
-
-    IEnumerator HandleHitStop(float frames)
-    {
-        // Stop the physics simulation
-        Physics.simulationMode = SimulationMode.Script;
-        for(int i = 0; i < frames; i++) yield return new WaitForFixedUpdate();
-        // Resume the physics simulation
-        Physics.simulationMode = SimulationMode.FixedUpdate;
     }
 
     private IEnumerator HandleHitStun(PianoMan character, float hitstunFrames)
