@@ -1377,9 +1377,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546d52925a9059a49be72ac3a60b2532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGrounded: 0
   playerCollider: {fileID: 532353743}
   moveInput: {x: 0, y: 0}
   originalSize: {x: 0, y: 0}
+  inHitStun: 0
   moveSpeed: 5
   jumpForce: 5
   groundCheckRadius: 0.5
@@ -1387,6 +1389,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
+  empty: {fileID: 0}
   health: 10
   healthSlider: {fileID: 1534790495}
 --- !u!1 &594108596
@@ -2759,9 +2762,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546d52925a9059a49be72ac3a60b2532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGrounded: 0
   playerCollider: {fileID: 1371698341}
   moveInput: {x: 0, y: 0}
   originalSize: {x: 0, y: 0}
+  inHitStun: 0
   moveSpeed: 5
   jumpForce: 5
   groundCheckRadius: 0.2
@@ -2769,6 +2774,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  empty: {fileID: 5110056302384140412, guid: 16fb077a63d82f34b8c61fb49f2ff621, type: 3}
   health: 10
   healthSlider: {fileID: 1661628353}
 --- !u!70 &1371698341

@@ -9,15 +9,16 @@ using UnityEngine.UI;
 public class PianoMan : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private bool isGrounded;
+    public bool isGrounded;
     public StateMachine stateMachine;
     public CapsuleCollider2D playerCollider;
     public Vector2 moveInput, originalSize;
-    private bool inHitStun;
+    public bool inHitStun;
     [SerializeField] public float moveSpeed, jumpForce;
     [SerializeField] public float groundCheckRadius;
     [SerializeField] public Transform groundCheck;
     [SerializeField] public LayerMask groundLayer;
+    [SerializeField] private GameObject empty;
     public float health;
     public Slider healthSlider;
 
@@ -39,22 +40,7 @@ public class PianoMan : MonoBehaviour
     void Update()
     {
         stateMachine.Update();
-
-        //TestInputs
-        if(!inHitStun)
-        {
-            if(Input.GetKeyDown(KeyCode.Space) && gameObject.name == "PianoMan")
-            {
-                Debug.Log("Space input");
-                InitiateAttack();
-            }
-
-            if(Input.GetKeyDown(KeyCode.Return) && gameObject.name == "CPU")
-            {
-                Vector2 movePosition = new Vector2(transform.position.x, transform.position.y) + new Vector2(2, 0);
-                stateMachine.currentAttackState.Attack(movePosition, 20, 60, 60, 0.5f, 15, new Vector2(1, 0), 250, 30, 30, false);
-            }
-        }
+        
     }
 
     public void TakeDamage(float damage)
@@ -69,7 +55,7 @@ public class PianoMan : MonoBehaviour
         }
     }
 
-    public void InitiateAttack()
+    public void Jab()
     {
         Vector2 movePosition = new Vector2(transform.position.x, transform.position.y) + new Vector2(2, 0);
         stateMachine.currentAttackState.Attack(movePosition, 0, 60, 60, 0.5f, 1, new Vector2(1, 0), 250, 120, 30, false);
@@ -93,6 +79,7 @@ public class PianoMan : MonoBehaviour
 
     public void APress(InputAction.CallbackContext context)
     {
+        Debug.Log("Character A press");
         if (context.performed) stateMachine.APress(context);
     }
 
@@ -130,6 +117,8 @@ public class PianoMan : MonoBehaviour
         // GameManager.instance.audioSource.Play();
         Collider2D[] hitColliders;
         List<string> hitCharacters = new();
+        GameObject movePos = Instantiate(empty, position, Quaternion.identity);
+        movePos.transform.SetParent(gameObject.transform);
 
         //startup logic
         stateMachine.SetState("AttackState", new Startup());
@@ -145,8 +134,8 @@ public class PianoMan : MonoBehaviour
         for(int i = 0; i < activeFrames; i++) 
         {
             //Check for collision
-            hitColliders = Physics2D.OverlapCircleAll(position, hitbox);
-            gizmoPos = position;
+            hitColliders = Physics2D.OverlapCircleAll(movePos.transform.position, hitbox);
+            gizmoPos = movePos.transform.position;
             gizmoSize = hitbox;
 
             if (hitColliders.Length > 0)
@@ -166,6 +155,7 @@ public class PianoMan : MonoBehaviour
             yield return new WaitForFixedUpdate();
         }
         //start recovery logic
+        Destroy(empty);
         stateMachine.SetState("AttackState", new Recovery());
         gizmoSize = 0;
         gizmoPos = new Vector2(0, 0);
