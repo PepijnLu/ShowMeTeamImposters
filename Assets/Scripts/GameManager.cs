@@ -66,23 +66,23 @@ public class GameManager : MonoBehaviour
         Physics2D.simulationMode = SimulationMode2D.Script;
 
         // Wait for the specified duration
-        //for(int i = 0; i < frames; i++) yield return new WaitForFixedUpdate();
+        for(int i = 0; i < frames; i++) yield return new WaitForFixedUpdate();
 
         //Wait 36 frames
-        switch(beats)
-        {
-            case 0.5f:
-                for(int i = 0; i < 18; i++) yield return new WaitForFixedUpdate();
-                break;
-            case 1:
-                for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
-                break;
-            case 2:
-                for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
-                for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
-                break;
+        // switch(beats)
+        // {
+        //     case 0.5f:
+        //         for(int i = 0; i < 18; i++) yield return new WaitForFixedUpdate();
+        //         break;
+        //     case 1:
+        //         for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
+        //         break;
+        //     case 2:
+        //         for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
+        //         for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
+        //         break;
             
-        }
+        // }
         //for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
         //for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
 
