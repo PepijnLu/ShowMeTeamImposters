@@ -9,21 +9,22 @@ using UnityEngine.UI;
 
 public class PianoMan : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    public bool isGrounded;
-    public StateMachine stateMachine;
-    public CapsuleCollider2D playerCollider;
-    public Vector2 moveInput, originalSize;
-    public bool inHitStun;
-    [SerializeField] public float moveSpeed, jumpForce;
-    [SerializeField] public float groundCheckRadius;
     [SerializeField] public Transform groundCheck;
     [SerializeField] public LayerMask groundLayer;
     [SerializeField] private GameObject empty;
     [SerializeField] private Animator animator;
-    public float health;
+    [SerializeField] public float moveSpeed, jumpForce;
+    [SerializeField] public float groundCheckRadius;
+    public StateMachine stateMachine;
+    public CapsuleCollider2D playerCollider;
+    public Vector2 moveInput, originalSize;
     public Slider healthSlider;
-
+    public bool isGrounded;
+    public bool inHitStun;
+    public float health;
+    private Rigidbody2D rb;
+    private AttackMove aKick;
+    private Dictionary<string, AttackMove> attackMoves = new();
     private Vector2 gizmoPos;
     private float gizmoSize;
 
@@ -36,13 +37,13 @@ public class PianoMan : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         originalSize = playerCollider.size;
         //originalSize = gameObject.transform.localScale;
+        InitializeMoves();
     }
 
     // Update is called once per frame
     void Update()
     {
         stateMachine.Update();
-        
     }
 
     public void TakeDamage(float damage)
@@ -57,10 +58,11 @@ public class PianoMan : MonoBehaviour
         }
     }
 
-    public void Jab()
+    public void Attack(string move)
     {
-        Vector2 movePosition = new Vector2(transform.position.x, transform.position.y) + new Vector2(1f, 0.05f);
-        stateMachine.currentAttackState.Attack(movePosition, 25, 10, 20, 0.25f, 1, new Vector2(0.5f, 0.5f), 250, 120, 30, false);
+        AttackMove attackMove = attackMoves[move];
+        Vector2 movePos = new Vector2(transform.position.x, transform.position.y) + attackMove.position;
+        stateMachine.currentAttackState.Attack(movePos, attackMove.startupFrames, attackMove.activeFrames, attackMove.recoveryFrames, attackMove.hitbox, attackMove.damage, attackMove.launchAngle, attackMove.launchStrength, attackMove.hitstunFrames, attackMove.hitstopFrames, attackMove.multiHit);
     }
 
     void FixedUpdate()  // Use FixedUpdate for physics-based movement
@@ -81,7 +83,6 @@ public class PianoMan : MonoBehaviour
 
     public void APress(InputAction.CallbackContext context)
     {
-        Debug.Log("Character A press");
         if (context.performed) stateMachine.APress(context);
     }
 
@@ -131,9 +132,9 @@ public class PianoMan : MonoBehaviour
             Debug.Log("WAIT A FRAME");
             yield return new WaitForFixedUpdate();
         }
+
         //become active logic
         stateMachine.SetState("AttackState", new Active());
-        //GameObject circle = Instantiate(gizmoCircle, position, Quaternion.identity);
         for(int i = 0; i < activeFrames; i++) 
         {
             //Check for collision
@@ -157,6 +158,7 @@ public class PianoMan : MonoBehaviour
 
             yield return new WaitForFixedUpdate();
         }
+
         //start recovery logic
         empty.SetActive(false);
         stateMachine.SetState("AttackState", new Recovery());
@@ -167,6 +169,7 @@ public class PianoMan : MonoBehaviour
             //during recovery logic
             yield return new WaitForFixedUpdate();
         }
+
         //end recovery logic
         stateMachine.SetState("AttackState", new Idle());
         yield return null;
@@ -221,19 +224,10 @@ public class PianoMan : MonoBehaviour
         float direction = character.transform.position.x - position.x;
 
         launchAngle.Normalize();
-        if(direction >= 0)
-        {
-            launchAngle.x = launchAngle.x;
-        }
-        else
+        if(direction < 0)
         {
             launchAngle.x = -launchAngle.x;
         }
-
-        // Step 3: Normalize the direction vector and move object2 forward
-        // direction.Normalize();
-        // direction += launchAngle.normalized;
-        // direction.Normalize();
 
         if(character.TryGetComponent<PianoMan>(out PianoMan component))
         {
@@ -265,5 +259,25 @@ public class PianoMan : MonoBehaviour
 
         // Draw the wireframe circle at the specified position with the specified radius
         Gizmos.DrawWireSphere(gizmoPos, gizmoSize);
+    }
+
+    void InitializeMoves()
+    {
+        aKick = new()
+        {
+            position = new Vector2(1f, 0.05f),
+            startupFrames = 25,
+            activeFrames = 10,
+            recoveryFrames = 20,
+            hitbox = 0.25f,
+            damage = 1,
+            launchAngle = new Vector2(0.5f, 0.5f),
+            launchStrength = 250,
+            hitstunFrames = 120,
+            hitstopFrames = 30,
+            multiHit = false
+        };
+
+        attackMoves.Add("Kick", aKick);
     }
 }

@@ -48,7 +48,7 @@ public class Idle : AttackState
     public override void APress(InputAction.CallbackContext context)
     {
         Debug.Log("Idle state a press");
-        if(!character.inHitStun) character.Jab();
+        if(!character.inHitStun) character.Attack("Kick");
     }
 }
 
