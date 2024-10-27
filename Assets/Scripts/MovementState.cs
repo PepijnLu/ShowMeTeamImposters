@@ -154,7 +154,7 @@ public class Grounded : MovementState
                 }
                 else
                 {
-                    requiredForce = -character.acceleration;
+                    requiredForce = character.acceleration;
                     isRunning = false;
                 }
             }
@@ -252,8 +252,13 @@ public class Grounded : MovementState
 
     private void Jump()
     {
-        rb.AddForce(Vector2.up * character.jumpForce, ForceMode2D.Impulse);  // Apply upward force for the jump
-        Debug.Log("Player Jump");
+        if(!character.jumpOnCooldown)
+        {
+            character.jumpOnCooldown = true;
+            rb.AddForce(Vector2.up * character.jumpForce, ForceMode2D.Impulse);  // Apply upward force for the jump
+            Debug.Log("Player Jump");
+            character.StartJumpCooldown();
+        }
     }
 
     private void DashBack()

@@ -13,7 +13,7 @@ public class PianoMan : MonoBehaviour
     [SerializeField] public LayerMask groundLayer;
     [SerializeField] private GameObject empty;
     [SerializeField] private Animator animator;
-    [SerializeField] private GameObject oppponent;
+    [SerializeField] private GameObject oppponent, playerCanvas;
     [SerializeField] public float maxWalkSpeed, maxRunSpeed, acceleration, jumpForce, dashCooldown, dashBackSpeed, aerialDriftAcceleration, maxAerialDriftSpeed;
     [SerializeField] public float groundCheckRadius;
     public StateMachine stateMachine;
@@ -23,12 +23,13 @@ public class PianoMan : MonoBehaviour
     public bool isGrounded;
     public bool inHitStun;
     public float health;
+    private bool readingInputs;
     private Rigidbody2D rb;
     private AttackMove aKick;
     private Dictionary<string, AttackMove> attackMoves = new();
     private Vector2 gizmoPos;
     private float gizmoSize;
-    public bool isFacingLeft, dashOnCooldown, dashedBackOnInput;
+    public bool isFacingLeft, dashOnCooldown, jumpOnCooldown, dashedBackOnInput;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +47,14 @@ public class PianoMan : MonoBehaviour
     void Update()
     {
         stateMachine.Update();
+        readingInputs = CheckIfReadInputs();
+    }
+
+    bool CheckIfReadInputs()
+    {
+        if(GameManager.instance.inHitStop) return false;
+        if(inHitStun) return false;
+        return true;
     }
 
     public void TakeDamage(float damage)
@@ -83,49 +92,54 @@ public class PianoMan : MonoBehaviour
         {
             if(!isFacingLeft)
             {
-                Debug.Log("Flip left");
                 isFacingLeft = true;
-                Vector3 scale = transform.localScale;
-                scale.x *= -1;
-                transform.localScale = scale;
+                Flip();
             }
         }
         else if(posRelativeToOpponent <= -1)
         {
             if(isFacingLeft)
             {
-                Debug.Log("Flip right");
                 isFacingLeft = false;
-                Vector3 scale = transform.localScale;
-                scale.x *= -1;
-                transform.localScale = scale;
+                Flip();
             }
         }
     }
 
+    private void Flip()
+    {
+        Debug.Log("Flip left");
+        Vector3 playerScale = transform.localScale;
+        Vector3 canvasScale = playerCanvas.transform.localScale;
+        playerScale.x *= -1;
+        canvasScale.x *= -1;
+        playerCanvas.transform.localScale = canvasScale;
+        transform.localScale = playerScale;
+    }
+
     public void APress(InputAction.CallbackContext context)
     {
-        if (context.performed) stateMachine.APress(context);
+        if (context.performed && readingInputs) stateMachine.APress(context);
     }
 
     public void YPress(InputAction.CallbackContext context)
     {
-        if (context.performed) stateMachine.YPress(context);
+        if (context.performed && readingInputs) stateMachine.YPress(context);
     }
 
     public void BPress(InputAction.CallbackContext context)
     {
-        if (context.performed) stateMachine.BPress(context);
+        if (context.performed && readingInputs) stateMachine.BPress(context);
     }
 
     public void XPress(InputAction.CallbackContext context)
     {
-        if (context.performed) stateMachine.XPress(context);
+        if (context.performed && readingInputs) stateMachine.XPress(context);
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && readingInputs)
         {
             moveInput = context.ReadValue<Vector2>();  // Read the Vector2 value (X and Y)
             Debug.Log("Joystick movement: " + moveInput);
@@ -247,10 +261,10 @@ public class PianoMan : MonoBehaviour
         hitstopFrames *= hitstopFramesMult;
 
         // Step 1: Calculate the direction from object1 to object2
-        float direction = character.transform.position.x - position.x;
+        //float direction = character.transform.position.x - position.x;
 
         launchAngle.Normalize();
-        if(direction < 0)
+        if(isFacingLeft)
         {
             launchAngle.x = -launchAngle.x;
         }
@@ -312,9 +326,20 @@ public class PianoMan : MonoBehaviour
         StartCoroutine(DashCooldown());
     }
 
-    IEnumerator DashCooldown()
+    public void StartJumpCooldown()
     {
-        yield return new WaitForSeconds(dashCooldown);
+        StartCoroutine(JumpCooldown());
+    }
+
+    public IEnumerator JumpCooldown()
+    {
+        for(int i = 0; i < 5; i++) yield return new WaitForFixedUpdate();
+        jumpOnCooldown = false; 
+    }
+
+    public IEnumerator DashCooldown()
+    {
+        for(int i = 0; i < dashCooldown; i++) yield return new WaitForFixedUpdate();
         dashOnCooldown = false;
     }
 }

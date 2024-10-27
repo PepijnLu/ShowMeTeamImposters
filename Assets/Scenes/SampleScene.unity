@@ -1486,6 +1486,7 @@ MonoBehaviour:
   empty: {fileID: 0}
   animator: {fileID: 0}
   oppponent: {fileID: 1346749652}
+  playerCanvas: {fileID: 1386882476}
   maxWalkSpeed: 0
   maxRunSpeed: 0
   acceleration: 0
@@ -1504,6 +1505,8 @@ MonoBehaviour:
   health: 10
   isFacingLeft: 0
   dashOnCooldown: 0
+  jumpOnCooldown: 0
+  dashedBackOnInput: 0
 --- !u!1 &564688517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,6 +3071,7 @@ MonoBehaviour:
   empty: {fileID: 5110056302384140412, guid: 16fb077a63d82f34b8c61fb49f2ff621, type: 3}
   animator: {fileID: 1346749653}
   oppponent: {fileID: 532353742}
+  playerCanvas: {fileID: 308723058}
   maxWalkSpeed: 2.5
   maxRunSpeed: 5
   acceleration: 10
@@ -3086,6 +3090,8 @@ MonoBehaviour:
   health: 10
   isFacingLeft: 0
   dashOnCooldown: 0
+  jumpOnCooldown: 0
+  dashedBackOnInput: 0
 --- !u!70 &1346749658
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3376,6 +3382,7 @@ MonoBehaviour:
   empty: {fileID: 5110056302384140412, guid: 16fb077a63d82f34b8c61fb49f2ff621, type: 3}
   animator: {fileID: 0}
   oppponent: {fileID: 0}
+  playerCanvas: {fileID: 0}
   maxWalkSpeed: 0
   maxRunSpeed: 0
   acceleration: 0
@@ -3394,6 +3401,8 @@ MonoBehaviour:
   health: 10
   isFacingLeft: 0
   dashOnCooldown: 0
+  jumpOnCooldown: 0
+  dashedBackOnInput: 0
 --- !u!70 &1371698341
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
