@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class MovementState : AState
 {
+    protected Vector2 moveInput;
     protected Rigidbody2D rb;
     protected PianoMan character;
     protected StateMachine sm;
     protected bool isGrounded;
+    protected bool isRunning;
     public override void StateStart(GameObject runner)
     {
         Debug.Log("State Start");
@@ -19,8 +22,9 @@ public class MovementState : AState
     public override void StateFixedUpdate(GameObject runner)
     {
         Debug.Log("Character: " + character);
-        //isGrounded = Physics2D.OverlapCircle(character.groundCheck.position, character.groundCheckRadius, character.groundLayer);
-        if(character.isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
+        isGrounded = Physics2D.OverlapCircle(character.groundCheck.position, character.groundCheckRadius, character.groundLayer);
+        Debug.Log("State Grounded" + isGrounded);
+        if(isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
     }
     public virtual void APress(InputAction.CallbackContext context)
     {
@@ -41,6 +45,11 @@ public class MovementState : AState
     {
         Debug.Log("X button pressed");
     }
+
+    public virtual void Move()
+    {
+        moveInput = character.moveInput;
+    }
 }
 
 public class Airborne : MovementState
@@ -59,7 +68,34 @@ public class Airborne : MovementState
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        //if(isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
+        if(isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
+    }
+
+    public override void Move()
+    {
+        if(character.inHitStun) return;
+
+        base.Move();
+        float moveInputNormalized = 0;
+        if(moveInput.x > 0.1f) moveInputNormalized = 1;
+        else if(moveInput.x < -0.1f) moveInputNormalized = -1;
+
+        Vector2 desiredForce = new Vector2(moveInputNormalized * character.aerialDriftAcceleration, 0);
+        Vector2 predictedVelocity = new Vector2(rb.velocity.x + (desiredForce.x * Time.fixedDeltaTime / rb.mass), 0);
+        float maxToCheck = character.maxAerialDriftSpeed;
+        Vector2 clampedForce;
+        
+        if (predictedVelocity.magnitude > maxToCheck)
+        {
+            clampedForce = (predictedVelocity.normalized * maxToCheck - rb.velocity) * rb.mass / Time.fixedDeltaTime;
+            Vector2 forceToAdd = new Vector2(clampedForce.x, 0);
+            rb.AddForce(forceToAdd);
+        }
+        else
+        {
+            // Apply the full force if within limits
+            rb.AddForce(desiredForce);
+        }
     }
 
     private void DoubleJump()
@@ -88,11 +124,124 @@ public class Grounded : MovementState
     {
         Jump();
     }
+    public override void Move()
+    {
+        if(character.inHitStun) return;
+        
+        base.Move();
+        float requiredForce = 0f;
+        Debug.Log("X Move Input: " + moveInput.x);
+
+        //Facing left
+        if(character.isFacingLeft)
+        {
+            //Run left
+            if(moveInput.x <= -0.8f)
+            {
+                isRunning = true;
+                //requiredForce = -(character.maxRunSpeed - rb.velocity.x) * rb.mass;
+                requiredForce = -character.dashBackSpeed;
+                character.dashedBackOnInput = false;
+            }
+            //Dash right
+            else if(moveInput.x >= 0.8f)
+            {
+                if(!character.dashedBackOnInput)
+                {
+                    DashBack();
+                    character.dashedBackOnInput = true;
+                    return;
+                }
+                else
+                {
+                    requiredForce = -character.acceleration;
+                    isRunning = false;
+                }
+            }
+            //Walk left
+            else if(moveInput.x < -0.1)
+            {
+                requiredForce = -character.acceleration;
+                isRunning = false;
+                character.dashedBackOnInput = false;
+            }
+            //Walk right
+            else if(moveInput.x > 0.1)
+            {
+                requiredForce = character.acceleration;
+                isRunning = false;
+                character.dashedBackOnInput = false;
+            }
+        }
+        //Facing right
+        else
+        {
+            //Run right
+            if(moveInput.x >= 0.8f)
+            {
+                isRunning = true;
+                //requiredForce = (character.maxRunSpeed - rb.velocity.x) * rb.mass;
+                requiredForce = character.dashBackSpeed;
+                character.dashedBackOnInput = false;
+            }
+            //Dash left
+            else if(moveInput.x <= -0.8f)
+            {
+                if(!character.dashedBackOnInput)
+                {
+                    DashBack();
+                    character.dashedBackOnInput = true;
+                    return;
+                }
+                else
+                {
+                    requiredForce = -character.acceleration;
+                    isRunning = false;
+                }
+            }
+            //Walk left
+            else if(moveInput.x < -0.1)
+            {
+                requiredForce = -character.acceleration;
+                isRunning = false;
+                character.dashedBackOnInput = false;
+            }
+            //Walk right
+            else if(moveInput.x > 0.1)
+            {
+                requiredForce = character.acceleration;
+                isRunning = false;
+                character.dashedBackOnInput = false;
+            }
+        }
+
+        Debug.Log("Required Force: " + requiredForce);
+
+
+        Vector2 desiredForce = new Vector2(requiredForce, 0);
+        Vector2 predictedVelocity = new Vector2(rb.velocity.x + (desiredForce.x * Time.fixedDeltaTime / rb.mass), 0);
+        float maxToCheck;
+        Vector2 clampedForce;
+
+        if(isRunning) maxToCheck = character.maxRunSpeed;
+        else maxToCheck = character.maxWalkSpeed;
+        
+        if (predictedVelocity.magnitude > maxToCheck)
+        {
+            clampedForce = (predictedVelocity.normalized * maxToCheck - rb.velocity) * rb.mass / Time.fixedDeltaTime;
+            Vector2 forceToAdd = new Vector2(clampedForce.x, 0);
+            rb.AddForce(forceToAdd);
+        }
+        else
+        {
+            // Apply the full force if within limits
+            rb.AddForce(desiredForce);
+        }
+    }
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        Debug.Log("Grounded " + character.isGrounded);
-        if(!character.isGrounded) 
+        if(!isGrounded) 
         {
             character.stateMachine.SetState("MovementState", new Airborne());
             Debug.Log("Switched to Airborne");
@@ -105,6 +254,21 @@ public class Grounded : MovementState
     {
         rb.AddForce(Vector2.up * character.jumpForce, ForceMode2D.Impulse);  // Apply upward force for the jump
         Debug.Log("Player Jump");
+    }
+
+    private void DashBack()
+    {
+        if(!character.dashOnCooldown)
+        {
+            character.dashOnCooldown = true;
+            Debug.Log("Dash back");
+            rb.velocity = new Vector2(0, rb.velocity.y);
+            Vector2 movement = Vector2.zero;
+            if(!character.isFacingLeft) movement = new Vector2((-character.dashBackSpeed - rb.velocity.x) * rb.mass, 0);
+            if(character.isFacingLeft) movement = new Vector2((character.dashBackSpeed - rb.velocity.x) * rb.mass, 0);
+            rb.AddForce(movement);
+            character.StartDashCooldown();
+        }
     }
 }
 
@@ -121,7 +285,7 @@ public class Crouching : MovementState
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        if(!isGrounded) character.stateMachine.SetState("MovementState", new Airborne());
+        //if(!isGrounded) character.stateMachine.SetState("MovementState", new Airborne());
         if(character.moveInput.y > -0.50f) character.stateMachine.SetState("MovementState", new Grounded());
     }
 

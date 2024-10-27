@@ -13,7 +13,8 @@ public class PianoMan : MonoBehaviour
     [SerializeField] public LayerMask groundLayer;
     [SerializeField] private GameObject empty;
     [SerializeField] private Animator animator;
-    [SerializeField] public float moveSpeed, jumpForce;
+    [SerializeField] private GameObject oppponent;
+    [SerializeField] public float maxWalkSpeed, maxRunSpeed, acceleration, jumpForce, dashCooldown, dashBackSpeed, aerialDriftAcceleration, maxAerialDriftSpeed;
     [SerializeField] public float groundCheckRadius;
     public StateMachine stateMachine;
     public CapsuleCollider2D playerCollider;
@@ -27,6 +28,7 @@ public class PianoMan : MonoBehaviour
     private Dictionary<string, AttackMove> attackMoves = new();
     private Vector2 gizmoPos;
     private float gizmoSize;
+    public bool isFacingLeft, dashOnCooldown, dashedBackOnInput;
 
     // Start is called before the first frame update
     void Start()
@@ -61,23 +63,43 @@ public class PianoMan : MonoBehaviour
     public void Attack(string move)
     {
         AttackMove attackMove = attackMoves[move];
-        Vector2 movePos = new Vector2(transform.position.x, transform.position.y) + attackMove.position;
+        Vector2 movePos = Vector2.zero;
+        if(isFacingLeft) movePos = new Vector2(transform.position.x, transform.position.y) - attackMove.position;
+        if(!isFacingLeft) movePos = new Vector2(transform.position.x, transform.position.y) + attackMove.position;
         stateMachine.currentAttackState.Attack(movePos, attackMove.startupFrames, attackMove.activeFrames, attackMove.recoveryFrames, attackMove.hitbox, attackMove.damage, attackMove.launchAngle, attackMove.launchStrength, attackMove.hitstunFrames, attackMove.hitstopFrames, attackMove.multiHit);
     }
 
     void FixedUpdate()  // Use FixedUpdate for physics-based movement
     {
         stateMachine.FixedUpdate();
+        HandleTurnaround();
+    }
 
-        if(!inHitStun)
+    public void HandleTurnaround()
+    {
+        float posRelativeToOpponent = transform.position.x - oppponent.transform.position.x;
+        Debug.Log("rel pos: " + posRelativeToOpponent);
+        if(posRelativeToOpponent >= 1)
         {
-            // Convert the 2D input vector into a 3D vector for applying force
-            Vector2 force = new Vector2(moveInput.x, moveInput.y) * moveSpeed;
-            isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-            Debug.Log("IsGrounded: " + isGrounded);
-
-            // Apply force to the Rigidbody (keeping it in world space)
-            rb.AddForce(force);
+            if(!isFacingLeft)
+            {
+                Debug.Log("Flip left");
+                isFacingLeft = true;
+                Vector3 scale = transform.localScale;
+                scale.x *= -1;
+                transform.localScale = scale;
+            }
+        }
+        else if(posRelativeToOpponent <= -1)
+        {
+            if(isFacingLeft)
+            {
+                Debug.Log("Flip right");
+                isFacingLeft = false;
+                Vector3 scale = transform.localScale;
+                scale.x *= -1;
+                transform.localScale = scale;
+            }
         }
     }
 
@@ -107,6 +129,10 @@ public class PianoMan : MonoBehaviour
         {
             moveInput = context.ReadValue<Vector2>();  // Read the Vector2 value (X and Y)
             Debug.Log("Joystick movement: " + moveInput);
+        }
+        else
+        {
+            moveInput = Vector2.zero;
         }
     }
 
@@ -279,5 +305,16 @@ public class PianoMan : MonoBehaviour
         };
 
         attackMoves.Add("Kick", aKick);
+    }
+
+    public void StartDashCooldown()
+    {
+        StartCoroutine(DashCooldown());
+    }
+
+    IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(dashCooldown);
+        dashOnCooldown = false;
     }
 }

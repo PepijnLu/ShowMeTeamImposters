@@ -3,6 +3,16 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+/*
+TO DO LIST:
+
+-pause animation during hitstop
+-remove reversals probably
+-short/hop full hop sometime
+-grounded friction during moves or something like that
+-crouching
+
+*/
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;

@@ -1046,7 +1046,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0.2527482, y: -2.61, z: 0}
-  m_LocalScale: {x: 15.953285, y: 2.8625, z: 1}
+  m_LocalScale: {x: 41.47854, y: 2.8625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1285,7 +1285,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10.06
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1459,7 +1459,7 @@ Transform:
   m_GameObject: {fileID: 532353742}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.75, y: -0.66, z: 0}
+  m_LocalPosition: {x: 1.2, y: -0.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1474,27 +1474,36 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532353742}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 546d52925a9059a49be72ac3a60b2532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGrounded: 0
-  playerCollider: {fileID: 532353743}
-  moveInput: {x: 0, y: 0}
-  originalSize: {x: 0, y: 0}
-  inHitStun: 0
-  moveSpeed: 5
-  jumpForce: 5
-  groundCheckRadius: 0.5
   groundCheck: {fileID: 1214708444}
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
   empty: {fileID: 0}
   animator: {fileID: 0}
-  health: 10
+  oppponent: {fileID: 1346749652}
+  maxWalkSpeed: 0
+  maxRunSpeed: 0
+  acceleration: 0
+  jumpForce: 5
+  dashCooldown: 0
+  dashBackSpeed: 0
+  aerialDriftAcceleration: 0
+  maxAerialDriftSpeed: 0
+  groundCheckRadius: 0.5
+  playerCollider: {fileID: 532353743}
+  moveInput: {x: 0, y: 0}
+  originalSize: {x: 0, y: 0}
   healthSlider: {fileID: 1534790495}
+  isGrounded: 0
+  inHitStun: 0
+  health: 10
+  isFacingLeft: 0
+  dashOnCooldown: 0
 --- !u!1 &564688517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,7 +2922,7 @@ Transform:
   m_GameObject: {fileID: 1346749652}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.29, y: -0.21, z: 0}
+  m_LocalPosition: {x: -3.29, y: 0.01, z: 0}
   m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3052,22 +3061,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546d52925a9059a49be72ac3a60b2532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGrounded: 0
-  playerCollider: {fileID: 1346749658}
-  moveInput: {x: 0, y: 0}
-  originalSize: {x: 0, y: 0}
-  inHitStun: 0
-  moveSpeed: 5
-  jumpForce: 5
-  groundCheckRadius: 0.5
   groundCheck: {fileID: 1237406965}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   empty: {fileID: 5110056302384140412, guid: 16fb077a63d82f34b8c61fb49f2ff621, type: 3}
   animator: {fileID: 1346749653}
-  health: 10
+  oppponent: {fileID: 532353742}
+  maxWalkSpeed: 2.5
+  maxRunSpeed: 5
+  acceleration: 10
+  jumpForce: 7
+  dashCooldown: 1
+  dashBackSpeed: 300
+  aerialDriftAcceleration: 5
+  maxAerialDriftSpeed: 5
+  groundCheckRadius: 0.5
+  playerCollider: {fileID: 1346749658}
+  moveInput: {x: 0, y: 0}
+  originalSize: {x: 0, y: 0}
   healthSlider: {fileID: 1661628353}
+  isGrounded: 0
+  inHitStun: 0
+  health: 10
+  isFacingLeft: 0
+  dashOnCooldown: 0
 --- !u!70 &1346749658
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3351,22 +3369,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 546d52925a9059a49be72ac3a60b2532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGrounded: 0
-  playerCollider: {fileID: 1371698341}
-  moveInput: {x: 0, y: 0}
-  originalSize: {x: 0, y: 0}
-  inHitStun: 0
-  moveSpeed: 5
-  jumpForce: 5
-  groundCheckRadius: 0.2
   groundCheck: {fileID: 1452972252}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   empty: {fileID: 5110056302384140412, guid: 16fb077a63d82f34b8c61fb49f2ff621, type: 3}
   animator: {fileID: 0}
-  health: 10
+  oppponent: {fileID: 0}
+  maxWalkSpeed: 0
+  maxRunSpeed: 0
+  acceleration: 0
+  jumpForce: 5
+  dashCooldown: 0
+  dashBackSpeed: 0
+  aerialDriftAcceleration: 0
+  maxAerialDriftSpeed: 0
+  groundCheckRadius: 0.2
+  playerCollider: {fileID: 1371698341}
+  moveInput: {x: 0, y: 0}
+  originalSize: {x: 0, y: 0}
   healthSlider: {fileID: 1661628353}
+  isGrounded: 0
+  inHitStun: 0
+  health: 10
+  isFacingLeft: 0
+  dashOnCooldown: 0
 --- !u!70 &1371698341
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
