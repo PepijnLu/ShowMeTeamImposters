@@ -237,6 +237,8 @@ public class Grounded : MovementState
             // Apply the full force if within limits
             rb.AddForce(desiredForce);
         }
+
+        Debug.Log("X Velocity: " + rb.velocity.x);
     }
     public override void StateFixedUpdate(GameObject runner)
     {

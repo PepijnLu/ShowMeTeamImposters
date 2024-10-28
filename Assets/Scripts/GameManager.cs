@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] int perfectTimingFrameWindow, goodTimingFrameWindow, badTimingFrameWindow;
     int currentFrame;
     [SerializeField] PianoMan pianoMan, dummy;
-    [SerializeField] public AudioSource audioSource, snare, breakingTheHabit;
+    [SerializeField] public AudioSource audioSource, snare, gameMusic;
     Vector3 dummyStartPos;
 
     // Start is called before the first frame update
@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
                 if(currentFrame == 0) 
                 {
                     Debug.Log("Metronome beat");
-                    if(!breakingTheHabit.isPlaying) breakingTheHabit.Play();    
+                    if(!gameMusic.isPlaying) gameMusic.Play();    
                     audioSource.Play();
                     //if(pianoMan.stateMachine != null) pianoMan.InitiateAttack();
                 }
