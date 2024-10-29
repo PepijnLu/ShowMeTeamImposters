@@ -47,6 +47,18 @@ TagManager:
   - name: Achter
     uniqueID: 3428937473
     locked: 0
+  - name: Midden5
+    uniqueID: 1275508633
+    locked: 0
+  - name: Midden4
+    uniqueID: 855251381
+    locked: 0
+  - name: Midden3
+    uniqueID: 2141590737
+    locked: 0
+  - name: Midden2
+    uniqueID: 2053903737
+    locked: 0
   - name: Midden
     uniqueID: 2834639605
     locked: 0
