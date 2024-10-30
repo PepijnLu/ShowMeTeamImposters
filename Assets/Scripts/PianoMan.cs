@@ -273,9 +273,6 @@ public class PianoMan : MonoBehaviour
         {
             component.TakeDamage(damage);
             //Handle hitstop
-            Rigidbody2D rb2D = component.GetComponent<Rigidbody2D>();
-            rb2D.velocity = Vector2.zero;
-            rb2D.angularVelocity = 0f;
             Coroutine hitstopRoutine = StartCoroutine(GameManager.instance.HandleHitStop(hitstopFrames, hitstopBeats));
             yield return hitstopRoutine; 
             StartCoroutine(HandleHitStun(component, hitstunFrames));
@@ -306,15 +303,16 @@ public class PianoMan : MonoBehaviour
         aKick = new()
         {
             position = new Vector2(1f, 0.05f),
-            startupFrames = 25,
-            activeFrames = 10,
-            recoveryFrames = 20,
+            startupFrames = 17,
+            activeFrames = 7,
+            recoveryFrames = 13,
             hitbox = 0.25f,
             damage = 1,
             launchAngle = new Vector2(0.5f, 0.5f),
-            launchStrength = 250,
-            hitstunFrames = 120,
-            hitstopFrames = 30,
+            launchStrength = 300,
+            hitstunFrames = 15,
+            //5 is perfect
+            hitstopFrames = 10,
             multiHit = false
         };
 

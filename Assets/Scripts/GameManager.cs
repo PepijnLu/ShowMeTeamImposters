@@ -40,6 +40,11 @@ public class GameManager : MonoBehaviour
         // Get all Rigidbodies in the scene (or specific ones if needed)
         rigidbodies2D = FindObjectsOfType<Rigidbody2D>();
         animators = FindObjectsOfType<Animator>();
+
+        foreach(Animator anim in animators)
+        {
+            anim.speed = 1.5f;
+        }
     }
 
     // Update is called once per frame
@@ -94,7 +99,7 @@ public class GameManager : MonoBehaviour
         }
         foreach(Animator anim in animators)
         {
-            anim.speed = 1;
+            anim.speed = 1.5f;
         }
         inHitStop = false;
     }

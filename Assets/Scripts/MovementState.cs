@@ -74,6 +74,7 @@ public class Airborne : MovementState
     public override void Move()
     {
         if(character.inHitStun) return;
+        if(character.gameObject.name != "Character") return;
 
         base.Move();
         float moveInputNormalized = 0;
