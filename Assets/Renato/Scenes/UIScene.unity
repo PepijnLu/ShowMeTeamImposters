@@ -1050,7 +1050,7 @@ MonoBehaviour:
   damage: 5
   layerHP: 100
   comboManagement:
-    key: 112
+    key: 32
     requiredTimeFrame: 1
     tolerance: 0.2
     lastPressTime: -1

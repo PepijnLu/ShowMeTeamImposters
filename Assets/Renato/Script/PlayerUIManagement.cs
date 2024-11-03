@@ -200,7 +200,6 @@ public class PlayerUIManagement
         }
     }
 
-    // private bool isLayerReadyToSwitch = false; // Flag to indicate readiness for layer switch
     public void UpdateComboBar(ref int powerNoteBarIndex, ref int powerNotesIndex, int powerNotesPerBar, GameObject UI_element, ref int comboCounter, ref float lastPressTime, bool isLayerReadyToSwitch = false) 
     {
         if (powerNoteBarIndex >= comboNotesHealthBars.Count)
@@ -211,6 +210,13 @@ public class PlayerUIManagement
         var currentPowerNoteBar = comboNotesHealthBars[powerNoteBarIndex].Key;
         var powerNotes = comboNotesHealthBars[powerNoteBarIndex].Value;
         var comboNotes = comboNotesHealthBars[powerNoteBarIndex].Value_2;
+
+        // Safety check: ensure powerNotes and comboNotes lists are properly initialized
+        if (powerNotes == null || comboNotes == null)
+        {
+            Debug.LogError("Power notes or combo notes list is null.");
+            return;
+        }
 
         // Add the new UI element to combo notes if less than 2 are present
         if (comboNotes.Count < 2) 
@@ -224,13 +230,23 @@ public class PlayerUIManagement
             if (powerNotesIndex < powerNotes.Count) // Ensure we're within bounds
             {
                 GameObject currentPowerNote = powerNotes[powerNotesIndex];
-                currentPowerNote.SetActive(true);
-                Debug.Log($"Activated Power Note at index {powerNotesIndex} in bar {powerNoteBarIndex}");
+                if (currentPowerNote != null)
+                {
+                    currentPowerNote.SetActive(true);
+                    Debug.Log($"Activated Power Note at index {powerNotesIndex} in bar {powerNoteBarIndex}");
+                }
+                else
+                {
+                    Debug.LogError($"Power note at index {powerNotesIndex} is null.");
+                }
 
                 // Deactivate all other combo notes
                 foreach (var element in comboNotes)
                 {
-                    element.SetActive(false);
+                    if (element != null)
+                    {
+                        element.SetActive(false);
+                    }
                 }
 
                 comboNotes.Clear();
@@ -249,13 +265,20 @@ public class PlayerUIManagement
         if (isLayerReadyToSwitch && powerNotesIndex >= powerNotes.Count)
         {
             // Prepare to move to the next layer on the next hit
-            currentPowerNoteBar.SetActive(false);
+            if (currentPowerNoteBar != null)
+            {
+                currentPowerNoteBar.SetActive(false);
+            }
             powerNoteBarIndex++;
 
             if (powerNoteBarIndex < comboNotesHealthBars.Count)
             {
                 var nextPowerNoteBar = comboNotesHealthBars[powerNoteBarIndex].Key;
-                nextPowerNoteBar.SetActive(true);
+                if (nextPowerNoteBar != null)
+                {
+                    nextPowerNoteBar.SetActive(true);
+                }
+
                 powerNotesIndex = 0; // Reset index for new layer
                 comboNotesHealthBars[powerNoteBarIndex].Value_2.Clear();
                 isLayerReadyToSwitch = false; // Reset flag after switching
@@ -270,6 +293,9 @@ public class PlayerUIManagement
             }
         }
     }
+
+
+
 
     private void UpdateComboMeter(ref int layerIndex, bool isComboMeterFull = false) 
     {
@@ -491,3 +517,73 @@ public class DictionaryEntry2<TKey, TValue, TValue_2>
     public TValue_2 Value_2;
 }
 
+    // public void UpdateComboBar(ref int powerNoteBarIndex, ref int powerNotesIndex, int powerNotesPerBar, GameObject UI_element, ref int comboCounter, ref float lastPressTime, bool isLayerReadyToSwitch = false) 
+    // {
+    //     if (powerNoteBarIndex >= comboNotesHealthBars.Count)
+    //         return;
+
+    //     Debug.Log($"Current Power Note Bar Index: {powerNoteBarIndex}");
+
+    //     var currentPowerNoteBar = comboNotesHealthBars[powerNoteBarIndex].Key;
+    //     var powerNotes = comboNotesHealthBars[powerNoteBarIndex].Value;
+    //     var comboNotes = comboNotesHealthBars[powerNoteBarIndex].Value_2;
+
+    //     // Add the new UI element to combo notes if less than 2 are present
+    //     if (comboNotes.Count < 2) 
+    //     {
+    //         comboNotes.Add(UI_element);
+    //     }
+
+    //     // When there are two combo notes, process the power note activation
+    //     if (comboNotes.Count == 2)
+    //     {
+    //         if (powerNotesIndex < powerNotes.Count) // Ensure we're within bounds
+    //         {
+    //             GameObject currentPowerNote = powerNotes[powerNotesIndex];
+    //             currentPowerNote.SetActive(true);
+    //             Debug.Log($"Activated Power Note at index {powerNotesIndex} in bar {powerNoteBarIndex}");
+
+    //             Debug.Log($"Combo Notes Count: {comboNotes.Count}");
+    //             // Deactivate all other combo notes
+    //             foreach (var element in comboNotes)
+    //             {
+    //                 element.SetActive(false);
+    //             }
+
+    //             comboNotes.Clear();
+    //             powerNotesIndex++;
+    //         }
+
+    //         // Check if we're at the limit of power notes
+    //         if (powerNotesIndex == powerNotesPerBar) 
+    //         {
+    //             isLayerReadyToSwitch = true; // Mark the layer as ready to switch
+    //             Debug.Log($"Fourth Power Note activated. Layer ready to switch on next hit.");
+    //         }
+    //     }
+
+    //     // Only check for layer switch on the next hit
+    //     if (isLayerReadyToSwitch && powerNotesIndex >= powerNotes.Count)
+    //     {
+    //         // Prepare to move to the next layer on the next hit
+    //         currentPowerNoteBar.SetActive(false);
+    //         powerNoteBarIndex++;
+
+    //         if (powerNoteBarIndex < comboNotesHealthBars.Count)
+    //         {
+    //             var nextPowerNoteBar = comboNotesHealthBars[powerNoteBarIndex].Key;
+    //             nextPowerNoteBar.SetActive(true);
+    //             powerNotesIndex = 0; // Reset index for new layer
+    //             comboNotesHealthBars[powerNoteBarIndex].Value_2.Clear();
+    //             isLayerReadyToSwitch = false; // Reset flag after switching
+
+    //             Debug.Log($"Moved to next Power Note Bar. New Bar Index: {powerNoteBarIndex}");
+    //         }
+    //         else 
+    //         {
+    //             Debug.Log("All power note bars are fully activated.");
+    //             UpdateComboMeter(ref comboMeterIndex);
+    //             ResetComboSystem(ref comboCounter, ref lastPressTime);
+    //         }
+    //     }
+    // }

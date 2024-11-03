@@ -32,7 +32,7 @@ public class PlayerManager : MonoBehaviour
         layerHP -= incomingDamage;
         layerHP = MathF.Max(layerHP, 0);
 
-        Debug.Log($"Layer HP: {layerHP} + Player HP: {HP}");
+        // Debug.Log($"Layer HP: {layerHP} + Player HP: {HP}");
 
         playerUIManagement.UpdateHealthBar(HP, ref layerHP);
 
