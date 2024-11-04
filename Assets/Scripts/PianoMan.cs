@@ -1,51 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PianoMan : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    private bool isGrounded;
+    [SerializeField] public Transform groundCheck;
+    [SerializeField] public LayerMask groundLayer;
+    [SerializeField] private GameObject empty;
+    [SerializeField] private Animator animator;
+    [SerializeField] public float moveSpeed, jumpForce;
+    [SerializeField] public float groundCheckRadius;
     public StateMachine stateMachine;
     public CapsuleCollider2D playerCollider;
     public Vector2 moveInput, originalSize;
-    private bool inHitStun;
-    [SerializeField] public float moveSpeed, jumpForce;
-    [SerializeField] public float groundCheckRadius;
-    [SerializeField] public Transform groundCheck;
-    [SerializeField] public LayerMask groundLayer;
-
+    public Slider healthSlider;
+    public bool isGrounded;
+    public bool inHitStun;
+    public float health;
+    private Rigidbody2D rb;
+    private AttackMove aKick;
+    private Dictionary<string, AttackMove> attackMoves = new();
     private Vector2 gizmoPos;
     private float gizmoSize;
 
     void Start()
     {   
+        healthSlider.maxValue = health;
+        healthSlider.value = health;
         stateMachine = new StateMachine(gameObject);
         rb = GetComponent<Rigidbody2D>();
         originalSize = playerCollider.size;
         //originalSize = gameObject.transform.localScale;
+        InitializeMoves();
     }
 
     void Update()
     {
         stateMachine.Update();
+    }
 
-        //TestInputs
-        if(!inHitStun)
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        healthSlider.value = health;
+
+        if(health <= 0)
         {
-            if(Input.GetKeyDown(KeyCode.Space) && gameObject.name == "PianoMan")
-            {
-                Vector2 movePosition = new Vector2(transform.position.x, transform.position.y) + new Vector2(2, 0);
-                stateMachine.currentAttackState.Attack(movePosition, 0, 60, 60, 0.5f, 15, new Vector2(1, 0), 250, 120, 30, false);
-            }
-
-            if(Input.GetKeyDown(KeyCode.Return) && gameObject.name == "CPU")
-            {
-                Vector2 movePosition = new Vector2(transform.position.x, transform.position.y) + new Vector2(2, 0);
-                stateMachine.currentAttackState.Attack(movePosition, 20, 60, 60, 0.5f, 15, new Vector2(1, 0), 250, 30, 30, false);
-            }
+            health = 0;
+            //Die logic
         }
+    }
+
+    public void Attack(string move)
+    {
+        AttackMove attackMove = attackMoves[move];
+        Vector2 movePos = new Vector2(transform.position.x, transform.position.y) + attackMove.position;
+        stateMachine.currentAttackState.Attack(movePos, attackMove.startupFrames, attackMove.activeFrames, attackMove.recoveryFrames, attackMove.hitbox, attackMove.damage, attackMove.launchAngle, attackMove.launchStrength, attackMove.hitstunFrames, attackMove.hitstopFrames, attackMove.multiHit);
     }
 
     void FixedUpdate()  // Use FixedUpdate for physics-based movement
@@ -100,34 +115,39 @@ public class PianoMan : MonoBehaviour
 
     public IEnumerator AttackMove(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
     {
+        // GameManager.instance.audioSource.Play();
         Collider2D[] hitColliders;
         List<string> hitCharacters = new();
+        GameObject movePos = Instantiate(empty, position, Quaternion.identity);
+        movePos.transform.SetParent(gameObject.transform);
 
         //startup logic
+        animator.SetTrigger("Kick");
         stateMachine.SetState("AttackState", new Startup());
         for(int i = 0; i < startupFrames; i++) 
         {
             //during startup logic
+            Debug.Log("WAIT A FRAME");
             yield return new WaitForFixedUpdate();
         }
+
         //become active logic
         stateMachine.SetState("AttackState", new Active());
-        //GameObject circle = Instantiate(gizmoCircle, position, Quaternion.identity);
         for(int i = 0; i < activeFrames; i++) 
         {
             //Check for collision
-            hitColliders = Physics2D.OverlapCircleAll(position, hitbox);
-            gizmoPos = position;
+            hitColliders = Physics2D.OverlapCircleAll(movePos.transform.position, hitbox);
+            gizmoPos = movePos.transform.position;
             gizmoSize = hitbox;
 
             if (hitColliders.Length > 0)
             {
                 foreach (Collider2D hitCollider in hitColliders)
                 {
-                    Debug.Log("Collision detected with: " + hitCollider.gameObject.name);
-                    if ((!hitCharacters.Contains(hitCollider.gameObject.name) || multiHit) && (!hitCollider.gameObject != gameObject))
+                    Debug.Log("Collision detected with: " + gameObject.name + " , " + hitCollider.gameObject.name);
+                    if ((!hitCharacters.Contains(hitCollider.gameObject.name) || multiHit) && (hitCollider.gameObject != gameObject))
                     {
-                        StartCoroutine(HitCharacter(position, hitCollider.gameObject, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames));
+                        StartCoroutine(HitCharacter(movePos.transform.position, hitCollider.gameObject, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames));
                         hitCharacters.Add(hitCollider.gameObject.name);
                         Debug.Log("111" + hitCharacters[0]);
                     }
@@ -136,7 +156,9 @@ public class PianoMan : MonoBehaviour
 
             yield return new WaitForFixedUpdate();
         }
+
         //start recovery logic
+        empty.SetActive(false);
         stateMachine.SetState("AttackState", new Recovery());
         gizmoSize = 0;
         gizmoPos = new Vector2(0, 0);
@@ -145,6 +167,7 @@ public class PianoMan : MonoBehaviour
             //during recovery logic
             yield return new WaitForFixedUpdate();
         }
+
         //end recovery logic
         stateMachine.SetState("AttackState", new Idle());
         yield return null;
@@ -152,41 +175,72 @@ public class PianoMan : MonoBehaviour
 
     IEnumerator HitCharacter(Vector2 position, GameObject character, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames)
     {
+        GameManager.instance.snare.Play();
         Debug.Log($" HitDetection: {character.name} hit");
+        string accuracy = GameManager.instance.GetAccuracyOnBeat();
+
+        float damageMult = 0;
+        float launchStrengthMult = 0;
+        float hitstunFramesMult = 0;
+        float hitstopFramesMult = 0;
+        float hitstopBeats = 0;
+
+        switch(accuracy)
+        {
+            case "Perfect":
+                Debug.Log("Hit: Perfect");
+                damageMult = 3;
+                launchStrengthMult = 3;
+                hitstunFramesMult = 3;
+                hitstopFramesMult = 3;
+                hitstopBeats = 2;
+                break;
+            case "OK":
+                Debug.Log("Hit: OK");
+                damageMult = 1.5f;
+                launchStrengthMult = 1.5f;
+                hitstunFramesMult = 1.5f;
+                hitstopFramesMult = 1.5f;
+                hitstopBeats = 1;
+                break;
+            case "Bad":
+                Debug.Log("Hit: Bad");
+                damageMult = .5f;
+                launchStrengthMult = .5f;
+                hitstunFramesMult = .5f;
+                hitstopFramesMult = .5f;
+                hitstopBeats = .5f;
+                break;
+        }
+
+        damage *= damageMult;
+        launchStrength *= launchStrengthMult;
+        hitstunFrames *= hitstunFramesMult;
+        hitstopFrames *= hitstopFramesMult;
 
         // Step 1: Calculate the direction from object1 to object2
-        Vector2 direction = new Vector2(character.transform.position.x, character.transform.position.x) - position;
+        float direction = character.transform.position.x - position.x;
 
-        // Step 2: Get the angle (in degrees) from the direction vector
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-        // Step 3: Normalize the direction vector and move object2 forward
-        direction.Normalize();
-        direction += launchAngle.normalized;
-        direction.Normalize();
+        launchAngle.Normalize();
+        if(direction < 0)
+        {
+            launchAngle.x = -launchAngle.x;
+        }
 
         if(character.TryGetComponent<PianoMan>(out PianoMan component))
         {
+            component.TakeDamage(damage);
             //Handle hitstop
             Rigidbody2D rb2D = component.GetComponent<Rigidbody2D>();
             rb2D.velocity = Vector2.zero;
             rb2D.angularVelocity = 0f;
-            Coroutine hitstopRoutine = StartCoroutine(GameManager.instance.HandleHitStop(hitstopFrames));
+            Coroutine hitstopRoutine = StartCoroutine(GameManager.instance.HandleHitStop(hitstopFrames, hitstopBeats));
             yield return hitstopRoutine; 
             StartCoroutine(HandleHitStun(component, hitstunFrames));
         }
-        character.GetComponent<Rigidbody2D>().AddForce(direction * launchStrength);
+        character.GetComponent<Rigidbody2D>().AddForce(launchAngle * launchStrength);
 
         yield return null;
-    }
-
-    IEnumerator HandleHitStop(float frames)
-    {
-        // Stop the physics simulation
-        Physics.simulationMode = SimulationMode.Script;
-        for(int i = 0; i < frames; i++) yield return new WaitForFixedUpdate();
-        // Resume the physics simulation
-        Physics.simulationMode = SimulationMode.FixedUpdate;
     }
 
     private IEnumerator HandleHitStun(PianoMan character, float hitstunFrames)
@@ -203,5 +257,25 @@ public class PianoMan : MonoBehaviour
 
         // Draw the wireframe circle at the specified position with the specified radius
         Gizmos.DrawWireSphere(gizmoPos, gizmoSize);
+    }
+
+    void InitializeMoves()
+    {
+        aKick = new()
+        {
+            position = new Vector2(1f, 0.05f),
+            startupFrames = 25,
+            activeFrames = 10,
+            recoveryFrames = 20,
+            hitbox = 0.25f,
+            damage = 1,
+            launchAngle = new Vector2(0.5f, 0.5f),
+            launchStrength = 250,
+            hitstunFrames = 120,
+            hitstopFrames = 30,
+            multiHit = false
+        };
+
+        attackMoves.Add("Kick", aKick);
     }
 }

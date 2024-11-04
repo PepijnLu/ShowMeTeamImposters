@@ -68,7 +68,9 @@ public class StateMachine
 
     public void APress(InputAction.CallbackContext context)
     {
+        //Debug.Log("Current attack state: " + currentAttackState.GetType().Name);
         currentMovementState.APress(context);
+        currentAttackState.APress(context);
     }
 
     public void BPress(InputAction.CallbackContext context)

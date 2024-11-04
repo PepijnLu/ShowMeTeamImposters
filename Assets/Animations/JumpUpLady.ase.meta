@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: 71bfb8365fe7e994ab39650bbd3d05ac
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: JumpUpLady_Frame_0
+    originalName: 
+    pivot: {x: 0.569395, y: -0.019390581}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 562
+      height: 722
+    spriteID: 00f48b7688196c949abeccc6d7d3b523
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -216, y: -10}
+  - name: JumpUpLady_Frame_1
+    originalName: 
+    pivot: {x: 0.569395, y: -0.019390581}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 734
+      width: 562
+      height: 722
+    spriteID: 5c35f4687b25c3d45903976eb91886ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -216, y: 720}
+  - name: JumpUpLady_Frame_2
+    originalName: 
+    pivot: {x: 0.569395, y: -0.019390581}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1464
+      width: 562
+      height: 722
+    spriteID: 70185bb327da82a438947be8f5d68a50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -216, y: 1450}
+  - name: JumpUpLady_Frame_3
+    originalName: 
+    pivot: {x: 0.39839035, y: -0.2594203}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2194
+      width: 497
+      height: 690
+    spriteID: 89c817c98c5e0b14689f190dfaca1151
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -338, y: 1619}
+  - name: JumpUpLady_Frame_4
+    originalName: 
+    pivot: {x: 0.39839035, y: -0.2594203}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2892
+      width: 497
+      height: 690
+    spriteID: fc02ade1dbc0e5c45ba2791630cef613
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -338, y: 2317}
+  - name: JumpUpLady_Frame_5
+    originalName: 
+    pivot: {x: 0.39839035, y: -0.2594203}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 574
+      y: 4
+      width: 497
+      height: 690
+    spriteID: 4b972468bd2834c448da4b3a8f6af5d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: -571}
+  - name: JumpUpLady_Frame_6
+    originalName: 
+    pivot: {x: 0.45274726, y: -0.2688588}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 574
+      y: 3165
+      width: 455
+      height: 517
+    spriteID: 46b6aa7bfaa81344a8432bc3631635f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 240, y: 2294}
+  - name: JumpUpLady_Frame_7
+    originalName: 
+    pivot: {x: 0.45274726, y: -0.2688588}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1079
+      y: 4
+      width: 455
+      height: 517
+    spriteID: 2e8d9e3fb568f7d43a8cd769f5d6334d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 745, y: -867}
+  - name: JumpUpLady_Frame_8
+    originalName: 
+    pivot: {x: 0.45274726, y: -0.2688588}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1079
+      y: 529
+      width: 455
+      height: 517
+    spriteID: 7d59ecaa211aa374ab61d345839b3ad6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 745, y: -342}
+  - name: JumpUpLady_Frame_9
+    originalName: 
+    pivot: {x: 0.37581703, y: -0.062730625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 574
+      y: 702
+      width: 306
+      height: 813
+    spriteID: 2489c3cf32261184586d8e447a25507e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 149, y: 387}
+  - name: JumpUpLady_Frame_10
+    originalName: 
+    pivot: {x: 0.37581703, y: -0.062730625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 574
+      y: 1523
+      width: 306
+      height: 813
+    spriteID: b004bf0290f9338498eec72dd8a31ddf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 149, y: 1208}
+  - name: JumpUpLady_Frame_11
+    originalName: 
+    pivot: {x: 0.37581703, y: -0.062730625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 574
+      y: 2344
+      width: 306
+      height: 813
+    spriteID: ee8ffa3555adbe04996d8182a36035eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 149, y: 2029}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -289793541
+    name: JumpUpLady
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: JumpUpLady_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1080
+        height: 2000
+      spriteId: 00f48b7688196c949abeccc6d7d3b523
+    - name: JumpUpLady_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1080
+        height: 2000
+      spriteId: 5c35f4687b25c3d45903976eb91886ea
+    - name: JumpUpLady_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1080
+        height: 2000
+      spriteId: 70185bb327da82a438947be8f5d68a50
+    - name: JumpUpLady_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -396
+        width: 1080
+        height: 2000
+      spriteId: 89c817c98c5e0b14689f190dfaca1151
+    - name: JumpUpLady_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -396
+        width: 1080
+        height: 2000
+      spriteId: fc02ade1dbc0e5c45ba2791630cef613
+    - name: JumpUpLady_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -396
+        width: 1080
+        height: 2000
+      spriteId: 4b972468bd2834c448da4b3a8f6af5d9
+    - name: JumpUpLady_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -732
+        width: 1080
+        height: 2000
+      spriteId: 46b6aa7bfaa81344a8432bc3631635f7
+    - name: JumpUpLady_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -732
+        width: 1080
+        height: 2000
+      spriteId: 2e8d9e3fb568f7d43a8cd769f5d6334d
+    - name: JumpUpLady_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -732
+        width: 1080
+        height: 2000
+      spriteId: 7d59ecaa211aa374ab61d345839b3ad6
+    - name: JumpUpLady_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -264
+        width: 1080
+        height: 2000
+      spriteId: 2489c3cf32261184586d8e447a25507e
+    - name: JumpUpLady_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -264
+        width: 1080
+        height: 2000
+      spriteId: b004bf0290f9338498eec72dd8a31ddf
+    - name: JumpUpLady_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -264
+        width: 1080
+        height: 2000
+      spriteId: ee8ffa3555adbe04996d8182a36035eb
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1080, y: 1080}

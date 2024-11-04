@@ -16,8 +16,8 @@ public class MovementState : AState
     public override void StateFixedUpdate(GameObject runner)
     {
         Debug.Log("Character: " + character);
-        isGrounded = Physics2D.OverlapCircle(character.groundCheck.position, character.groundCheckRadius, character.groundLayer);
-        if(isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
+        //isGrounded = Physics2D.OverlapCircle(character.groundCheck.position, character.groundCheckRadius, character.groundLayer);
+        if(character.isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
     }
     
     public virtual void APress(InputAction.CallbackContext context)
@@ -57,7 +57,7 @@ public class Airborne : MovementState
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        if(isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
+        //if(isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
     }
 
     private void DoubleJump()
@@ -89,8 +89,14 @@ public class Grounded : MovementState
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        if(!isGrounded) character.stateMachine.SetState("MovementState", new Airborne());
-        if(character.moveInput.y < -0.50f) Debug.Log("Should switch to crouching"); character.stateMachine.SetState("MovementState", new Crouching());
+        Debug.Log("Grounded " + character.isGrounded);
+        if(!character.isGrounded) 
+        {
+            character.stateMachine.SetState("MovementState", new Airborne());
+            Debug.Log("Switched to Airborne");
+        }
+        Debug.Log("moveInput Y: " + character.moveInput.y);
+        //if(character.moveInput.y < -0.50f) Debug.Log("Should switch to crouching"); character.stateMachine.SetState("MovementState", new Crouching());
     }
 
     private void Jump()
@@ -107,7 +113,7 @@ public class Crouching : MovementState
     {
         base.StateStart(runner);
         Debug.Log("Switched to crouching");
-        character.playerCollider.size = new Vector2(1, 0.5f);
+        //character.playerCollider.size = new Vector2(1, 0.5f);
         //character.playerCollider.transform.localScale = new Vector2(1, 0.5f);
     }
     public override void StateFixedUpdate(GameObject runner)
@@ -119,7 +125,7 @@ public class Crouching : MovementState
 
     public override void StateComplete(GameObject runner)
     {
-        character.playerCollider.size = character.originalSize;
+        //character.playerCollider.size = character.originalSize;
         //character.playerCollider.transform.localScale = character.originalSize;
     }
 }

@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -7,6 +9,12 @@ public class GameManager : MonoBehaviour
     public bool isHitstopOn;
     private Rigidbody2D[] rigidbodies2D;
     [SerializeField] private int fps = 60;
+    [SerializeField] int perfectTimingFrameWindow, goodTimingFrameWindow, badTimingFrameWindow;
+    int currentFrame;
+    [SerializeField] PianoMan pianoMan, dummy;
+    [SerializeField] public AudioSource audioSource, snare, breakingTheHabit;
+    Vector3 dummyStartPos;
+
     // Start is called before the first frame update
 
     void Awake()
@@ -16,6 +24,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        dummyStartPos = dummy.transform.position;
         isHitstopOn = true;
         QualitySettings.vSyncCount = 0;  // Disable VSync
         Application.targetFrameRate = fps; // Set target frame rate to 60 FPS
@@ -26,10 +35,16 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+            Rigidbody2D dummyRB = dummy.GetComponent<Rigidbody2D>();
+            dummy.transform.position = dummyStartPos;
+            dummyRB.angularVelocity = 0;
+            dummyRB.velocity = Vector3.zero;
+        }
     }
 
-    public IEnumerator HandleHitStop(float frames)
+    public IEnumerator HandleHitStop(float frames, float beats)
     {
         // Store the velocities to restore later
         Vector2[] originalVelocities = new Vector2[rigidbodies2D.Length];
@@ -52,6 +67,24 @@ public class GameManager : MonoBehaviour
         // Wait for the specified duration
         for(int i = 0; i < frames; i++) yield return new WaitForFixedUpdate();
 
+        //Wait 36 frames
+        // switch(beats)
+        // {
+        //     case 0.5f:
+        //         for(int i = 0; i < 18; i++) yield return new WaitForFixedUpdate();
+        //         break;
+        //     case 1:
+        //         for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
+        //         break;
+        //     case 2:
+        //         for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
+        //         for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
+        //         break;
+            
+        // }
+        //for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
+        //for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
+
         // Resume the physics simulation and restore the original velocities
         Physics2D.simulationMode = SimulationMode2D.FixedUpdate;
 
@@ -65,10 +98,61 @@ public class GameManager : MonoBehaviour
     IEnumerator MusicTiming()
     {
         int testLimit = 100;
-        for(int i = 0; i < testLimit; i++)
+        while(true)
         {
-            Debug.Log("Metronome beat " + i);
-            for(int i2 = 0; i2 < 36; i2++) yield return new WaitForFixedUpdate();
+            for(int i2 = 0; i2 < 36; i2++) 
+            {
+                currentFrame = i2;
+                if(currentFrame == 0) 
+                {
+                    Debug.Log("Metronome beat");
+                    if(!breakingTheHabit.isPlaying) breakingTheHabit.Play();    
+                    audioSource.Play();
+                    //if(pianoMan.stateMachine != null) pianoMan.InitiateAttack();
+                }
+                //Debug.Log("Current frame: " + currentFrame);
+                yield return new WaitForFixedUpdate();
+            }
         }
+    }
+
+    public string GetAccuracyOnBeat()
+    {
+        int accuracy = 0;
+
+        if(currentFrame <= 18)
+        {
+            accuracy = currentFrame;
+        }
+        else if (currentFrame <= 35)
+        {
+            accuracy = 36 - currentFrame;
+        }
+        else throw new System.Exception("no accuracy for this int");
+
+        //Debug.Log("Off beat: " + currentFrame + " , "  + accuracy);
+
+        if(accuracy  * 2 <= perfectTimingFrameWindow - 1)
+        {
+            Debug.Log("Accuracy: Perfect");
+            return "Perfect";
+        }
+        else if(accuracy * 2 <= goodTimingFrameWindow - 1)
+        {
+            Debug.Log("Accuracy: OK");
+            return "OK";
+        }
+        else if(accuracy == 18)
+        {
+            Debug.Log("Accuracy: Bad");
+            return "Bad";
+        }
+        else if(accuracy * 2 <= badTimingFrameWindow - 1)
+        {
+            Debug.Log("Accuracy: Bad");
+            return "Bad";
+        }
+
+        throw new System.Exception("no accuracy for this int");
     }
 }

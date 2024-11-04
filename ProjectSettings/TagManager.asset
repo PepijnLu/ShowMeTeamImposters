@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
+  - Characters
   - 
   - 
   - 
@@ -41,6 +41,30 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Combat
-    uniqueID: 1450222819
+  - name: Achterachtergrond
+    uniqueID: 1913202723
+    locked: 0
+  - name: Achter
+    uniqueID: 3428937473
+    locked: 0
+  - name: Midden5
+    uniqueID: 1275508633
+    locked: 0
+  - name: Midden4
+    uniqueID: 855251381
+    locked: 0
+  - name: Midden3
+    uniqueID: 2141590737
+    locked: 0
+  - name: Midden2
+    uniqueID: 2053903737
+    locked: 0
+  - name: Midden
+    uniqueID: 2834639605
+    locked: 0
+  - name: Stage
+    uniqueID: 2096861759
+    locked: 0
+  - name: Voor
+    uniqueID: 3890800815
     locked: 0

@@ -1,0 +1,6427 @@
+fileFormatVersion: 2
+guid: e4d955b62cc49964ba5d9ddc50af1f89
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 0
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 1
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 0
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 1
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 0
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638655940075691930
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Smallcrowd_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1920
+      height: 370
+    spriteID: a638bcc63f183654cb34257a5068dbf9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Smallcrowd_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 0
+      width: 1920
+      height: 370
+    spriteID: e13a64a04347ff54eb440d12e9c87c38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 0}
+  - name: Smallcrowd_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 0
+      width: 1920
+      height: 370
+    spriteID: 5ff5d9e37c263e24ea1c341faa1d0f59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 0}
+  - name: Smallcrowd_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 0
+      width: 1920
+      height: 370
+    spriteID: 018a8c5e01509bf47a8d04822aef45e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 0}
+  - name: Smallcrowd_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 0
+      width: 1920
+      height: 370
+    spriteID: c146c80b6bb819049ac87ad042477037
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 0}
+  - name: Smallcrowd_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 0
+      width: 1920
+      height: 370
+    spriteID: e782e587d42b37a4a8b21a7d8e5287cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 0}
+  - name: Smallcrowd_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 0
+      width: 1920
+      height: 370
+    spriteID: 61fa6294f3fb4504fba556132b8208e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 0}
+  - name: Smallcrowd_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 0
+      width: 1920
+      height: 370
+    spriteID: de8f98fd544cd6b48bedc79322f2005b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 0}
+  - name: Smallcrowd_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 370
+      width: 1920
+      height: 370
+    spriteID: 6eea7b4e8518f5b4fa7553370696ca10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 370}
+  - name: Smallcrowd_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 370
+      width: 1920
+      height: 370
+    spriteID: 2bc348b6d5f6b154b8720b30ae19ca8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 370}
+  - name: Smallcrowd_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 370
+      width: 1920
+      height: 370
+    spriteID: 3edc2a733fc7f50488089d5e354403d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 370}
+  - name: Smallcrowd_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 370
+      width: 1920
+      height: 370
+    spriteID: 5d66c45256b487d41b15e705684f4aa4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 370}
+  - name: Smallcrowd_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 370
+      width: 1920
+      height: 370
+    spriteID: eadef3a656a23174ba191930d959c464
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 370}
+  - name: Smallcrowd_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 370
+      width: 1920
+      height: 370
+    spriteID: d40dea7457007a6408be7392bb273a33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 370}
+  - name: Smallcrowd_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 370
+      width: 1920
+      height: 370
+    spriteID: a201c27664cc9df4baea00024778a619
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 370}
+  - name: Smallcrowd_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 370
+      width: 1920
+      height: 370
+    spriteID: b2504eece2eed1e408cad34a3cbf7723
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 370}
+  - name: Smallcrowd_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 740
+      width: 1920
+      height: 370
+    spriteID: 0f98d50a9e4ddaa4c88370e893f98ad6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 740}
+  - name: Smallcrowd_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 740
+      width: 1920
+      height: 370
+    spriteID: 484c28ca821398243a5bba05bfb381df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 740}
+  - name: Smallcrowd_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 740
+      width: 1920
+      height: 370
+    spriteID: 6bcce77f96e1f994f9153d0a5dc922e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 740}
+  - name: Smallcrowd_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 740
+      width: 1920
+      height: 370
+    spriteID: d32d89ffa369994439a1c91bb28ec612
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 740}
+  - name: Smallcrowd_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 740
+      width: 1920
+      height: 370
+    spriteID: 9ab73dd4837de814099e73e38019bb5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 740}
+  - name: Smallcrowd_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 740
+      width: 1920
+      height: 370
+    spriteID: 91abade19c9339242998633c9834cebf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 740}
+  - name: Smallcrowd_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 740
+      width: 1920
+      height: 370
+    spriteID: 81cd82680af19204ebf5430f296612b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 740}
+  - name: Smallcrowd_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 740
+      width: 1920
+      height: 370
+    spriteID: c2ad4dce4864bef4a80106a554f98ce6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 740}
+  - name: Smallcrowd_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 1110
+      width: 1920
+      height: 370
+    spriteID: e6b013123961a544598ad831129ae805
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 1110}
+  - name: Smallcrowd_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 1110
+      width: 1920
+      height: 370
+    spriteID: be0d07c33802b3440be3361a05ed981e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 1110}
+  - name: Smallcrowd_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 1110
+      width: 1920
+      height: 370
+    spriteID: 4416b08023e4db945aa04d4aaf23f892
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 1110}
+  - name: Smallcrowd_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 1110
+      width: 1920
+      height: 370
+    spriteID: e1c591be8e66b2c4198dde432dc851b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 1110}
+  - name: Smallcrowd_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 1110
+      width: 1920
+      height: 370
+    spriteID: b505e29495406f0438eb356ab1bfdf1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 1110}
+  - name: Smallcrowd_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 1110
+      width: 1920
+      height: 370
+    spriteID: 4a987e3c2a7d32f47a3fe3384487e0df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 1110}
+  - name: Smallcrowd_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 1110
+      width: 1920
+      height: 370
+    spriteID: 26324beca869dbb468acd1dcdef226ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 1110}
+  - name: Smallcrowd_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 1110
+      width: 1920
+      height: 370
+    spriteID: d54f86ac94254eb42b9b1df558414cd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 1110}
+  - name: Smallcrowd_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 1480
+      width: 1920
+      height: 370
+    spriteID: 9574931bed22a9a48b71b41275f64b39
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 1480}
+  - name: Smallcrowd_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 1480
+      width: 1920
+      height: 370
+    spriteID: c6e1dfc4283ee0a4d9c682ae65bed367
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 1480}
+  - name: Smallcrowd_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 1480
+      width: 1920
+      height: 370
+    spriteID: 24ab264f3208afb4e9fa834906f00504
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 1480}
+  - name: Smallcrowd_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 1480
+      width: 1920
+      height: 370
+    spriteID: cf8cc45d6922fb1409d95b4919fea04c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 1480}
+  - name: Smallcrowd_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 1480
+      width: 1920
+      height: 370
+    spriteID: fbd76f5bd7713374da7c862faf2865cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 1480}
+  - name: Smallcrowd_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 1480
+      width: 1920
+      height: 370
+    spriteID: 429101726acd33e48936e7b2ab6deb3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 1480}
+  - name: Smallcrowd_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 1480
+      width: 1920
+      height: 370
+    spriteID: 84053c2717fbcaf4e9e642663816b547
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 1480}
+  - name: Smallcrowd_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 1480
+      width: 1920
+      height: 370
+    spriteID: d035b91904354b54b880c8f514fc84ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 1480}
+  - name: Smallcrowd_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 1850
+      width: 1920
+      height: 370
+    spriteID: b320e6f4b944a7249b8b7b29acbee59c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 1850}
+  - name: Smallcrowd_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 1850
+      width: 1920
+      height: 370
+    spriteID: 71548ec84fb5c5341b08f84ecd868389
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 1850}
+  - name: Smallcrowd_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 1850
+      width: 1920
+      height: 370
+    spriteID: d055493c4b0599844862e4c4bca1d3bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 1850}
+  - name: Smallcrowd_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 1850
+      width: 1920
+      height: 370
+    spriteID: f6b1af3aa55a1a24b94330438226b73a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 1850}
+  - name: Smallcrowd_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 1850
+      width: 1920
+      height: 370
+    spriteID: d5b352a826292b844bbc9fbc6dd3e7e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 1850}
+  - name: Smallcrowd_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 1850
+      width: 1920
+      height: 370
+    spriteID: b03adecc790271b4b8f6b47d679ce2b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 1850}
+  - name: Smallcrowd_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 1850
+      width: 1920
+      height: 370
+    spriteID: 73eaa4a9adb7fc147bfd94f16cd25f4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 1850}
+  - name: Smallcrowd_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 1850
+      width: 1920
+      height: 370
+    spriteID: 819f300aec874a049bd10df8a823e485
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 1850}
+  - name: Smallcrowd_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 2220
+      width: 1920
+      height: 370
+    spriteID: 3ab3c332966708a42b4a11145ef716d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 2220}
+  - name: Smallcrowd_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 2220
+      width: 1920
+      height: 370
+    spriteID: b0cf160fe54cb1646949c0e0622d6db8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 2220}
+  - name: Smallcrowd_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 2220
+      width: 1920
+      height: 370
+    spriteID: adc385d0aee22cb47864061dcbdc976f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 2220}
+  - name: Smallcrowd_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 2220
+      width: 1920
+      height: 370
+    spriteID: a0388a16fcfd554419625bdafdfc5d92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 2220}
+  - name: Smallcrowd_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 2220
+      width: 1920
+      height: 370
+    spriteID: dba2b13081403cd409e84d00f4397396
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 2220}
+  - name: Smallcrowd_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 2220
+      width: 1920
+      height: 370
+    spriteID: 06a0f4365cfecf941b05bdee07955209
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 2220}
+  - name: Smallcrowd_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 2220
+      width: 1920
+      height: 370
+    spriteID: 64024b29c3f16fe44a530aa68991c22b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 2220}
+  - name: Smallcrowd_Frame_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 2220
+      width: 1920
+      height: 370
+    spriteID: 2d8d76f8c2ee4d64aa6103f511d6e168
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 2220}
+  - name: Smallcrowd_Frame_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 2590
+      width: 1920
+      height: 370
+    spriteID: ffb96d241f73d48489d7ea94f9a0197b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 2590}
+  - name: Smallcrowd_Frame_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 2590
+      width: 1920
+      height: 370
+    spriteID: 6e0f852819ea4784f838358b0b5a40ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 2590}
+  - name: Smallcrowd_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 2590
+      width: 1920
+      height: 370
+    spriteID: 7cebe749623389c4c99cbf7069a0b421
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 2590}
+  - name: Smallcrowd_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 2590
+      width: 1920
+      height: 370
+    spriteID: 0e9e25d07bd63e1408d3e0e081048533
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 2590}
+  - name: Smallcrowd_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 2590
+      width: 1920
+      height: 370
+    spriteID: 9ff0054b617ce5d4aaca4afe0e024a86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 2590}
+  - name: Smallcrowd_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 2590
+      width: 1920
+      height: 370
+    spriteID: 4b294ad4b985bb3429b8c6735512bdc6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 2590}
+  - name: Smallcrowd_Frame_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 2590
+      width: 1920
+      height: 370
+    spriteID: dfb37a1f3e693ca47aaf6e08aadd9393
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 2590}
+  - name: Smallcrowd_Frame_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 2590
+      width: 1920
+      height: 370
+    spriteID: 510abede12b38174a88c6f986240b058
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 2590}
+  - name: Smallcrowd_Frame_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 2960
+      width: 1920
+      height: 370
+    spriteID: e4bdd19272c1a2942b147c806786c681
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 2960}
+  - name: Smallcrowd_Frame_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 2960
+      width: 1920
+      height: 370
+    spriteID: 50d61558090528f46b25f8c54a783692
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 2960}
+  - name: Smallcrowd_Frame_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 2960
+      width: 1920
+      height: 370
+    spriteID: 7e1fcd81187137b4795ee3c8b9b8c339
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 2960}
+  - name: Smallcrowd_Frame_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 2960
+      width: 1920
+      height: 370
+    spriteID: 92c722f191c7ee14e93fe6ba93c72b4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 2960}
+  - name: Smallcrowd_Frame_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 2960
+      width: 1920
+      height: 370
+    spriteID: 8c829991e072d804eaa5594228abdc81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 2960}
+  - name: Smallcrowd_Frame_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 2960
+      width: 1920
+      height: 370
+    spriteID: 3eaa85376cc874a46996a3f71585e8a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 2960}
+  - name: Smallcrowd_Frame_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 2960
+      width: 1920
+      height: 370
+    spriteID: 7c4fbaa410765ec4d8229ac9b5e91c15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 2960}
+  - name: Smallcrowd_Frame_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 2960
+      width: 1920
+      height: 370
+    spriteID: 670c49b324bfada4d969064fe0e6a829
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 2960}
+  - name: Smallcrowd_Frame_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 3330
+      width: 1920
+      height: 370
+    spriteID: 05d4a2689edad9e4b9baacdb0e50c2a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 3330}
+  - name: Smallcrowd_Frame_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 3330
+      width: 1920
+      height: 370
+    spriteID: f37b4e69aaacbd140bfa7f60b43479ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 3330}
+  - name: Smallcrowd_Frame_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 3330
+      width: 1920
+      height: 370
+    spriteID: c8a267c7d5c6fab4fa9dd550b5badc1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 3330}
+  - name: Smallcrowd_Frame_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 3330
+      width: 1920
+      height: 370
+    spriteID: fc770e377f1465146932d93900fc0e1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 3330}
+  - name: Smallcrowd_Frame_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 3330
+      width: 1920
+      height: 370
+    spriteID: 24fa4afaaa1eb2d45a77272363768039
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 3330}
+  - name: Smallcrowd_Frame_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 3330
+      width: 1920
+      height: 370
+    spriteID: 1f91b9a63eb976f45a22363c1f804e82
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 3330}
+  - name: Smallcrowd_Frame_78
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 3330
+      width: 1920
+      height: 370
+    spriteID: 366cdb380b4487d42b7323733bdccd8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 3330}
+  - name: Smallcrowd_Frame_79
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 3330
+      width: 1920
+      height: 370
+    spriteID: 730328c4f6a8f8643b4ae1b7350385d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 3330}
+  - name: Smallcrowd_Frame_80
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 3700
+      width: 1920
+      height: 370
+    spriteID: 00a240768b2af804890e81ebd33e5170
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 3700}
+  - name: Smallcrowd_Frame_81
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 3700
+      width: 1920
+      height: 370
+    spriteID: 72ff3e42d80af1a4199829bae447cbe9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 3700}
+  - name: Smallcrowd_Frame_82
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 3700
+      width: 1920
+      height: 370
+    spriteID: dc86797a6297ddc43961cdee206a68d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 3700}
+  - name: Smallcrowd_Frame_83
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 3700
+      width: 1920
+      height: 370
+    spriteID: 1103a6b6c6ae9f647bfb28825d5ffd4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 3700}
+  - name: Smallcrowd_Frame_84
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 3700
+      width: 1920
+      height: 370
+    spriteID: a357332a738c18c498c2bd81928d1f68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 3700}
+  - name: Smallcrowd_Frame_85
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 3700
+      width: 1920
+      height: 370
+    spriteID: 528ce6105c480114a97feed32746110d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 3700}
+  - name: Smallcrowd_Frame_86
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 3700
+      width: 1920
+      height: 370
+    spriteID: 0aa5f709145eb3243b6a3c22d1921dc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 3700}
+  - name: Smallcrowd_Frame_87
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 3700
+      width: 1920
+      height: 370
+    spriteID: c7752fa3ebdc10944a1276bbc46dada9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 3700}
+  - name: Smallcrowd_Frame_88
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 4070
+      width: 1920
+      height: 370
+    spriteID: a770b8ba99d5cbd4fb3eba3f2d36c42e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 4070}
+  - name: Smallcrowd_Frame_89
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 4070
+      width: 1920
+      height: 370
+    spriteID: 0375887627b2740488e0833ba7501674
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 4070}
+  - name: Smallcrowd_Frame_90
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 4070
+      width: 1920
+      height: 370
+    spriteID: 0eaa270a6ba193e49b50551de2b8a4ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 4070}
+  - name: Smallcrowd_Frame_91
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 4070
+      width: 1920
+      height: 370
+    spriteID: b6791f98cd2cc1242bcfa8e47a497444
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 4070}
+  - name: Smallcrowd_Frame_92
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 4070
+      width: 1920
+      height: 370
+    spriteID: b2efd66226f1a984a89468c30836cec3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 4070}
+  - name: Smallcrowd_Frame_93
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 4070
+      width: 1920
+      height: 370
+    spriteID: 9f5104efbab77414b92550b5cd7cf4aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 4070}
+  - name: Smallcrowd_Frame_94
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 4070
+      width: 1920
+      height: 370
+    spriteID: d532811d7dad0ba4f812221df3b5f738
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 4070}
+  - name: Smallcrowd_Frame_95
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 4070
+      width: 1920
+      height: 370
+    spriteID: 7a4da89b0306fbd4b918b55b0bef6dd4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 4070}
+  - name: Smallcrowd_Frame_96
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 4440
+      width: 1920
+      height: 370
+    spriteID: 98a6de03ce485cb4887524a8f1b07b85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 4440}
+  - name: Smallcrowd_Frame_97
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 4440
+      width: 1920
+      height: 370
+    spriteID: 063722fd74e8e2149b6aa8ccfab2449a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 4440}
+  - name: Smallcrowd_Frame_98
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 4440
+      width: 1920
+      height: 370
+    spriteID: c91dca283223d4d46b9ca0276d81d78f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 4440}
+  - name: Smallcrowd_Frame_99
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 4440
+      width: 1920
+      height: 370
+    spriteID: 1f68d1d602d921b4fbd4f2ace4a31865
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 4440}
+  - name: Smallcrowd_Frame_100
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 4440
+      width: 1920
+      height: 370
+    spriteID: 11f67ea8206445e4dace371b3a6138c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 4440}
+  - name: Smallcrowd_Frame_101
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 4440
+      width: 1920
+      height: 370
+    spriteID: 3a6316d8894fc8e46a5c85340cdd5d0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 4440}
+  - name: Smallcrowd_Frame_102
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 4440
+      width: 1920
+      height: 370
+    spriteID: 956b5d9d0e5fedd4d8ad4096aca3554e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 4440}
+  - name: Smallcrowd_Frame_103
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 4440
+      width: 1920
+      height: 370
+    spriteID: dc5c282f41f6daf469b1e3cadcfecbc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 4440}
+  - name: Smallcrowd_Frame_104
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 4810
+      width: 1920
+      height: 370
+    spriteID: 156d779d1ac8fff4aa317d0d72447b4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 4810}
+  - name: Smallcrowd_Frame_105
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 4810
+      width: 1920
+      height: 370
+    spriteID: c0236df8b1236eb4086ea04c73e902fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 4810}
+  - name: Smallcrowd_Frame_106
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 4810
+      width: 1920
+      height: 370
+    spriteID: 74af84b1c6501844794c960a7a43f6bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 4810}
+  - name: Smallcrowd_Frame_107
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 4810
+      width: 1920
+      height: 370
+    spriteID: 8a6317da528a5ae49b04546e5c47b416
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 4810}
+  - name: Smallcrowd_Frame_108
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 4810
+      width: 1920
+      height: 370
+    spriteID: 17bddb4a79b91d042af1d38904a9bd56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 4810}
+  - name: Smallcrowd_Frame_109
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 4810
+      width: 1920
+      height: 370
+    spriteID: 4e4c5eb3612f0f44db25e90a98331a7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 4810}
+  - name: Smallcrowd_Frame_110
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 4810
+      width: 1920
+      height: 370
+    spriteID: 49f7a323811bad048915a87482254719
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 4810}
+  - name: Smallcrowd_Frame_111
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 4810
+      width: 1920
+      height: 370
+    spriteID: ffd77dc7533d459419b09d7537238dd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 4810}
+  - name: Smallcrowd_Frame_112
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 5180
+      width: 1920
+      height: 370
+    spriteID: f11e862bf85cda042b3aa2f7ef5165d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 5180}
+  - name: Smallcrowd_Frame_113
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 5180
+      width: 1920
+      height: 370
+    spriteID: b64f15e62b1d43544abd1769c71d09b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 5180}
+  - name: Smallcrowd_Frame_114
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 5180
+      width: 1920
+      height: 370
+    spriteID: 0bdbdc73658b585499dde91976ede31a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 5180}
+  - name: Smallcrowd_Frame_115
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 5180
+      width: 1920
+      height: 370
+    spriteID: d2ea9487be2a46544a93e60ab08df594
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 5180}
+  - name: Smallcrowd_Frame_116
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 5180
+      width: 1920
+      height: 370
+    spriteID: 113c161476c8e4141877341280d2cda3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 5180}
+  - name: Smallcrowd_Frame_117
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 5180
+      width: 1920
+      height: 370
+    spriteID: 6a654f62bb09f8b488eb54824683ead1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 5180}
+  - name: Smallcrowd_Frame_118
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 5180
+      width: 1920
+      height: 370
+    spriteID: 24cd0e7fb3501254da4e4a5a2a0bf602
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 5180}
+  - name: Smallcrowd_Frame_119
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 5180
+      width: 1920
+      height: 370
+    spriteID: f1c187b815ccb1e42ade352f4b14861c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 5180}
+  - name: Smallcrowd_Frame_120
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 5550
+      width: 1920
+      height: 370
+    spriteID: e5b2961f04c2f054f8586cefc8a8e009
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 5550}
+  - name: Smallcrowd_Frame_121
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 5550
+      width: 1920
+      height: 370
+    spriteID: 6f41ff489cc943d4eaff92957bd03ff8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 5550}
+  - name: Smallcrowd_Frame_122
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 5550
+      width: 1920
+      height: 370
+    spriteID: 378b854dfd2c0e741a40dd2af36d2174
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 5550}
+  - name: Smallcrowd_Frame_123
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 5550
+      width: 1920
+      height: 370
+    spriteID: d26db223e41caf94a991a181c022c564
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 5550}
+  - name: Smallcrowd_Frame_124
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 5550
+      width: 1920
+      height: 370
+    spriteID: 5453da54d41048b49938bd881e212daa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 5550}
+  - name: Smallcrowd_Frame_125
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 5550
+      width: 1920
+      height: 370
+    spriteID: 2287da22293e0f34c903eabad8014708
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 5550}
+  - name: Smallcrowd_Frame_126
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 5550
+      width: 1920
+      height: 370
+    spriteID: 5f577baca56bb284b8cb7cb80eac5809
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 5550}
+  - name: Smallcrowd_Frame_127
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 5550
+      width: 1920
+      height: 370
+    spriteID: 67b3d24bacb94284dad464bc39404022
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 5550}
+  - name: Smallcrowd_Frame_128
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 5920
+      width: 1920
+      height: 370
+    spriteID: 69eae723e13afa941938f31f53dd5ba1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 5920}
+  - name: Smallcrowd_Frame_129
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 5920
+      width: 1920
+      height: 370
+    spriteID: c106976efc0abfc408827b97ae5a30c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 5920}
+  - name: Smallcrowd_Frame_130
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 5920
+      width: 1920
+      height: 370
+    spriteID: 02291514187c17342be04128babdf1cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 5920}
+  - name: Smallcrowd_Frame_131
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 5920
+      width: 1920
+      height: 370
+    spriteID: 36ed02ece2811ff4d9b11334c2119ada
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 5920}
+  - name: Smallcrowd_Frame_132
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 5920
+      width: 1920
+      height: 370
+    spriteID: 98f304bf52037344787424cf99e0bb63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 5920}
+  - name: Smallcrowd_Frame_133
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 5920
+      width: 1920
+      height: 370
+    spriteID: ff008501880097649902bbfc0a3472e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 5920}
+  - name: Smallcrowd_Frame_134
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 5920
+      width: 1920
+      height: 370
+    spriteID: f8bc0c1025ce0b149a4ea8f8de4bedbe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 5920}
+  - name: Smallcrowd_Frame_135
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 5920
+      width: 1920
+      height: 370
+    spriteID: 3e92654e8bfc7fc4f94b14e43a5c31a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 5920}
+  - name: Smallcrowd_Frame_136
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 6290
+      width: 1920
+      height: 370
+    spriteID: 365ada8b929f46443b06ee78a7949478
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 6290}
+  - name: Smallcrowd_Frame_137
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 6290
+      width: 1920
+      height: 370
+    spriteID: b42d1b64cabf9954682646d85e9f7451
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 6290}
+  - name: Smallcrowd_Frame_138
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 6290
+      width: 1920
+      height: 370
+    spriteID: 1162fd4413462d54ebb6aa35de2098f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 6290}
+  - name: Smallcrowd_Frame_139
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 6290
+      width: 1920
+      height: 370
+    spriteID: 40785305594275842829210e50270f46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 6290}
+  - name: Smallcrowd_Frame_140
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 6290
+      width: 1920
+      height: 370
+    spriteID: a7a8cd65ef7a6f6409b0f6b71dea1fc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 6290}
+  - name: Smallcrowd_Frame_141
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 6290
+      width: 1920
+      height: 370
+    spriteID: e353c8019f8b98b4595eb40349f1f5dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 6290}
+  - name: Smallcrowd_Frame_142
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 6290
+      width: 1920
+      height: 370
+    spriteID: 8be2c6d2229b02b4cbe66ce780ef50da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 6290}
+  - name: Smallcrowd_Frame_143
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 6290
+      width: 1920
+      height: 370
+    spriteID: 00d7dd79945b10a4fa93e326d70a4680
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 6290}
+  - name: Smallcrowd_Frame_144
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 6660
+      width: 1920
+      height: 370
+    spriteID: 166a7273538ddeb479762c72cda9ff1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 6660}
+  - name: Smallcrowd_Frame_145
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 6660
+      width: 1920
+      height: 370
+    spriteID: 7d9dab139f261e8449944503982b8a9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 6660}
+  - name: Smallcrowd_Frame_146
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 6660
+      width: 1920
+      height: 370
+    spriteID: 87933b61a43814c4091d76de2be31862
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 6660}
+  - name: Smallcrowd_Frame_147
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 6660
+      width: 1920
+      height: 370
+    spriteID: 19e4675474099e544a333e9ee92bd531
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 6660}
+  - name: Smallcrowd_Frame_148
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 6660
+      width: 1920
+      height: 370
+    spriteID: 0a9f267a5a5b49a498b7f3f4728f9100
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 6660}
+  - name: Smallcrowd_Frame_149
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 6660
+      width: 1920
+      height: 370
+    spriteID: 18bfc8323c2984e42bf499988b45632d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 6660}
+  - name: Smallcrowd_Frame_150
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 6660
+      width: 1920
+      height: 370
+    spriteID: 6185d87053815b245bd9b649dcff5f83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 6660}
+  - name: Smallcrowd_Frame_151
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 6660
+      width: 1920
+      height: 370
+    spriteID: f7c17636f80037c45ba7773d0e3ccf7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 6660}
+  - name: Smallcrowd_Frame_152
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 7030
+      width: 1920
+      height: 370
+    spriteID: 48bb8d4ece54a4c458ac325d305bdd94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 7030}
+  - name: Smallcrowd_Frame_153
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 7030
+      width: 1920
+      height: 370
+    spriteID: 08c6f37a9dbe14a449402fd02be5a397
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 7030}
+  - name: Smallcrowd_Frame_154
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 7030
+      width: 1920
+      height: 370
+    spriteID: e8dd82002ba40c3419f40b1cf0cde157
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 7030}
+  - name: Smallcrowd_Frame_155
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 7030
+      width: 1920
+      height: 370
+    spriteID: 5f71befb812496b4d9bdbaab0a403723
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 7030}
+  - name: Smallcrowd_Frame_156
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 7030
+      width: 1920
+      height: 370
+    spriteID: e2522416987d2a84a9d33c84e46ec3e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 7030}
+  - name: Smallcrowd_Frame_157
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 7030
+      width: 1920
+      height: 370
+    spriteID: 57fb0a28a06e4a941b268c3eea9e5304
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 7030}
+  - name: Smallcrowd_Frame_158
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 7030
+      width: 1920
+      height: 370
+    spriteID: 534b00f8151c9be42a663e9bf20786ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 7030}
+  - name: Smallcrowd_Frame_159
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 7030
+      width: 1920
+      height: 370
+    spriteID: fe803140e8be6724b976aaff2e2fb177
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 7030}
+  - name: Smallcrowd_Frame_160
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 7400
+      width: 1920
+      height: 370
+    spriteID: 3fae66d873571dd4dbeddcf0062e9450
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 7400}
+  - name: Smallcrowd_Frame_161
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 7400
+      width: 1920
+      height: 370
+    spriteID: 497b89391bb739d46be223ecb45221ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 7400}
+  - name: Smallcrowd_Frame_162
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 7400
+      width: 1920
+      height: 370
+    spriteID: bc3641f3ac66c8d4a84ea8a0764a3b33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 7400}
+  - name: Smallcrowd_Frame_163
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 7400
+      width: 1920
+      height: 370
+    spriteID: cbc3814ae226fcb47ab456d971d85ca0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 7400}
+  - name: Smallcrowd_Frame_164
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 7400
+      width: 1920
+      height: 370
+    spriteID: efd60d880fea1f044858db7a59ea20b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 7400}
+  - name: Smallcrowd_Frame_165
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 7400
+      width: 1920
+      height: 370
+    spriteID: dbe19d2fd39718d49b2135b0cd59d88d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 7400}
+  - name: Smallcrowd_Frame_166
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 7400
+      width: 1920
+      height: 370
+    spriteID: 65d05fd89dda4514bb747b3ad3d4be23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 7400}
+  - name: Smallcrowd_Frame_167
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 7400
+      width: 1920
+      height: 370
+    spriteID: 82d5905478326c147a9f340c920b1196
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 7400}
+  - name: Smallcrowd_Frame_168
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 7770
+      width: 1920
+      height: 370
+    spriteID: 43ac2b5bac123d846bcc2ccea7fad27e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 7770}
+  - name: Smallcrowd_Frame_169
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 7770
+      width: 1920
+      height: 370
+    spriteID: 018bfeb2863c39f4fb6d0db04c31460b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 7770}
+  - name: Smallcrowd_Frame_170
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 7770
+      width: 1920
+      height: 370
+    spriteID: 664298e37b0eff0449e58c6cabf22765
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 7770}
+  - name: Smallcrowd_Frame_171
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 7770
+      width: 1920
+      height: 370
+    spriteID: d90f6337d2b2ce046aed9544231e3810
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 7770}
+  - name: Smallcrowd_Frame_172
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 7770
+      width: 1920
+      height: 370
+    spriteID: 7cb043fab0433d349b2859bfd8b0a302
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 7770}
+  - name: Smallcrowd_Frame_173
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 7770
+      width: 1920
+      height: 370
+    spriteID: a1e3cb83dcdbfa348a6f7f688df241ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 7770}
+  - name: Smallcrowd_Frame_174
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 7770
+      width: 1920
+      height: 370
+    spriteID: a44c269a10300ad478e094d838d63d1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 7770}
+  - name: Smallcrowd_Frame_175
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 7770
+      width: 1920
+      height: 370
+    spriteID: 1777ae2b4051b5c4484ec75c75dac3fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 7770}
+  - name: Smallcrowd_Frame_176
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 8140
+      width: 1920
+      height: 370
+    spriteID: 7b4a8e58330520d44916c627db0047b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 8140}
+  - name: Smallcrowd_Frame_177
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 8140
+      width: 1920
+      height: 370
+    spriteID: ac579e7a157fd08418d33aa0a4dd430a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 8140}
+  - name: Smallcrowd_Frame_178
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 8140
+      width: 1920
+      height: 370
+    spriteID: a8c6053967c654c498c2f1d9b2758e7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 8140}
+  - name: Smallcrowd_Frame_179
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 8140
+      width: 1920
+      height: 370
+    spriteID: 33539981d678a1c4dbedaa551e098f8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 8140}
+  - name: Smallcrowd_Frame_180
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 8140
+      width: 1920
+      height: 370
+    spriteID: 7d0d9ccfa22860246a36ce15d9fbc24f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 8140}
+  - name: Smallcrowd_Frame_181
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 8140
+      width: 1920
+      height: 370
+    spriteID: f973b1e91122a134c8f224f0361423ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 8140}
+  - name: Smallcrowd_Frame_182
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 8140
+      width: 1920
+      height: 370
+    spriteID: df74b13d4c69b8b4c8c584db775cdd60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 8140}
+  - name: Smallcrowd_Frame_183
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 8140
+      width: 1920
+      height: 370
+    spriteID: 49d1877605261ea408cb0bc5e4e64897
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 8140}
+  - name: Smallcrowd_Frame_184
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 8510
+      width: 1920
+      height: 370
+    spriteID: 32ccccb364cce68479105f7822439900
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 8510}
+  - name: Smallcrowd_Frame_185
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 8510
+      width: 1920
+      height: 370
+    spriteID: 73ae4a213d629cd4faed9eaa8946ff8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 8510}
+  - name: Smallcrowd_Frame_186
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 8510
+      width: 1920
+      height: 370
+    spriteID: a4f7eb04535ff454b9e2a98a1ba127ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 8510}
+  - name: Smallcrowd_Frame_187
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 8510
+      width: 1920
+      height: 370
+    spriteID: c0a7b7979a72bdf459d2d14b22c59efe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 8510}
+  - name: Smallcrowd_Frame_188
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 8510
+      width: 1920
+      height: 370
+    spriteID: 915fec6bf2cfaf646abbab1ea68ab8d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 8510}
+  - name: Smallcrowd_Frame_189
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 8510
+      width: 1920
+      height: 370
+    spriteID: 949e17b43bc193144a031a22f706e2d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 8510}
+  - name: Smallcrowd_Frame_190
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 8510
+      width: 1920
+      height: 370
+    spriteID: 0da13864d928a3f43961114d0bea0339
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 8510}
+  - name: Smallcrowd_Frame_191
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 8510
+      width: 1920
+      height: 370
+    spriteID: 15619c7343d56df41bdc28305754dfeb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 8510}
+  - name: Smallcrowd_Frame_192
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 8880
+      width: 1920
+      height: 370
+    spriteID: 3d49e837ba1fcd54d874bd5cd5c566eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 8880}
+  - name: Smallcrowd_Frame_193
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 8880
+      width: 1920
+      height: 370
+    spriteID: 52977cf57c292084e80f38eb27c96c0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 8880}
+  - name: Smallcrowd_Frame_194
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 8880
+      width: 1920
+      height: 370
+    spriteID: 8f02c0b897f66b54e84a65d8e4f7c5b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 8880}
+  - name: Smallcrowd_Frame_195
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 8880
+      width: 1920
+      height: 370
+    spriteID: bf3d2dbe481d85b41a50e1be4471ab83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 8880}
+  - name: Smallcrowd_Frame_196
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 8880
+      width: 1920
+      height: 370
+    spriteID: ab2ac60c72163054ea9972b8ae20ab78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 8880}
+  - name: Smallcrowd_Frame_197
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 8880
+      width: 1920
+      height: 370
+    spriteID: 9beac01b0bbbe2044ba59cc27b186ee4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 8880}
+  - name: Smallcrowd_Frame_198
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 8880
+      width: 1920
+      height: 370
+    spriteID: d5bb22362e4300944bb6512cf1416014
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 8880}
+  - name: Smallcrowd_Frame_199
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 8880
+      width: 1920
+      height: 370
+    spriteID: fe68a687c5694c14faf7c20207338e2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 8880}
+  - name: Smallcrowd_Frame_200
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 9250
+      width: 1920
+      height: 370
+    spriteID: 6ff206b922e03964b83798101dc42163
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 9250}
+  - name: Smallcrowd_Frame_201
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 9250
+      width: 1920
+      height: 370
+    spriteID: edc7dce8178f7f14aaf196b01929074d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 9250}
+  - name: Smallcrowd_Frame_202
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 9250
+      width: 1920
+      height: 370
+    spriteID: d5bf33afc6034c24ab9dad84bf519a98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 9250}
+  - name: Smallcrowd_Frame_203
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 9250
+      width: 1920
+      height: 370
+    spriteID: 8be5800c3ca538d498f50617489a714b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 9250}
+  - name: Smallcrowd_Frame_204
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 9250
+      width: 1920
+      height: 370
+    spriteID: 56695619e61e8e748bed9de6dd4201c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 9250}
+  - name: Smallcrowd_Frame_205
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 9250
+      width: 1920
+      height: 370
+    spriteID: 0412105b1a7570a42bbd6f4818169797
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 9250}
+  - name: Smallcrowd_Frame_206
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 9250
+      width: 1920
+      height: 370
+    spriteID: b57d6358d7e3cf24f94a955db89ead98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 9250}
+  - name: Smallcrowd_Frame_207
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 9250
+      width: 1920
+      height: 370
+    spriteID: aceb035099928224abce142e6845023b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 9250}
+  - name: Smallcrowd_Frame_208
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 9620
+      width: 1920
+      height: 370
+    spriteID: bfaf2c2b499b4a14891a867ecafb2f6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 9620}
+  - name: Smallcrowd_Frame_209
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1920
+      y: 9620
+      width: 1920
+      height: 370
+    spriteID: 10c8060434ebb52478959e87271f0761
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1920, y: 9620}
+  - name: Smallcrowd_Frame_210
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3840
+      y: 9620
+      width: 1920
+      height: 370
+    spriteID: 48346f9a471bacd4c804f915a69304fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3840, y: 9620}
+  - name: Smallcrowd_Frame_211
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5760
+      y: 9620
+      width: 1920
+      height: 370
+    spriteID: a34098e881565fb4aa814ec27f8e6027
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5760, y: 9620}
+  - name: Smallcrowd_Frame_212
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7680
+      y: 9620
+      width: 1920
+      height: 370
+    spriteID: f9f9e6be30ca07643969bb03943e518c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7680, y: 9620}
+  - name: Smallcrowd_Frame_213
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 9600
+      y: 9620
+      width: 1920
+      height: 370
+    spriteID: 5f5ffabc60fee104e8f646e47bcb3e5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 9600, y: 9620}
+  - name: Smallcrowd_Frame_214
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 11520
+      y: 9620
+      width: 1920
+      height: 370
+    spriteID: a828505ebe609494b8a8e8589c661f0a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 11520, y: 9620}
+  - name: Smallcrowd_Frame_215
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 13440
+      y: 9620
+      width: 1920
+      height: 370
+    spriteID: b6896c06fb2374843a2298123b85e8f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 13440, y: 9620}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -472389838
+    name: Smallcrowd
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Smallcrowd_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a638bcc63f183654cb34257a5068dbf9
+    - name: Smallcrowd_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: e13a64a04347ff54eb440d12e9c87c38
+    - name: Smallcrowd_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 5ff5d9e37c263e24ea1c341faa1d0f59
+    - name: Smallcrowd_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 018a8c5e01509bf47a8d04822aef45e9
+    - name: Smallcrowd_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: c146c80b6bb819049ac87ad042477037
+    - name: Smallcrowd_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: e782e587d42b37a4a8b21a7d8e5287cb
+    - name: Smallcrowd_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 61fa6294f3fb4504fba556132b8208e8
+    - name: Smallcrowd_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: de8f98fd544cd6b48bedc79322f2005b
+    - name: Smallcrowd_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 6eea7b4e8518f5b4fa7553370696ca10
+    - name: Smallcrowd_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 2bc348b6d5f6b154b8720b30ae19ca8c
+    - name: Smallcrowd_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 3edc2a733fc7f50488089d5e354403d8
+    - name: Smallcrowd_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 5d66c45256b487d41b15e705684f4aa4
+    - name: Smallcrowd_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: eadef3a656a23174ba191930d959c464
+    - name: Smallcrowd_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d40dea7457007a6408be7392bb273a33
+    - name: Smallcrowd_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a201c27664cc9df4baea00024778a619
+    - name: Smallcrowd_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: b2504eece2eed1e408cad34a3cbf7723
+    - name: Smallcrowd_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 0f98d50a9e4ddaa4c88370e893f98ad6
+    - name: Smallcrowd_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 484c28ca821398243a5bba05bfb381df
+    - name: Smallcrowd_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 6bcce77f96e1f994f9153d0a5dc922e3
+    - name: Smallcrowd_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d32d89ffa369994439a1c91bb28ec612
+    - name: Smallcrowd_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 9ab73dd4837de814099e73e38019bb5a
+    - name: Smallcrowd_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 91abade19c9339242998633c9834cebf
+    - name: Smallcrowd_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 81cd82680af19204ebf5430f296612b6
+    - name: Smallcrowd_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: c2ad4dce4864bef4a80106a554f98ce6
+    - name: Smallcrowd_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: e6b013123961a544598ad831129ae805
+    - name: Smallcrowd_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: be0d07c33802b3440be3361a05ed981e
+    - name: Smallcrowd_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 4416b08023e4db945aa04d4aaf23f892
+    - name: Smallcrowd_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: e1c591be8e66b2c4198dde432dc851b8
+    - name: Smallcrowd_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: b505e29495406f0438eb356ab1bfdf1f
+    - name: Smallcrowd_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 4a987e3c2a7d32f47a3fe3384487e0df
+    - name: Smallcrowd_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 26324beca869dbb468acd1dcdef226ed
+    - name: Smallcrowd_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d54f86ac94254eb42b9b1df558414cd3
+    - name: Smallcrowd_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 9574931bed22a9a48b71b41275f64b39
+    - name: Smallcrowd_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: c6e1dfc4283ee0a4d9c682ae65bed367
+    - name: Smallcrowd_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 24ab264f3208afb4e9fa834906f00504
+    - name: Smallcrowd_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: cf8cc45d6922fb1409d95b4919fea04c
+    - name: Smallcrowd_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: fbd76f5bd7713374da7c862faf2865cd
+    - name: Smallcrowd_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 429101726acd33e48936e7b2ab6deb3c
+    - name: Smallcrowd_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 84053c2717fbcaf4e9e642663816b547
+    - name: Smallcrowd_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d035b91904354b54b880c8f514fc84ec
+    - name: Smallcrowd_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: b320e6f4b944a7249b8b7b29acbee59c
+    - name: Smallcrowd_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 71548ec84fb5c5341b08f84ecd868389
+    - name: Smallcrowd_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d055493c4b0599844862e4c4bca1d3bd
+    - name: Smallcrowd_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: f6b1af3aa55a1a24b94330438226b73a
+    - name: Smallcrowd_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d5b352a826292b844bbc9fbc6dd3e7e2
+    - name: Smallcrowd_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: b03adecc790271b4b8f6b47d679ce2b3
+    - name: Smallcrowd_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 73eaa4a9adb7fc147bfd94f16cd25f4d
+    - name: Smallcrowd_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 819f300aec874a049bd10df8a823e485
+    - name: Smallcrowd_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 3ab3c332966708a42b4a11145ef716d5
+    - name: Smallcrowd_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: b0cf160fe54cb1646949c0e0622d6db8
+    - name: Smallcrowd_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: adc385d0aee22cb47864061dcbdc976f
+    - name: Smallcrowd_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a0388a16fcfd554419625bdafdfc5d92
+    - name: Smallcrowd_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: dba2b13081403cd409e84d00f4397396
+    - name: Smallcrowd_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 06a0f4365cfecf941b05bdee07955209
+    - name: Smallcrowd_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 64024b29c3f16fe44a530aa68991c22b
+    - name: Smallcrowd_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 2d8d76f8c2ee4d64aa6103f511d6e168
+    - name: Smallcrowd_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: ffb96d241f73d48489d7ea94f9a0197b
+    - name: Smallcrowd_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 6e0f852819ea4784f838358b0b5a40ba
+    - name: Smallcrowd_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 7cebe749623389c4c99cbf7069a0b421
+    - name: Smallcrowd_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 0e9e25d07bd63e1408d3e0e081048533
+    - name: Smallcrowd_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 9ff0054b617ce5d4aaca4afe0e024a86
+    - name: Smallcrowd_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 4b294ad4b985bb3429b8c6735512bdc6
+    - name: Smallcrowd_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: dfb37a1f3e693ca47aaf6e08aadd9393
+    - name: Smallcrowd_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 510abede12b38174a88c6f986240b058
+    - name: Smallcrowd_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: e4bdd19272c1a2942b147c806786c681
+    - name: Smallcrowd_Frame_65
+      frameIndex: 65
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 50d61558090528f46b25f8c54a783692
+    - name: Smallcrowd_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 7e1fcd81187137b4795ee3c8b9b8c339
+    - name: Smallcrowd_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 92c722f191c7ee14e93fe6ba93c72b4e
+    - name: Smallcrowd_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 8c829991e072d804eaa5594228abdc81
+    - name: Smallcrowd_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 3eaa85376cc874a46996a3f71585e8a2
+    - name: Smallcrowd_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 7c4fbaa410765ec4d8229ac9b5e91c15
+    - name: Smallcrowd_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 670c49b324bfada4d969064fe0e6a829
+    - name: Smallcrowd_Frame_72
+      frameIndex: 72
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 05d4a2689edad9e4b9baacdb0e50c2a6
+    - name: Smallcrowd_Frame_73
+      frameIndex: 73
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: f37b4e69aaacbd140bfa7f60b43479ca
+    - name: Smallcrowd_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: c8a267c7d5c6fab4fa9dd550b5badc1a
+    - name: Smallcrowd_Frame_75
+      frameIndex: 75
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: fc770e377f1465146932d93900fc0e1b
+    - name: Smallcrowd_Frame_76
+      frameIndex: 76
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 24fa4afaaa1eb2d45a77272363768039
+    - name: Smallcrowd_Frame_77
+      frameIndex: 77
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 1f91b9a63eb976f45a22363c1f804e82
+    - name: Smallcrowd_Frame_78
+      frameIndex: 78
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 366cdb380b4487d42b7323733bdccd8e
+    - name: Smallcrowd_Frame_79
+      frameIndex: 79
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 730328c4f6a8f8643b4ae1b7350385d5
+    - name: Smallcrowd_Frame_80
+      frameIndex: 80
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 00a240768b2af804890e81ebd33e5170
+    - name: Smallcrowd_Frame_81
+      frameIndex: 81
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 72ff3e42d80af1a4199829bae447cbe9
+    - name: Smallcrowd_Frame_82
+      frameIndex: 82
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: dc86797a6297ddc43961cdee206a68d2
+    - name: Smallcrowd_Frame_83
+      frameIndex: 83
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 1103a6b6c6ae9f647bfb28825d5ffd4f
+    - name: Smallcrowd_Frame_84
+      frameIndex: 84
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a357332a738c18c498c2bd81928d1f68
+    - name: Smallcrowd_Frame_85
+      frameIndex: 85
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 528ce6105c480114a97feed32746110d
+    - name: Smallcrowd_Frame_86
+      frameIndex: 86
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 0aa5f709145eb3243b6a3c22d1921dc8
+    - name: Smallcrowd_Frame_87
+      frameIndex: 87
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: c7752fa3ebdc10944a1276bbc46dada9
+    - name: Smallcrowd_Frame_88
+      frameIndex: 88
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a770b8ba99d5cbd4fb3eba3f2d36c42e
+    - name: Smallcrowd_Frame_89
+      frameIndex: 89
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 0375887627b2740488e0833ba7501674
+    - name: Smallcrowd_Frame_90
+      frameIndex: 90
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 0eaa270a6ba193e49b50551de2b8a4ce
+    - name: Smallcrowd_Frame_91
+      frameIndex: 91
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: b6791f98cd2cc1242bcfa8e47a497444
+    - name: Smallcrowd_Frame_92
+      frameIndex: 92
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: b2efd66226f1a984a89468c30836cec3
+    - name: Smallcrowd_Frame_93
+      frameIndex: 93
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 9f5104efbab77414b92550b5cd7cf4aa
+    - name: Smallcrowd_Frame_94
+      frameIndex: 94
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d532811d7dad0ba4f812221df3b5f738
+    - name: Smallcrowd_Frame_95
+      frameIndex: 95
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 7a4da89b0306fbd4b918b55b0bef6dd4
+    - name: Smallcrowd_Frame_96
+      frameIndex: 96
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 98a6de03ce485cb4887524a8f1b07b85
+    - name: Smallcrowd_Frame_97
+      frameIndex: 97
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 063722fd74e8e2149b6aa8ccfab2449a
+    - name: Smallcrowd_Frame_98
+      frameIndex: 98
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: c91dca283223d4d46b9ca0276d81d78f
+    - name: Smallcrowd_Frame_99
+      frameIndex: 99
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 1f68d1d602d921b4fbd4f2ace4a31865
+    - name: Smallcrowd_Frame_100
+      frameIndex: 100
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 11f67ea8206445e4dace371b3a6138c1
+    - name: Smallcrowd_Frame_101
+      frameIndex: 101
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 3a6316d8894fc8e46a5c85340cdd5d0c
+    - name: Smallcrowd_Frame_102
+      frameIndex: 102
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 956b5d9d0e5fedd4d8ad4096aca3554e
+    - name: Smallcrowd_Frame_103
+      frameIndex: 103
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: dc5c282f41f6daf469b1e3cadcfecbc1
+    - name: Smallcrowd_Frame_104
+      frameIndex: 104
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 156d779d1ac8fff4aa317d0d72447b4f
+    - name: Smallcrowd_Frame_105
+      frameIndex: 105
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: c0236df8b1236eb4086ea04c73e902fd
+    - name: Smallcrowd_Frame_106
+      frameIndex: 106
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 74af84b1c6501844794c960a7a43f6bd
+    - name: Smallcrowd_Frame_107
+      frameIndex: 107
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 8a6317da528a5ae49b04546e5c47b416
+    - name: Smallcrowd_Frame_108
+      frameIndex: 108
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 17bddb4a79b91d042af1d38904a9bd56
+    - name: Smallcrowd_Frame_109
+      frameIndex: 109
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 4e4c5eb3612f0f44db25e90a98331a7f
+    - name: Smallcrowd_Frame_110
+      frameIndex: 110
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 49f7a323811bad048915a87482254719
+    - name: Smallcrowd_Frame_111
+      frameIndex: 111
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: ffd77dc7533d459419b09d7537238dd3
+    - name: Smallcrowd_Frame_112
+      frameIndex: 112
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: f11e862bf85cda042b3aa2f7ef5165d6
+    - name: Smallcrowd_Frame_113
+      frameIndex: 113
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: b64f15e62b1d43544abd1769c71d09b3
+    - name: Smallcrowd_Frame_114
+      frameIndex: 114
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 0bdbdc73658b585499dde91976ede31a
+    - name: Smallcrowd_Frame_115
+      frameIndex: 115
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d2ea9487be2a46544a93e60ab08df594
+    - name: Smallcrowd_Frame_116
+      frameIndex: 116
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 113c161476c8e4141877341280d2cda3
+    - name: Smallcrowd_Frame_117
+      frameIndex: 117
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 6a654f62bb09f8b488eb54824683ead1
+    - name: Smallcrowd_Frame_118
+      frameIndex: 118
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 24cd0e7fb3501254da4e4a5a2a0bf602
+    - name: Smallcrowd_Frame_119
+      frameIndex: 119
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: f1c187b815ccb1e42ade352f4b14861c
+    - name: Smallcrowd_Frame_120
+      frameIndex: 120
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: e5b2961f04c2f054f8586cefc8a8e009
+    - name: Smallcrowd_Frame_121
+      frameIndex: 121
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 6f41ff489cc943d4eaff92957bd03ff8
+    - name: Smallcrowd_Frame_122
+      frameIndex: 122
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 378b854dfd2c0e741a40dd2af36d2174
+    - name: Smallcrowd_Frame_123
+      frameIndex: 123
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d26db223e41caf94a991a181c022c564
+    - name: Smallcrowd_Frame_124
+      frameIndex: 124
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 5453da54d41048b49938bd881e212daa
+    - name: Smallcrowd_Frame_125
+      frameIndex: 125
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 2287da22293e0f34c903eabad8014708
+    - name: Smallcrowd_Frame_126
+      frameIndex: 126
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 5f577baca56bb284b8cb7cb80eac5809
+    - name: Smallcrowd_Frame_127
+      frameIndex: 127
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 67b3d24bacb94284dad464bc39404022
+    - name: Smallcrowd_Frame_128
+      frameIndex: 128
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 69eae723e13afa941938f31f53dd5ba1
+    - name: Smallcrowd_Frame_129
+      frameIndex: 129
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: c106976efc0abfc408827b97ae5a30c7
+    - name: Smallcrowd_Frame_130
+      frameIndex: 130
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 02291514187c17342be04128babdf1cc
+    - name: Smallcrowd_Frame_131
+      frameIndex: 131
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 36ed02ece2811ff4d9b11334c2119ada
+    - name: Smallcrowd_Frame_132
+      frameIndex: 132
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 98f304bf52037344787424cf99e0bb63
+    - name: Smallcrowd_Frame_133
+      frameIndex: 133
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: ff008501880097649902bbfc0a3472e8
+    - name: Smallcrowd_Frame_134
+      frameIndex: 134
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: f8bc0c1025ce0b149a4ea8f8de4bedbe
+    - name: Smallcrowd_Frame_135
+      frameIndex: 135
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 3e92654e8bfc7fc4f94b14e43a5c31a0
+    - name: Smallcrowd_Frame_136
+      frameIndex: 136
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 365ada8b929f46443b06ee78a7949478
+    - name: Smallcrowd_Frame_137
+      frameIndex: 137
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: b42d1b64cabf9954682646d85e9f7451
+    - name: Smallcrowd_Frame_138
+      frameIndex: 138
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 1162fd4413462d54ebb6aa35de2098f8
+    - name: Smallcrowd_Frame_139
+      frameIndex: 139
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 40785305594275842829210e50270f46
+    - name: Smallcrowd_Frame_140
+      frameIndex: 140
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a7a8cd65ef7a6f6409b0f6b71dea1fc9
+    - name: Smallcrowd_Frame_141
+      frameIndex: 141
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: e353c8019f8b98b4595eb40349f1f5dc
+    - name: Smallcrowd_Frame_142
+      frameIndex: 142
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 8be2c6d2229b02b4cbe66ce780ef50da
+    - name: Smallcrowd_Frame_143
+      frameIndex: 143
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 00d7dd79945b10a4fa93e326d70a4680
+    - name: Smallcrowd_Frame_144
+      frameIndex: 144
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 166a7273538ddeb479762c72cda9ff1f
+    - name: Smallcrowd_Frame_145
+      frameIndex: 145
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 7d9dab139f261e8449944503982b8a9f
+    - name: Smallcrowd_Frame_146
+      frameIndex: 146
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 87933b61a43814c4091d76de2be31862
+    - name: Smallcrowd_Frame_147
+      frameIndex: 147
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 19e4675474099e544a333e9ee92bd531
+    - name: Smallcrowd_Frame_148
+      frameIndex: 148
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 0a9f267a5a5b49a498b7f3f4728f9100
+    - name: Smallcrowd_Frame_149
+      frameIndex: 149
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 18bfc8323c2984e42bf499988b45632d
+    - name: Smallcrowd_Frame_150
+      frameIndex: 150
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 6185d87053815b245bd9b649dcff5f83
+    - name: Smallcrowd_Frame_151
+      frameIndex: 151
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: f7c17636f80037c45ba7773d0e3ccf7d
+    - name: Smallcrowd_Frame_152
+      frameIndex: 152
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 48bb8d4ece54a4c458ac325d305bdd94
+    - name: Smallcrowd_Frame_153
+      frameIndex: 153
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 08c6f37a9dbe14a449402fd02be5a397
+    - name: Smallcrowd_Frame_154
+      frameIndex: 154
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: e8dd82002ba40c3419f40b1cf0cde157
+    - name: Smallcrowd_Frame_155
+      frameIndex: 155
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 5f71befb812496b4d9bdbaab0a403723
+    - name: Smallcrowd_Frame_156
+      frameIndex: 156
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: e2522416987d2a84a9d33c84e46ec3e9
+    - name: Smallcrowd_Frame_157
+      frameIndex: 157
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 57fb0a28a06e4a941b268c3eea9e5304
+    - name: Smallcrowd_Frame_158
+      frameIndex: 158
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 534b00f8151c9be42a663e9bf20786ec
+    - name: Smallcrowd_Frame_159
+      frameIndex: 159
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: fe803140e8be6724b976aaff2e2fb177
+    - name: Smallcrowd_Frame_160
+      frameIndex: 160
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 3fae66d873571dd4dbeddcf0062e9450
+    - name: Smallcrowd_Frame_161
+      frameIndex: 161
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 497b89391bb739d46be223ecb45221ce
+    - name: Smallcrowd_Frame_162
+      frameIndex: 162
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: bc3641f3ac66c8d4a84ea8a0764a3b33
+    - name: Smallcrowd_Frame_163
+      frameIndex: 163
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: cbc3814ae226fcb47ab456d971d85ca0
+    - name: Smallcrowd_Frame_164
+      frameIndex: 164
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: efd60d880fea1f044858db7a59ea20b3
+    - name: Smallcrowd_Frame_165
+      frameIndex: 165
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: dbe19d2fd39718d49b2135b0cd59d88d
+    - name: Smallcrowd_Frame_166
+      frameIndex: 166
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 65d05fd89dda4514bb747b3ad3d4be23
+    - name: Smallcrowd_Frame_167
+      frameIndex: 167
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 82d5905478326c147a9f340c920b1196
+    - name: Smallcrowd_Frame_168
+      frameIndex: 168
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 43ac2b5bac123d846bcc2ccea7fad27e
+    - name: Smallcrowd_Frame_169
+      frameIndex: 169
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 018bfeb2863c39f4fb6d0db04c31460b
+    - name: Smallcrowd_Frame_170
+      frameIndex: 170
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 664298e37b0eff0449e58c6cabf22765
+    - name: Smallcrowd_Frame_171
+      frameIndex: 171
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d90f6337d2b2ce046aed9544231e3810
+    - name: Smallcrowd_Frame_172
+      frameIndex: 172
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 7cb043fab0433d349b2859bfd8b0a302
+    - name: Smallcrowd_Frame_173
+      frameIndex: 173
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a1e3cb83dcdbfa348a6f7f688df241ff
+    - name: Smallcrowd_Frame_174
+      frameIndex: 174
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a44c269a10300ad478e094d838d63d1c
+    - name: Smallcrowd_Frame_175
+      frameIndex: 175
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 1777ae2b4051b5c4484ec75c75dac3fb
+    - name: Smallcrowd_Frame_176
+      frameIndex: 176
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 7b4a8e58330520d44916c627db0047b5
+    - name: Smallcrowd_Frame_177
+      frameIndex: 177
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: ac579e7a157fd08418d33aa0a4dd430a
+    - name: Smallcrowd_Frame_178
+      frameIndex: 178
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a8c6053967c654c498c2f1d9b2758e7d
+    - name: Smallcrowd_Frame_179
+      frameIndex: 179
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 33539981d678a1c4dbedaa551e098f8e
+    - name: Smallcrowd_Frame_180
+      frameIndex: 180
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 7d0d9ccfa22860246a36ce15d9fbc24f
+    - name: Smallcrowd_Frame_181
+      frameIndex: 181
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: f973b1e91122a134c8f224f0361423ed
+    - name: Smallcrowd_Frame_182
+      frameIndex: 182
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: df74b13d4c69b8b4c8c584db775cdd60
+    - name: Smallcrowd_Frame_183
+      frameIndex: 183
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 49d1877605261ea408cb0bc5e4e64897
+    - name: Smallcrowd_Frame_184
+      frameIndex: 184
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 32ccccb364cce68479105f7822439900
+    - name: Smallcrowd_Frame_185
+      frameIndex: 185
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 73ae4a213d629cd4faed9eaa8946ff8b
+    - name: Smallcrowd_Frame_186
+      frameIndex: 186
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a4f7eb04535ff454b9e2a98a1ba127ba
+    - name: Smallcrowd_Frame_187
+      frameIndex: 187
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: c0a7b7979a72bdf459d2d14b22c59efe
+    - name: Smallcrowd_Frame_188
+      frameIndex: 188
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 915fec6bf2cfaf646abbab1ea68ab8d4
+    - name: Smallcrowd_Frame_189
+      frameIndex: 189
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 949e17b43bc193144a031a22f706e2d7
+    - name: Smallcrowd_Frame_190
+      frameIndex: 190
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 0da13864d928a3f43961114d0bea0339
+    - name: Smallcrowd_Frame_191
+      frameIndex: 191
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 15619c7343d56df41bdc28305754dfeb
+    - name: Smallcrowd_Frame_192
+      frameIndex: 192
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 3d49e837ba1fcd54d874bd5cd5c566eb
+    - name: Smallcrowd_Frame_193
+      frameIndex: 193
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 52977cf57c292084e80f38eb27c96c0e
+    - name: Smallcrowd_Frame_194
+      frameIndex: 194
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 8f02c0b897f66b54e84a65d8e4f7c5b9
+    - name: Smallcrowd_Frame_195
+      frameIndex: 195
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: bf3d2dbe481d85b41a50e1be4471ab83
+    - name: Smallcrowd_Frame_196
+      frameIndex: 196
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: ab2ac60c72163054ea9972b8ae20ab78
+    - name: Smallcrowd_Frame_197
+      frameIndex: 197
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 9beac01b0bbbe2044ba59cc27b186ee4
+    - name: Smallcrowd_Frame_198
+      frameIndex: 198
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d5bb22362e4300944bb6512cf1416014
+    - name: Smallcrowd_Frame_199
+      frameIndex: 199
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: fe68a687c5694c14faf7c20207338e2f
+    - name: Smallcrowd_Frame_200
+      frameIndex: 200
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 6ff206b922e03964b83798101dc42163
+    - name: Smallcrowd_Frame_201
+      frameIndex: 201
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: edc7dce8178f7f14aaf196b01929074d
+    - name: Smallcrowd_Frame_202
+      frameIndex: 202
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: d5bf33afc6034c24ab9dad84bf519a98
+    - name: Smallcrowd_Frame_203
+      frameIndex: 203
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 8be5800c3ca538d498f50617489a714b
+    - name: Smallcrowd_Frame_204
+      frameIndex: 204
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 56695619e61e8e748bed9de6dd4201c3
+    - name: Smallcrowd_Frame_205
+      frameIndex: 205
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 0412105b1a7570a42bbd6f4818169797
+    - name: Smallcrowd_Frame_206
+      frameIndex: 206
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: b57d6358d7e3cf24f94a955db89ead98
+    - name: Smallcrowd_Frame_207
+      frameIndex: 207
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: aceb035099928224abce142e6845023b
+    - name: Smallcrowd_Frame_208
+      frameIndex: 208
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: bfaf2c2b499b4a14891a867ecafb2f6f
+    - name: Smallcrowd_Frame_209
+      frameIndex: 209
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 10c8060434ebb52478959e87271f0761
+    - name: Smallcrowd_Frame_210
+      frameIndex: 210
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 48346f9a471bacd4c804f915a69304fb
+    - name: Smallcrowd_Frame_211
+      frameIndex: 211
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a34098e881565fb4aa814ec27f8e6027
+    - name: Smallcrowd_Frame_212
+      frameIndex: 212
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: f9f9e6be30ca07643969bb03943e518c
+    - name: Smallcrowd_Frame_213
+      frameIndex: 213
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: 5f5ffabc60fee104e8f646e47bcb3e5c
+    - name: Smallcrowd_Frame_214
+      frameIndex: 214
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: a828505ebe609494b8a8e8589c661f0a
+    - name: Smallcrowd_Frame_215
+      frameIndex: 215
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 370
+      spriteId: b6896c06fb2374843a2298123b85e8f1
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1920, y: 370}

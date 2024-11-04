@@ -1,0 +1,2111 @@
+fileFormatVersion: 2
+guid: cfd4cec64e956284f9b0f31bfa2506a4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: WaveDash_Frame_0
+    originalName: 
+    pivot: {x: 3.597015, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1398
+      y: 2228
+      width: 134
+      height: 243
+    spriteID: bedd972e9161c4d4184483b6911984e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 920, y: 2228}
+  - name: WaveDash_Frame_1
+    originalName: 
+    pivot: {x: 3.597015, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3874
+      y: 1144
+      width: 134
+      height: 345
+    spriteID: 0df5e306837010743aa3965e71bdfeff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3396, y: 1144}
+  - name: WaveDash_Frame_2
+    originalName: 
+    pivot: {x: 3.6439395, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3734
+      y: 1144
+      width: 132
+      height: 410
+    spriteID: bf5225250a36caa49879629f518b8a92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3255, y: 1144}
+  - name: WaveDash_Frame_3
+    originalName: 
+    pivot: {x: 2.0468085, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3491
+      y: 1144
+      width: 235
+      height: 397
+    spriteID: d678a7fcda885c345b8440588b8c935a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3012, y: 1144}
+  - name: WaveDash_Frame_4
+    originalName: 
+    pivot: {x: 2.0468085, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1398
+      y: 1652
+      width: 235
+      height: 568
+    spriteID: 407aaefaacbc98444bcbaaf34d292e46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 919, y: 1652}
+  - name: WaveDash_Frame_5
+    originalName: 
+    pivot: {x: 1.4315476, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1295
+      y: 2598
+      width: 336
+      height: 818
+    spriteID: 77c4f195650cc344aa33e0ead3c2606c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 816, y: 2598}
+  - name: WaveDash_Frame_6
+    originalName: 
+    pivot: {x: 1.430267, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 850
+      y: 5501
+      width: 337
+      height: 989
+    spriteID: 6591bb5f959aed7489f9239dbec31f1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 372, y: 5501}
+  - name: WaveDash_Frame_7
+    originalName: 
+    pivot: {x: 1.3982557, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1296
+      y: 3594
+      width: 344
+      height: 939
+    spriteID: 74be05b45c8acd5408df3356d1f5cee6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 817, y: 3594}
+  - name: WaveDash_Frame_8
+    originalName: 
+    pivot: {x: 1.1006866, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 850
+      y: 2598
+      width: 437
+      height: 988
+    spriteID: 47a482d16d97fae49b6ad8a164d1d52d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 371, y: 2598}
+  - name: WaveDash_Frame_9
+    originalName: 
+    pivot: {x: 1.0981735, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 850
+      y: 4555
+      width: 438
+      height: 938
+    spriteID: c7a6762a646f1344ca3b76e2f7d19679
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 371, y: 4555}
+  - name: WaveDash_Frame_10
+    originalName: 
+    pivot: {x: 1.0981735, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 850
+      y: 3594
+      width: 438
+      height: 953
+    spriteID: f9c664d68c1e3e84b9e3787d03d961da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 371, y: 3594}
+  - name: WaveDash_Frame_11
+    originalName: 
+    pivot: {x: 0.8884758, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 850
+      y: 655
+      width: 538
+      height: 989
+    spriteID: 4575b9a85c47e71468b3cbb60530f32b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 368, y: 655}
+  - name: WaveDash_Frame_12
+    originalName: 
+    pivot: {x: 0.8870371, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 850
+      y: 1652
+      width: 540
+      height: 938
+    spriteID: 1e6ed00122ac4f74fa1594b54c12e72f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 369, y: 1652}
+  - name: WaveDash_Frame_13
+    originalName: 
+    pivot: {x: 0.74647886, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3566
+      width: 639
+      height: 953
+    spriteID: 0d86c2b00af2fac4fa1ae139b3ba0cfb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -479, y: 3566}
+  - name: WaveDash_Frame_14
+    originalName: 
+    pivot: {x: 0.74647886, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 775
+      width: 639
+      height: 988
+    spriteID: 30b4d7716f1fe8c45979f26b135e2d17
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -479, y: 775}
+  - name: WaveDash_Frame_15
+    originalName: 
+    pivot: {x: 0.74418604, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4527
+      width: 645
+      height: 938
+    spriteID: ff41d1bf380732a4597f92772fd08191
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -476, y: 4527}
+  - name: WaveDash_Frame_16
+    originalName: 
+    pivot: {x: 0.7433903, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2605
+      width: 643
+      height: 953
+    spriteID: 639828214b7eb7d4cab4d08b2960f788
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -478, y: 2605}
+  - name: WaveDash_Frame_17
+    originalName: 
+    pivot: {x: 0.7433903, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6286
+      width: 643
+      height: 911
+    spriteID: f71597d2294ae6346a7ce373be2f0429
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -478, y: 6286}
+  - name: WaveDash_Frame_18
+    originalName: 
+    pivot: {x: 0.6469003, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1771
+      width: 742
+      height: 826
+    spriteID: f24a1a1aff2ef6745b0a48f82f7e62f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -476, y: 1771}
+  - name: WaveDash_Frame_19
+    originalName: 
+    pivot: {x: 0.64498645, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5473
+      width: 738
+      height: 805
+    spriteID: e9efb8ac148f1864eb558cb3853a7c63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -480, y: 5473}
+  - name: WaveDash_Frame_20
+    originalName: 
+    pivot: {x: 0.57040566, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 838
+      height: 763
+    spriteID: ad4e8c8cb23ecf64b8b4fd4263d73a7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -478, y: 4}
+  - name: WaveDash_Frame_21
+    originalName: 
+    pivot: {x: 0.57279235, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 7205
+      width: 838
+      height: 678
+    spriteID: aab975c4f1b4c3f488ba5746fc08c0e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -476, y: 7205}
+  - name: WaveDash_Frame_22
+    originalName: 
+    pivot: {x: 0.56937796, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 850
+      y: 4
+      width: 836
+      height: 643
+    spriteID: 7516219d982d6d34c91fef49231ec15b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 366, y: 4}
+  - name: WaveDash_Frame_23
+    originalName: 
+    pivot: {x: 0.57040566, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1694
+      y: 4
+      width: 838
+      height: 636
+    spriteID: b21d70fd12166b640b2750520cf4beec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1212, y: 4}
+  - name: WaveDash_Frame_24
+    originalName: 
+    pivot: {x: 0.5707491, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 4
+      width: 841
+      height: 615
+    spriteID: 2994af6191998fd41960e00210f23c80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2060, y: 4}
+  - name: WaveDash_Frame_25
+    originalName: 
+    pivot: {x: 0.5692124, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1694
+      y: 648
+      width: 838
+      height: 572
+    spriteID: 1bd6cdc191820a14db61c3233b177aba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1211, y: 648}
+  - name: WaveDash_Frame_26
+    originalName: 
+    pivot: {x: 0.5085106, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 627
+      width: 940
+      height: 509
+    spriteID: f9a70a67fefa63a448bed907a254901c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2058, y: 627}
+  - name: WaveDash_Frame_27
+    originalName: 
+    pivot: {x: 0.5090138, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 1144
+      width: 943
+      height: 445
+    spriteID: d2b85c23b51dc8c49929a1c6cc20c793
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2060, y: 1144}
+  - name: WaveDash_Frame_28
+    originalName: 
+    pivot: {x: 0.45295832, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 1597
+      width: 1031
+      height: 360
+    spriteID: bc7b26939997fcf4aabe9b5897cdf1d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2047, y: 1597}
+  - name: WaveDash_Frame_29
+    originalName: 
+    pivot: {x: 0.45251942, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 1965
+      width: 1032
+      height: 297
+    spriteID: b6a1076b4370f5d4dbfd8458f05371eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2047, y: 1965}
+  - name: WaveDash_Frame_30
+    originalName: 
+    pivot: {x: 0.3930453, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 2270
+      width: 949
+      height: 233
+    spriteID: b579b60d1af4f5740b9fa2644a088e26
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1953, y: 2270}
+  - name: WaveDash_Frame_31
+    originalName: 
+    pivot: {x: 0.39559287, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 2731
+      width: 953
+      height: 223
+    spriteID: d610a8217709d22428c8ec19daf2edb3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1957, y: 2731}
+  - name: WaveDash_Frame_32
+    originalName: 
+    pivot: {x: 0.38263664, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 2962
+      width: 933
+      height: 220
+    spriteID: 6dc2ad4b6fa9a6b4ab1ab67564003af3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1937, y: 2962}
+  - name: WaveDash_Frame_33
+    originalName: 
+    pivot: {x: 0.3506876, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 2511
+      width: 1018
+      height: 212
+    spriteID: ff031ecef7f874b41b0b9d537483723e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1937, y: 2511}
+  - name: WaveDash_Frame_34
+    originalName: 
+    pivot: {x: 0.29348984, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 3190
+      width: 937
+      height: 203
+    spriteID: cc2d55de8b667f9408e74573455fe69e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1855, y: 3190}
+  - name: WaveDash_Frame_35
+    originalName: 
+    pivot: {x: 0.29348984, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 3401
+      width: 937
+      height: 191
+    spriteID: 3f7d7e7d2698df247a3e8ffedc0c08f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1855, y: 3401}
+  - name: WaveDash_Frame_36
+    originalName: 
+    pivot: {x: 0.2076372, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 7891
+      width: 838
+      height: 170
+    spriteID: fd13e7bd5fdfff04784379f2efb4b0d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -782, y: 7891}
+  - name: WaveDash_Frame_37
+    originalName: 
+    pivot: {x: 0.19903497, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 3600
+      width: 829
+      height: 161
+    spriteID: 967bf1624522b6247af5eaf014222225
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1745, y: 3600}
+  - name: WaveDash_Frame_38
+    originalName: 
+    pivot: {x: 0.19951633, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 3769
+      width: 827
+      height: 159
+    spriteID: 6514be8322d688c4b8a2b88941537232
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1745, y: 3769}
+  - name: WaveDash_Frame_39
+    originalName: 
+    pivot: {x: 0.09439121, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 3936
+      width: 731
+      height: 168
+    spriteID: 1e5efe1250de78546b54f29820f7ccbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1649, y: 3936}
+  - name: WaveDash_Frame_40
+    originalName: 
+    pivot: {x: 0.07670853, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 4112
+      width: 717
+      height: 171
+    spriteID: 955023065b97a3640bfabad1322ac1d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1635, y: 4112}
+  - name: WaveDash_Frame_41
+    originalName: 
+    pivot: {x: 0.0766017, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2540
+      y: 4291
+      width: 718
+      height: 167
+    spriteID: 7cc015e8b8e06f74bad575b4a065713a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1635, y: 4291}
+  - name: WaveDash_Frame_42
+    originalName: 
+    pivot: {x: -0.04897312, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3377
+      y: 3600
+      width: 633
+      height: 161
+    spriteID: 40f0f89654360634d8918fab5d751925
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2386, y: 3600}
+  - name: WaveDash_Frame_43
+    originalName: 
+    pivot: {x: -0.088379666, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3481
+      y: 2962
+      width: 611
+      height: 149
+    spriteID: 34e3ccc6674c7054abce8b14f6c5d2d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2467, y: 2962}
+  - name: WaveDash_Frame_44
+    originalName: 
+    pivot: {x: -0.08852456, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3375
+      y: 3769
+      width: 610
+      height: 128
+    spriteID: 5a1dbc376d0e8b543b9fc24a41f37615
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2361, y: 3769}
+  - name: WaveDash_Frame_45
+    originalName: 
+    pivot: {x: -0.2600382, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3566
+      y: 2511
+      width: 523
+      height: 128
+    spriteID: 3d801944f4c30b8498eecaeb96f045ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2470, y: 2511}
+  - name: WaveDash_Frame_46
+    originalName: 
+    pivot: {x: -0.25047448, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3485
+      y: 3401
+      width: 527
+      height: 85
+    spriteID: 6699fd5c45b8b7948a7c88a6fd20fa34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2393, y: 3401}
+  - name: WaveDash_Frame_47
+    originalName: 
+    pivot: {x: -0.26195022, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3566
+      y: 2647
+      width: 523
+      height: 45
+    spriteID: c7394b704de8f7c4a8b3a3ca9c127ad7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2469, y: 2647}
+  - name: WaveDash_Frame_48
+    originalName: 
+    pivot: {x: -0.26095232, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3481
+      y: 3119
+      width: 525
+      height: 44
+    spriteID: 634c9ea277056c94fbe380cb1aeecbdd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2384, y: 3119}
+  - name: WaveDash_Frame_49
+    originalName: 
+    pivot: {x: -0.5542452, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3485
+      y: 3494
+      width: 424
+      height: 45
+    spriteID: 6f01e7a2bd74ce949bdaa91e9b411132
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2290, y: 3494}
+  - name: WaveDash_Frame_50
+    originalName: 
+    pivot: {x: -0.5927711, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3485
+      y: 3547
+      width: 415
+      height: 45
+    spriteID: 20926f6c542327a4396df6421a670723
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2279, y: 3547}
+  - name: WaveDash_Frame_51
+    originalName: 
+    pivot: {x: -0.5927711, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3485
+      y: 3190
+      width: 415
+      height: 45
+    spriteID: cb06f8e48a5926440b9bd4a28d9bd860
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2279, y: 3190}
+  - name: WaveDash_Frame_52
+    originalName: 
+    pivot: {x: -1.0306749, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1295
+      y: 3424
+      width: 326
+      height: 45
+    spriteID: fa5e888ca00f2a14581d06bb28bba25a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -1, y: 3424}
+  - name: WaveDash_Frame_53
+    originalName: 
+    pivot: {x: -1.167213, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1295
+      y: 3477
+      width: 305
+      height: 45
+    spriteID: 36736df159c9c174d9eef23dd9a1928b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -21, y: 3477}
+  - name: WaveDash_Frame_54
+    originalName: 
+    pivot: {x: -1.1710525, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1295
+      y: 3530
+      width: 304
+      height: 45
+    spriteID: c9fbddbe391b63c468644336f08db460
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -21, y: 3530}
+  - name: WaveDash_Frame_55
+    originalName: 
+    pivot: {x: -1.9508927, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1398
+      y: 2479
+      width: 224
+      height: 44
+    spriteID: 6d5c65eaa95919a449d9b7344c99a128
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 2479}
+  - name: WaveDash_Frame_56
+    originalName: 
+    pivot: {x: -1.9419643, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1398
+      y: 2531
+      width: 224
+      height: 44
+    spriteID: 68b362d2a542f1b4f96adb103b8b6672
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3, y: 2531}
+  - name: WaveDash_Frame_57
+    originalName: 
+    pivot: {x: -1.9729726, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3580
+      y: 1965
+      width: 222
+      height: 44
+    spriteID: b10d9c5d95328b948a79ca791bc3e69d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2182, y: 1965}
+  - name: WaveDash_Frame_58
+    originalName: 
+    pivot: {x: -1.9819003, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3810
+      y: 1965
+      width: 221
+      height: 44
+    spriteID: 646e9001c1c820a46aa8de68d20d4895
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2412, y: 1965}
+  - name: WaveDash_Frame_59
+    originalName: 
+    pivot: {x: -4.2460313, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3908
+      y: 3190
+      width: 126
+      height: 44
+    spriteID: 4ddba29e9fd8ca046969742073c57250
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2413, y: 3190}
+  - name: WaveDash_Frame_60
+    originalName: 
+    pivot: {x: -4.2125983, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3917
+      y: 3494
+      width: 127
+      height: 45
+    spriteID: c2395c89a90bd804b9a60de2beb467cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2422, y: 3494}
+  - name: WaveDash_Frame_61
+    originalName: 
+    pivot: {x: -4.2460313, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3874
+      y: 1497
+      width: 126
+      height: 46
+    spriteID: 882178566c1d1a8499bb11055c7012e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2379, y: 1497}
+  - name: WaveDash_Frame_62
+    originalName: 
+    pivot: {x: -4.936937, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3734
+      y: 1562
+      width: 111
+      height: 22
+    spriteID: a985830762cef984288d53a642e2d79c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2226, y: 1562}
+  - name: WaveDash_Frame_63
+    originalName: 
+    pivot: {x: -4.936937, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3908
+      y: 3547
+      width: 111
+      height: 22
+    spriteID: 4effe675c6e449a44beb7fe4d06e3246
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2400, y: 3547}
+  - name: WaveDash_Frame_64
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3853
+      y: 1562
+      width: 0
+      height: 0
+    spriteID: 149d130c2666d59459f436432e1015e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1933, y: 482}
+  - name: WaveDash_Frame_65
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3853
+      y: 1570
+      width: 0
+      height: 0
+    spriteID: 8258d23f7c11be3418792f939605cfd6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1933, y: 490}
+  - name: WaveDash_Frame_66
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3853
+      y: 1578
+      width: 0
+      height: 0
+    spriteID: 9f786b6c50c9cb94eb0472e42ed8d655
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1933, y: 498}
+  - name: WaveDash_Frame_67
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3853
+      y: 1586
+      width: 0
+      height: 0
+    spriteID: 580766d7f7aad624e9c83ed798090141
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1933, y: 506}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1214976031
+    name: WaveDash
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: WaveDash_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: bedd972e9161c4d4184483b6911984e3
+    - name: WaveDash_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 0df5e306837010743aa3965e71bdfeff
+    - name: WaveDash_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: bf5225250a36caa49879629f518b8a92
+    - name: WaveDash_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: d678a7fcda885c345b8440588b8c935a
+    - name: WaveDash_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 407aaefaacbc98444bcbaaf34d292e46
+    - name: WaveDash_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 77c4f195650cc344aa33e0ead3c2606c
+    - name: WaveDash_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 6591bb5f959aed7489f9239dbec31f1d
+    - name: WaveDash_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 74be05b45c8acd5408df3356d1f5cee6
+    - name: WaveDash_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 47a482d16d97fae49b6ad8a164d1d52d
+    - name: WaveDash_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: c7a6762a646f1344ca3b76e2f7d19679
+    - name: WaveDash_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: f9c664d68c1e3e84b9e3787d03d961da
+    - name: WaveDash_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 4575b9a85c47e71468b3cbb60530f32b
+    - name: WaveDash_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 1e6ed00122ac4f74fa1594b54c12e72f
+    - name: WaveDash_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 0d86c2b00af2fac4fa1ae139b3ba0cfb
+    - name: WaveDash_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 30b4d7716f1fe8c45979f26b135e2d17
+    - name: WaveDash_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: ff41d1bf380732a4597f92772fd08191
+    - name: WaveDash_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 639828214b7eb7d4cab4d08b2960f788
+    - name: WaveDash_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: f71597d2294ae6346a7ce373be2f0429
+    - name: WaveDash_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: f24a1a1aff2ef6745b0a48f82f7e62f3
+    - name: WaveDash_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: e9efb8ac148f1864eb558cb3853a7c63
+    - name: WaveDash_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: ad4e8c8cb23ecf64b8b4fd4263d73a7a
+    - name: WaveDash_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: aab975c4f1b4c3f488ba5746fc08c0e9
+    - name: WaveDash_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 7516219d982d6d34c91fef49231ec15b
+    - name: WaveDash_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: b21d70fd12166b640b2750520cf4beec
+    - name: WaveDash_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 2994af6191998fd41960e00210f23c80
+    - name: WaveDash_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 1bd6cdc191820a14db61c3233b177aba
+    - name: WaveDash_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: f9a70a67fefa63a448bed907a254901c
+    - name: WaveDash_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: d2b85c23b51dc8c49929a1c6cc20c793
+    - name: WaveDash_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: bc7b26939997fcf4aabe9b5897cdf1d6
+    - name: WaveDash_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: b6a1076b4370f5d4dbfd8458f05371eb
+    - name: WaveDash_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: b579b60d1af4f5740b9fa2644a088e26
+    - name: WaveDash_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: d610a8217709d22428c8ec19daf2edb3
+    - name: WaveDash_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 6dc2ad4b6fa9a6b4ab1ab67564003af3
+    - name: WaveDash_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: ff031ecef7f874b41b0b9d537483723e
+    - name: WaveDash_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: cc2d55de8b667f9408e74573455fe69e
+    - name: WaveDash_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 3f7d7e7d2698df247a3e8ffedc0c08f7
+    - name: WaveDash_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: fd13e7bd5fdfff04784379f2efb4b0d6
+    - name: WaveDash_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 967bf1624522b6247af5eaf014222225
+    - name: WaveDash_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 6514be8322d688c4b8a2b88941537232
+    - name: WaveDash_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 1e5efe1250de78546b54f29820f7ccbc
+    - name: WaveDash_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 955023065b97a3640bfabad1322ac1d9
+    - name: WaveDash_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 7cc015e8b8e06f74bad575b4a065713a
+    - name: WaveDash_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 40f0f89654360634d8918fab5d751925
+    - name: WaveDash_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 34e3ccc6674c7054abce8b14f6c5d2d3
+    - name: WaveDash_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 5a1dbc376d0e8b543b9fc24a41f37615
+    - name: WaveDash_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 3d801944f4c30b8498eecaeb96f045ac
+    - name: WaveDash_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 6699fd5c45b8b7948a7c88a6fd20fa34
+    - name: WaveDash_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: c7394b704de8f7c4a8b3a3ca9c127ad7
+    - name: WaveDash_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 634c9ea277056c94fbe380cb1aeecbdd
+    - name: WaveDash_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 6f01e7a2bd74ce949bdaa91e9b411132
+    - name: WaveDash_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 20926f6c542327a4396df6421a670723
+    - name: WaveDash_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: cb06f8e48a5926440b9bd4a28d9bd860
+    - name: WaveDash_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: fa5e888ca00f2a14581d06bb28bba25a
+    - name: WaveDash_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 36736df159c9c174d9eef23dd9a1928b
+    - name: WaveDash_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: c9fbddbe391b63c468644336f08db460
+    - name: WaveDash_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 6d5c65eaa95919a449d9b7344c99a128
+    - name: WaveDash_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 68b362d2a542f1b4f96adb103b8b6672
+    - name: WaveDash_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: b10d9c5d95328b948a79ca791bc3e69d
+    - name: WaveDash_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 646e9001c1c820a46aa8de68d20d4895
+    - name: WaveDash_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 4ddba29e9fd8ca046969742073c57250
+    - name: WaveDash_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: c2395c89a90bd804b9a60de2beb467cf
+    - name: WaveDash_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 882178566c1d1a8499bb11055c7012e4
+    - name: WaveDash_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: a985830762cef984288d53a642e2d79c
+    - name: WaveDash_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 4effe675c6e449a44beb7fe4d06e3246
+    - name: WaveDash_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 149d130c2666d59459f436432e1015e0
+    - name: WaveDash_Frame_65
+      frameIndex: 65
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 8258d23f7c11be3418792f939605cfd6
+    - name: WaveDash_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 9f786b6c50c9cb94eb0472e42ed8d655
+    - name: WaveDash_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 580766d7f7aad624e9c83ed798090141
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1920, y: 1080}
