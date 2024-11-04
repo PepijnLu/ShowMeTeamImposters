@@ -30,6 +30,8 @@ public class StateMachine
         if ( currentMovementState != null )
         {
             currentMovementState.StateFixedUpdate(owner);
+            currentMovementState.Move();
+            Debug.Log("Current state: " + currentMovementState.GetType().Name);
         }
     }
 

@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
+/*
+TO DO LIST:
+
+-short/hop full hop sometime
+-grounded friction during moves or something like that
+-crouching (need sprite)
+
+*/
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public bool isHitstopOn;
+    public bool isHitstopOn, inHitStop;
     private Rigidbody2D[] rigidbodies2D;
+    private Animator[] animators;
     [SerializeField] private int fps = 60;
     [SerializeField] int perfectTimingFrameWindow, goodTimingFrameWindow, badTimingFrameWindow;
     int currentFrame;
     [SerializeField] PianoMan pianoMan, dummy;
-    [SerializeField] public AudioSource audioSource, snare, breakingTheHabit;
+    [SerializeField] public AudioSource audioSource, snare, gameMusic;
     Vector3 dummyStartPos;
 
     // Start is called before the first frame update
@@ -31,6 +39,12 @@ public class GameManager : MonoBehaviour
 
         // Get all Rigidbodies in the scene (or specific ones if needed)
         rigidbodies2D = FindObjectsOfType<Rigidbody2D>();
+        animators = FindObjectsOfType<Animator>();
+
+        foreach(Animator anim in animators)
+        {
+            anim.speed = 1.5f;
+        }
     }
 
     void Update()
@@ -46,9 +60,16 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator HandleHitStop(float frames, float beats)
     {
+
+        inHitStop = true;
         // Store the velocities to restore later
         Vector2[] originalVelocities = new Vector2[rigidbodies2D.Length];
         float[] originalAngularVelocities = new float[rigidbodies2D.Length];
+        //Pause the animators
+        foreach(Animator anim in animators)
+        {
+            anim.speed = 0;
+        }
 
         // Stop the physics simulation and freeze objects in place
         for (int i = 0; i < rigidbodies2D.Length; i++)
@@ -67,24 +88,6 @@ public class GameManager : MonoBehaviour
         // Wait for the specified duration
         for(int i = 0; i < frames; i++) yield return new WaitForFixedUpdate();
 
-        //Wait 36 frames
-        // switch(beats)
-        // {
-        //     case 0.5f:
-        //         for(int i = 0; i < 18; i++) yield return new WaitForFixedUpdate();
-        //         break;
-        //     case 1:
-        //         for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
-        //         break;
-        //     case 2:
-        //         for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
-        //         for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
-        //         break;
-            
-        // }
-        //for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
-        //for(int i = 0; i < 36; i++) yield return new WaitForFixedUpdate();
-
         // Resume the physics simulation and restore the original velocities
         Physics2D.simulationMode = SimulationMode2D.FixedUpdate;
 
@@ -93,11 +96,15 @@ public class GameManager : MonoBehaviour
             rigidbodies2D[i].velocity = originalVelocities[i];
             rigidbodies2D[i].angularVelocity = originalAngularVelocities[i];
         }
+        foreach(Animator anim in animators)
+        {
+            anim.speed = 1.5f;
+        }
+        inHitStop = false;
     }
 
     IEnumerator MusicTiming()
     {
-        int testLimit = 100;
         while(true)
         {
             for(int i2 = 0; i2 < 36; i2++) 
@@ -106,7 +113,7 @@ public class GameManager : MonoBehaviour
                 if(currentFrame == 0) 
                 {
                     Debug.Log("Metronome beat");
-                    if(!breakingTheHabit.isPlaying) breakingTheHabit.Play();    
+                    if(!gameMusic.isPlaying) gameMusic.Play();    
                     audioSource.Play();
                     //if(pianoMan.stateMachine != null) pianoMan.InitiateAttack();
                 }
