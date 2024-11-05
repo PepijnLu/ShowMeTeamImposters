@@ -78,16 +78,19 @@ public class StateMachine
     public void BPress(InputAction.CallbackContext context)
     {
         currentMovementState.BPress(context);
+        currentAttackState.BPress(context);
     }
 
     public void XPress(InputAction.CallbackContext context)
     {
         currentMovementState.XPress(context);
+        currentAttackState.XPress(context);
     }
 
     public void YPress(InputAction.CallbackContext context)
     {
         currentMovementState.YPress(context);
+        currentAttackState.YPress(context);
     }
 
 }

@@ -27,7 +27,7 @@ public class PianoMan : MonoBehaviour
     public float health;
     private bool readingInputs;
     private Rigidbody2D rb;
-    private AttackMove aKick;
+    private AttackMove pianoKnee, pianoKick;
     private Dictionary<string, AttackMove> attackMoves = new();
     private Vector2 gizmoPos;
     private float gizmoSize;
@@ -74,9 +74,9 @@ public class PianoMan : MonoBehaviour
     {
         AttackMove attackMove = attackMoves[move];
         Vector2 movePos = Vector2.zero;
-        if(isFacingLeft) movePos = new Vector2(transform.position.x, transform.position.y) - attackMove.position;
-        if(!isFacingLeft) movePos = new Vector2(transform.position.x, transform.position.y) + attackMove.position;
-        stateMachine.currentAttackState.Attack(movePos, attackMove.startupFrames, attackMove.activeFrames, attackMove.recoveryFrames, attackMove.hitbox, attackMove.damage, attackMove.launchAngle, attackMove.launchStrength, attackMove.hitstunFrames, attackMove.hitstopFrames, attackMove.multiHit);
+        if(isFacingLeft) movePos = new Vector2(transform.position.x, transform.position.y) + new Vector2(-attackMove.position.x, attackMove.position.y);
+        if(!isFacingLeft) movePos = new Vector2(transform.position.x, transform.position.y) + new Vector2(attackMove.position.x, attackMove.position.y);
+        stateMachine.currentAttackState.Attack(move, movePos, attackMove.startupFrames, attackMove.activeFrames, attackMove.recoveryFrames, attackMove.hitbox, attackMove.damage, attackMove.launchAngle, attackMove.launchStrength, attackMove.hitstunFrames, attackMove.hitstopFrames, attackMove.multiHit);
     }
 
     void FixedUpdate()  // Use FixedUpdate for physics-based movement
@@ -154,21 +154,24 @@ public class PianoMan : MonoBehaviour
         }
     }
 
-    public void StartAttackMove(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
+    public void StartAttackMove(string moveName, Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
     {
-        StartCoroutine(AttackMove(position, startupFrames, activeFrames, recoveryFrames, hitbox, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames, false));
+        StartCoroutine(AttackMove(moveName, position, startupFrames, activeFrames, recoveryFrames, hitbox, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames, false));
     }
 
-    public IEnumerator AttackMove(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
+    public IEnumerator AttackMove(string moveName, Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
     {
         // GameManager.instance.audioSource.Play();
+
         Collider2D[] hitColliders;
         List<string> hitCharacters = new();
         GameObject movePos = Instantiate(empty, position, Quaternion.identity);
         movePos.transform.SetParent(gameObject.transform);
 
         //startup logic
-        animator.SetTrigger("Kick");
+        //animator.SetTrigger("Kick");
+        Debug.Log("Move name = " + moveName);
+        animator.SetTrigger(moveName);
         stateMachine.SetState("AttackState", new Startup());
         for(int i = 0; i < startupFrames; i++) 
         {
@@ -327,14 +330,14 @@ public class PianoMan : MonoBehaviour
 
     void InitializeMoves()
     {
-        aKick = new()
+        pianoKnee = new()
         {
-            position = new Vector2(1f, 0.05f),
-            startupFrames = 17,
-            activeFrames = 7,
-            recoveryFrames = 13,
+            position = new Vector2(1f, 1.25f),
+            startupFrames = 10,
+            activeFrames = 9,
+            recoveryFrames = 25,
             hitbox = 0.25f,
-            damage = 1,
+            damage = 1, 
             launchAngle = new Vector2(0.5f, 0.5f),
             launchStrength = 300,
             hitstunFrames = 15,
@@ -343,7 +346,24 @@ public class PianoMan : MonoBehaviour
             multiHit = false
         };
 
-        attackMoves.Add("Kick", aKick);
+        pianoKick = new()
+        {
+            position = new Vector2(2f, 1.25f),
+            startupFrames = 10,
+            activeFrames = 9,
+            recoveryFrames = 25,
+            hitbox = 0.25f,
+            damage = 1, 
+            launchAngle = new Vector2(0.5f, 0.5f),
+            launchStrength = 300,
+            hitstunFrames = 15,
+            //5 is perfect
+            hitstopFrames = 10,
+            multiHit = false
+        };
+
+        attackMoves.Add("pianoKnee", pianoKnee);
+        attackMoves.Add("pianoKick", pianoKick);
     }
 
     public void StartDashCooldown()

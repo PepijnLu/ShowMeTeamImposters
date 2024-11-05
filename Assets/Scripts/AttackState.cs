@@ -12,7 +12,7 @@ public class AttackState : AState
     {
         if(character == null) character = runner.gameObject.GetComponent<PianoMan>();
     }
-    public virtual void Attack(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
+    public virtual void Attack(string moveName, Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
     {
 
     }
@@ -40,15 +40,21 @@ public class AttackState : AState
 
 public class Idle : AttackState
 {
-    public override void Attack(Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
+    public override void Attack(string moveName, Vector2 position, float startupFrames, float activeFrames, float recoveryFrames, float hitbox, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames, bool multiHit)
     {
-        character.StartAttackMove(position, startupFrames, activeFrames, recoveryFrames, hitbox, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames, multiHit);
+        character.StartAttackMove(moveName, position, startupFrames, activeFrames, recoveryFrames, hitbox, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames, multiHit);
     }
 
     public override void APress(InputAction.CallbackContext context)
     {
-        Debug.Log("Idle state a press");
-        if(!character.inHitStun) character.Attack("Kick");
+        Debug.Log("Idle state A press");
+        if(!character.inHitStun) character.Attack("pianoKnee");
+    }
+
+    public override void YPress(InputAction.CallbackContext context)
+    {
+        Debug.Log("Idle state Y press");
+        if(!character.inHitStun) character.Attack("pianoKick");
     }
 }
 
