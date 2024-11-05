@@ -51,6 +51,7 @@ public class MovementState : AState
 public class Airborne : MovementState
 {
     private bool jumped = false;
+    private bool animationTriggered = false;
 
     public override void BPress(InputAction.CallbackContext context)
     {
@@ -65,6 +66,12 @@ public class Airborne : MovementState
     {
         base.StateFixedUpdate(runner);
         if(character.isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
+
+        if(rb.velocity.y <= -0.1 && !animationTriggered)
+        {
+            character.animator.SetTrigger("Descent");
+            animationTriggered = true;
+        }
     }
 
     public override void Move()
