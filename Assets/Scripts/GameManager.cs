@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
 
         foreach(Animator anim in animators)
         {
-            anim.speed = 1.5f;
+            anim.speed = 1f;
         }
     }
 
@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
         }
         foreach(Animator anim in animators)
         {
-            anim.speed = 1.5f;
+            anim.speed = 1f;
         }
         inHitStop = false;
     }

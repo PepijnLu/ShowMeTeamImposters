@@ -12,16 +12,18 @@ public class PianoMan : MonoBehaviour
     [SerializeField] public Transform groundCheck;
     [SerializeField] public LayerMask groundLayer;
     [SerializeField] private GameObject empty;
-    [SerializeField] private Animator animator;
+    [SerializeField] public Animator animator;
     [SerializeField] private GameObject oppponent, playerCanvas;
-    [SerializeField] public float maxWalkSpeed, maxRunSpeed, acceleration, jumpForce, dashCooldown, dashBackSpeed, aerialDriftAcceleration, maxAerialDriftSpeed;
+    [SerializeField] public float maxWalkSpeed, maxRunSpeed, acceleration, jumpForce, dashCooldown, dashBackSpeed, aerialDriftAcceleration, maxAerialDriftSpeed, jumpSquatFrames;
     [SerializeField] public float groundCheckRadius;
     public StateMachine stateMachine;
+    public HitAnim hitAnim;
     public CapsuleCollider2D playerCollider;
     public Vector2 moveInput, originalSize;
     public Slider healthSlider;
     public bool isGrounded;
     public bool inHitStun;
+    public bool isRunning, inDashBack;
     public float health;
     private bool readingInputs;
     private Rigidbody2D rb;
@@ -29,6 +31,7 @@ public class PianoMan : MonoBehaviour
     private Dictionary<string, AttackMove> attackMoves = new();
     private Vector2 gizmoPos;
     private float gizmoSize;
+    private int frameCountForGroundCheck;
     public bool isFacingLeft, dashOnCooldown, jumpOnCooldown, dashedBackOnInput;
 
     void Start()
@@ -80,6 +83,9 @@ public class PianoMan : MonoBehaviour
     {
         stateMachine.FixedUpdate();
         HandleTurnaround();
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        frameCountForGroundCheck = 0;
+        Debug.Log("IsGrounded: " + gameObject.name + " " + isGrounded);
     }
 
     public void HandleTurnaround()
@@ -185,11 +191,15 @@ public class PianoMan : MonoBehaviour
                 foreach (Collider2D hitCollider in hitColliders)
                 {
                     Debug.Log("Collision detected with: " + gameObject.name + " , " + hitCollider.gameObject.name);
-                    if ((!hitCharacters.Contains(hitCollider.gameObject.name) || multiHit) && (hitCollider.gameObject != gameObject))
+
+                    if(hitCollider.TryGetComponent(out PianoMan component))
                     {
-                        StartCoroutine(HitCharacter(movePos.transform.position, hitCollider.gameObject, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames));
-                        hitCharacters.Add(hitCollider.gameObject.name);
-                        Debug.Log("111" + hitCharacters[0]);
+                        if ((!hitCharacters.Contains(hitCollider.gameObject.name) || multiHit) && (hitCollider.gameObject.name != gameObject.name))
+                        {
+                            StartCoroutine(HitCharacter(movePos.transform.position, hitCollider.gameObject, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames));
+                            hitCharacters.Add(hitCollider.gameObject.name);
+                            Debug.Log("111" + hitCharacters[0]);
+                        }
                     }
                 }
             }
@@ -218,12 +228,15 @@ public class PianoMan : MonoBehaviour
         GameManager.instance.snare.Play();
         Debug.Log($" HitDetection: {character.name} hit");
         string accuracy = GameManager.instance.GetAccuracyOnBeat();
-
         float damageMult = 0;
         float launchStrengthMult = 0;
         float hitstunFramesMult = 0;
         float hitstopFramesMult = 0;
         float hitstopBeats = 0;
+
+        hitAnim.transform.position = position;
+        hitAnim.spriteRenderer.enabled = true;
+        hitAnim.animator.SetTrigger("1Hit");
 
         switch(accuracy)
         {
@@ -286,6 +299,22 @@ public class PianoMan : MonoBehaviour
         for(int i = 0; i < hitstunFrames; i++) yield return new WaitForFixedUpdate(); 
         character.inHitStun = false;
     }
+    
+    private IEnumerator Jump()
+    {
+        animator.SetTrigger("Jump");
+        jumpOnCooldown = true;
+        for(int i = 0; i < jumpSquatFrames; i++) yield return new WaitForFixedUpdate();
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);  // Apply upward force for the jump
+        Debug.Log("Player Jump");
+        StartJumpCooldown();
+        yield return null;
+    }
+
+    public void StartJump()
+    {
+        StartCoroutine(Jump());
+    }
 
     void OnDrawGizmos()
     {
@@ -337,5 +366,6 @@ public class PianoMan : MonoBehaviour
     {
         for(int i = 0; i < dashCooldown; i++) yield return new WaitForFixedUpdate();
         dashOnCooldown = false;
+        inDashBack = false;
     }
 }

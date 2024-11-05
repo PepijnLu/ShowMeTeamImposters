@@ -10,8 +10,6 @@ public class MovementState : AState
     protected Rigidbody2D rb;
     protected PianoMan character;
     protected StateMachine sm;
-    protected bool isGrounded;
-    protected bool isRunning;
     public override void StateStart(GameObject runner)
     {
         Debug.Log("State Start");
@@ -21,9 +19,7 @@ public class MovementState : AState
     public override void StateFixedUpdate(GameObject runner)
     {
         Debug.Log("Character: " + character);
-        isGrounded = Physics2D.OverlapCircle(character.groundCheck.position, character.groundCheckRadius, character.groundLayer);
-        Debug.Log("State Grounded" + isGrounded);
-        if(isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
+        if(character.isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
     }
     
     public virtual void APress(InputAction.CallbackContext context)
@@ -68,13 +64,13 @@ public class Airborne : MovementState
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        if(isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
+        if(character.isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
     }
 
     public override void Move()
     {
         if(character.inHitStun) return;
-        if(character.gameObject.name != "Character") return;
+        //if(character.gameObject.name != "Character") return;
 
         base.Move();
         float moveInputNormalized = 0;
@@ -128,6 +124,7 @@ public class Grounded : MovementState
     public override void Move()
     {
         if(character.inHitStun) return;
+        if(character.inDashBack) return;
         
         base.Move();
         float requiredForce = 0f;
@@ -139,7 +136,8 @@ public class Grounded : MovementState
             //Run left
             if(moveInput.x <= -0.8f)
             {
-                isRunning = true;
+                if(!character.isRunning) character.animator.SetTrigger("DashForw");
+                character.isRunning = true;
                 //requiredForce = -(character.maxRunSpeed - rb.velocity.x) * rb.mass;
                 requiredForce = -character.dashBackSpeed;
                 character.dashedBackOnInput = false;
@@ -156,21 +154,21 @@ public class Grounded : MovementState
                 else
                 {
                     requiredForce = character.acceleration;
-                    isRunning = false;
+                    character.isRunning = false;
                 }
             }
             //Walk left
             else if(moveInput.x < -0.1)
             {
                 requiredForce = -character.acceleration;
-                isRunning = false;
+                character.isRunning = false;
                 character.dashedBackOnInput = false;
             }
             //Walk right
             else if(moveInput.x > 0.1)
             {
                 requiredForce = character.acceleration;
-                isRunning = false;
+                character.isRunning = false;
                 character.dashedBackOnInput = false;
             }
         }
@@ -180,7 +178,9 @@ public class Grounded : MovementState
             //Run right
             if(moveInput.x >= 0.8f)
             {
-                isRunning = true;
+                Debug.Log("character.isRunning: " + character.isRunning);
+                if(!character.isRunning) character.animator.SetTrigger("DashForw");
+                character.isRunning = true;
                 //requiredForce = (character.maxRunSpeed - rb.velocity.x) * rb.mass;
                 requiredForce = character.dashBackSpeed;
                 character.dashedBackOnInput = false;
@@ -197,21 +197,21 @@ public class Grounded : MovementState
                 else
                 {
                     requiredForce = -character.acceleration;
-                    isRunning = false;
+                    character.isRunning = false;
                 }
             }
             //Walk left
             else if(moveInput.x < -0.1)
             {
                 requiredForce = -character.acceleration;
-                isRunning = false;
+                character.isRunning = false;
                 character.dashedBackOnInput = false;
             }
             //Walk right
             else if(moveInput.x > 0.1)
             {
                 requiredForce = character.acceleration;
-                isRunning = false;
+                character.isRunning = false;
                 character.dashedBackOnInput = false;
             }
         }
@@ -224,7 +224,7 @@ public class Grounded : MovementState
         float maxToCheck;
         Vector2 clampedForce;
 
-        if(isRunning) maxToCheck = character.maxRunSpeed;
+        if(character.isRunning) maxToCheck = character.maxRunSpeed;
         else maxToCheck = character.maxWalkSpeed;
         
         if (predictedVelocity.magnitude > maxToCheck)
@@ -244,7 +244,7 @@ public class Grounded : MovementState
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        if(!isGrounded) 
+        if(!character.isGrounded) 
         {
             character.stateMachine.SetState("MovementState", new Airborne());
             Debug.Log("Switched to Airborne");
@@ -257,10 +257,7 @@ public class Grounded : MovementState
     {
         if(!character.jumpOnCooldown)
         {
-            character.jumpOnCooldown = true;
-            rb.AddForce(Vector2.up * character.jumpForce, ForceMode2D.Impulse);  // Apply upward force for the jump
-            Debug.Log("Player Jump");
-            character.StartJumpCooldown();
+            character.StartJump();
         }
     }
 
@@ -268,6 +265,8 @@ public class Grounded : MovementState
     {
         if(!character.dashOnCooldown)
         {
+            character.inDashBack = true;
+            character.animator.SetTrigger("DashBack");
             character.dashOnCooldown = true;
             Debug.Log("Dash back");
             rb.velocity = new Vector2(0, rb.velocity.y);
@@ -293,7 +292,7 @@ public class Crouching : MovementState
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        //if(!isGrounded) character.stateMachine.SetState("MovementState", new Airborne());
+        if(!character.isGrounded) character.stateMachine.SetState("MovementState", new Airborne());
         if(character.moveInput.y > -0.50f) character.stateMachine.SetState("MovementState", new Grounded());
     }
 
