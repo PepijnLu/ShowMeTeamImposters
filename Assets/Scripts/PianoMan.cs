@@ -32,7 +32,7 @@ public class PianoMan : MonoBehaviour
     private Vector2 gizmoPos;
     private float gizmoSize;
     private int frameCountForGroundCheck;
-    public bool isFacingLeft, dashOnCooldown, jumpOnCooldown, dashedBackOnInput;
+    public bool isFacingLeft, dashOnCooldown, jumpOnCooldown, dashedBackOnInput, walkAnimationTriggered, walkBackAnimationTriggered, crouchOnCooldown;
 
     void Start()
     {   
@@ -376,6 +376,11 @@ public class PianoMan : MonoBehaviour
         StartCoroutine(JumpCooldown());
     }
 
+    public void StartCrouchCooldown()
+    {
+        StartCoroutine(CrouchCooldown());
+    }
+
     public IEnumerator JumpCooldown()
     {
         for(int i = 0; i < 5; i++) yield return new WaitForFixedUpdate();
@@ -387,5 +392,10 @@ public class PianoMan : MonoBehaviour
         for(int i = 0; i < dashCooldown; i++) yield return new WaitForFixedUpdate();
         dashOnCooldown = false;
         inDashBack = false;
+    }
+    public IEnumerator CrouchCooldown()
+    {
+        for(int i = 0; i < 10; i++) yield return new WaitForFixedUpdate();
+        crouchOnCooldown = false;
     }
 }

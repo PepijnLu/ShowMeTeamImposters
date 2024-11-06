@@ -19,7 +19,7 @@ public class MovementState : AState
     public override void StateFixedUpdate(GameObject runner)
     {
         Debug.Log("Character: " + character);
-        if(character.isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
+        //if(character.isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
     }
     
     public virtual void APress(InputAction.CallbackContext context)
@@ -65,7 +65,11 @@ public class Airborne : MovementState
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        if(character.isGrounded) character.stateMachine.SetState("MovementState", new Grounded());
+        if(character.isGrounded) 
+        {
+            character.stateMachine.SetState("MovementState", new Grounded());
+            character.animator.SetTrigger("Landed");
+        }
 
         if(rb.velocity.y <= -0.1 && !animationTriggered)
         {
@@ -143,15 +147,20 @@ public class Grounded : MovementState
             //Run left
             if(moveInput.x <= -0.8f)
             {
-                if(!character.isRunning) character.animator.SetTrigger("DashForw");
+                Debug.Log("1Movement: Facing left, running left");
+
+                if(!character.isRunning) character.stateMachine.SetState("ActionState", new DashForward());
                 character.isRunning = true;
                 //requiredForce = -(character.maxRunSpeed - rb.velocity.x) * rb.mass;
                 requiredForce = -character.dashBackSpeed;
                 character.dashedBackOnInput = false;
+                character.walkAnimationTriggered = false;
             }
             //Dash right
             else if(moveInput.x >= 0.8f)
             {
+                Debug.Log("1Movement: Facing left, dashing right");
+
                 if(!character.dashedBackOnInput)
                 {
                     DashBack();
@@ -160,23 +169,38 @@ public class Grounded : MovementState
                 }
                 else
                 {
+                    //Walk right
                     requiredForce = character.acceleration;
                     character.isRunning = false;
+
+                    if(character.stateMachine.currentActionState.GetType().Name != "WalkingBack") character.stateMachine.SetState("ActionState", new WalkingBack());
                 }
             }
             //Walk left
             else if(moveInput.x < -0.1)
             {
+                Debug.Log("1Movement: Facing left, walking left");
+
                 requiredForce = -character.acceleration;
                 character.isRunning = false;
                 character.dashedBackOnInput = false;
+
+                if(character.stateMachine.currentActionState.GetType().Name != "WalkingForward") character.stateMachine.SetState("ActionState", new WalkingForward());
             }
             //Walk right
             else if(moveInput.x > 0.1)
             {
+                Debug.Log("1Movement: Facing left, walking right");
+
                 requiredForce = character.acceleration;
                 character.isRunning = false;
                 character.dashedBackOnInput = false;
+
+                if(character.stateMachine.currentActionState.GetType().Name != "WalkingBack") character.stateMachine.SetState("ActionState", new WalkingBack());
+            }
+            else if(moveInput.x == 0)
+            {
+                if(character.stateMachine.currentActionState.GetType().Name != "ActionIdle") character.stateMachine.SetState("ActionState", new ActionIdle());
             }
         }
         //Facing right
@@ -185,16 +209,28 @@ public class Grounded : MovementState
             //Run right
             if(moveInput.x >= 0.8f)
             {
+                Debug.Log("1Movement: Facing right, running right");
+
                 Debug.Log("character.isRunning: " + character.isRunning);
-                if(!character.isRunning) character.animator.SetTrigger("DashForw");
+                if(!character.isRunning) character.stateMachine.SetState("ActionState", new DashForward());
                 character.isRunning = true;
                 //requiredForce = (character.maxRunSpeed - rb.velocity.x) * rb.mass;
                 requiredForce = character.dashBackSpeed;
                 character.dashedBackOnInput = false;
+                // character.animator.SetTrigger("WalkFOut");
+                // character.walkAnimationTriggered = false;
+                // character.animator.SetTrigger("WalkBOut");
+                // character.walkBackAnimationTriggered = false;
             }
             //Dash left
             else if(moveInput.x <= -0.8f)
             {
+                Debug.Log("1Movement: Facing right, dashing left");
+
+                //character.animator.SetTrigger("WalkFOut");
+                //character.walkAnimationTriggered = false;
+                //character.animator.SetTrigger("WalkBOut");
+                //character.walkBackAnimationTriggered = false;
                 if(!character.dashedBackOnInput)
                 {
                     DashBack();
@@ -203,23 +239,50 @@ public class Grounded : MovementState
                 }
                 else
                 {
+                    //Walk left
                     requiredForce = -character.acceleration;
                     character.isRunning = false;
+                    if(character.stateMachine.currentActionState.GetType().Name != "WalkingBack") character.stateMachine.SetState("ActionState", new WalkingBack());
+                    // character.animator.SetTrigger("WalkFOut");
+                    // character.walkAnimationTriggered = false;
+                    // if(!character.walkBackAnimationTriggered) character.animator.SetTrigger("WalkFIn");
+                    // character.walkBackAnimationTriggered = true;
                 }
             }
             //Walk left
             else if(moveInput.x < -0.1)
             {
+                Debug.Log("1Movement: Facing right, walking left");
+
                 requiredForce = -character.acceleration;
                 character.isRunning = false;
                 character.dashedBackOnInput = false;
+                // character.animator.SetTrigger("WalkFOut");
+                // character.walkAnimationTriggered = false;
+                // if(!character.walkBackAnimationTriggered) character.animator.SetTrigger("WalkBIn");
+                // character.walkBackAnimationTriggered = true;
+
+                if(character.stateMachine.currentActionState.GetType().Name != "WalkingBack") character.stateMachine.SetState("ActionState", new WalkingBack());
             }
             //Walk right
             else if(moveInput.x > 0.1)
             {
+                Debug.Log("1Movement: Facing right, running right");
+
                 requiredForce = character.acceleration;
                 character.isRunning = false;
                 character.dashedBackOnInput = false;
+
+                if(character.stateMachine.currentActionState.GetType().Name != "WalkingForward") character.stateMachine.SetState("ActionState", new WalkingForward());
+
+                // if(!character.walkAnimationTriggered) character.animator.SetTrigger("WalkFIn");
+                // character.walkAnimationTriggered = true;
+                // character.animator.SetTrigger("WalkBOut");
+                // character.walkBackAnimationTriggered = false;
+            }
+            else if(moveInput.x == 0)
+            {
+                if(character.stateMachine.currentActionState.GetType().Name != "ActionIdle") character.stateMachine.SetState("ActionState", new ActionIdle());
             }
         }
 
@@ -257,7 +320,13 @@ public class Grounded : MovementState
             Debug.Log("Switched to Airborne");
         }
         Debug.Log("moveInput Y: " + character.moveInput.y);
-        //if(character.moveInput.y < -0.50f) Debug.Log("Should switch to crouching"); character.stateMachine.SetState("MovementState", new Crouching());
+        if(character.moveInput.y < -0.50f && !character.crouchOnCooldown) 
+        {
+            Debug.Log("Should switch to crouching"); 
+            character.stateMachine.SetState("MovementState", new Crouching());
+            character.StartCrouchCooldown();
+            character.crouchOnCooldown = true;
+        }
     }
 
     private void Jump()
@@ -272,6 +341,7 @@ public class Grounded : MovementState
     {
         if(!character.dashOnCooldown)
         {
+            character.stateMachine.SetState("ActionState", new DashBack());
             character.inDashBack = true;
             character.animator.SetTrigger("DashBack");
             character.dashOnCooldown = true;
@@ -293,18 +363,27 @@ public class Crouching : MovementState
     {
         base.StateStart(runner);
         Debug.Log("Switched to crouching");
+        character.animator.SetTrigger("CrouchIn");
+        character.animator.SetBool("Crouch", true);
         //character.playerCollider.size = new Vector2(1, 0.5f);
         //character.playerCollider.transform.localScale = new Vector2(1, 0.5f);
     }
     public override void StateFixedUpdate(GameObject runner)
     {
         base.StateFixedUpdate(runner);
-        if(!character.isGrounded) character.stateMachine.SetState("MovementState", new Airborne());
-        if(character.moveInput.y > -0.50f) character.stateMachine.SetState("MovementState", new Grounded());
+        //if(!character.isGrounded) character.stateMachine.SetState("MovementState", new Airborne());
+        if(character.moveInput.y > -0.50f && !character.crouchOnCooldown) 
+        {
+            character.stateMachine.SetState("MovementState", new Grounded());
+            character.StartCrouchCooldown();
+            character.crouchOnCooldown = true;
+        }
     }
 
     public override void StateComplete(GameObject runner)
     {
+        character.animator.SetBool("Crouch", false);
+        character.animator.SetTrigger("CrouchOut");
         //character.playerCollider.size = character.originalSize;
         //character.playerCollider.transform.localScale = character.originalSize;
     }

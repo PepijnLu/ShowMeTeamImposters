@@ -9,12 +9,14 @@ public class StateMachine
     private GameObject owner;
     public MovementState currentMovementState;
     public AttackState currentAttackState;
+    public ActionState currentActionState;
 
     public StateMachine( GameObject _owner )
     {
         owner = _owner;
         SetState("MovementState", new Grounded());
         SetState("AttackState", new Idle());
+        SetState("ActionState", new ActionIdle());
     }
 
     public void Update()
@@ -22,6 +24,11 @@ public class StateMachine
         if ( currentMovementState != null )
         {
             currentMovementState.StateUpdate(owner);
+        }
+
+        if ( currentActionState != null )
+        {
+            Debug.Log("Current action state: " + currentActionState.GetType().Name);
         }
     }
 
@@ -51,6 +58,12 @@ public class StateMachine
                     currentAttackState.StateComplete(owner);
                 }
                 break;
+            case "ActionState":
+                if ( currentActionState != null )
+                {
+                    currentActionState.StateComplete(owner);
+                }
+                break;
         }
 
         newState.StateStart(owner);
@@ -64,6 +77,10 @@ public class StateMachine
             case "AttackState":
                 AttackState newAttackState = newState as AttackState;
                 currentAttackState = newAttackState;
+                break;
+            case "ActionState":
+                ActionState newActionState = newState as ActionState;
+                currentActionState = newActionState;
                 break;
         }
     }
