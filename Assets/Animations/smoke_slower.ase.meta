@@ -1,0 +1,1386 @@
+fileFormatVersion: 2
+guid: 762e6ed8de2e86642ad1a1d1933c3875
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: smoke_slower_Frame_0
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1205
+      height: 883
+    spriteID: 14737ed12da924f4799218687d935275
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -394, y: -132}
+  - name: smoke_slower_Frame_1
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1217
+      y: 4
+      width: 1205
+      height: 883
+    spriteID: 7ba9cf013560d2945b94efb516dbe7b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 819, y: -132}
+  - name: smoke_slower_Frame_2
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2430
+      y: 4
+      width: 1205
+      height: 883
+    spriteID: 039a2502d74a6bb48b14027455b81387
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2032, y: -132}
+  - name: smoke_slower_Frame_3
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3643
+      y: 4
+      width: 1205
+      height: 883
+    spriteID: 9a3681d3b112ec641a710d1acff86824
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3245, y: -132}
+  - name: smoke_slower_Frame_4
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4856
+      y: 4
+      width: 1205
+      height: 883
+    spriteID: e9c05383ab0306243b38b2d31e548a84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4458, y: -132}
+  - name: smoke_slower_Frame_5
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6069
+      y: 4
+      width: 1205
+      height: 883
+    spriteID: 1070b681a9e148544a2d9fdebeb3b460
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5671, y: -132}
+  - name: smoke_slower_Frame_6
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 895
+      width: 1205
+      height: 883
+    spriteID: 349489ab94c62b54db5fb42b196ce1ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -394, y: 759}
+  - name: smoke_slower_Frame_7
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1217
+      y: 895
+      width: 1205
+      height: 883
+    spriteID: 2b105e2d74a3b934296f8543bceac298
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 819, y: 759}
+  - name: smoke_slower_Frame_8
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2430
+      y: 895
+      width: 1205
+      height: 883
+    spriteID: a787418a8bb901343ac7be966fb03d3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2032, y: 759}
+  - name: smoke_slower_Frame_9
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3643
+      y: 895
+      width: 1205
+      height: 883
+    spriteID: 8c16dd87dae13b0458869bde67660465
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3245, y: 759}
+  - name: smoke_slower_Frame_10
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4856
+      y: 895
+      width: 1205
+      height: 883
+    spriteID: bb4c6c27fbbe4664c81d9394c9144c00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4458, y: 759}
+  - name: smoke_slower_Frame_11
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6069
+      y: 895
+      width: 1205
+      height: 883
+    spriteID: d79d6c0c511aca5438392c245bbd7e1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5671, y: 759}
+  - name: smoke_slower_Frame_12
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1786
+      width: 1205
+      height: 883
+    spriteID: 6616c38cbeaef3a409677741358b33c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -394, y: 1650}
+  - name: smoke_slower_Frame_13
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1217
+      y: 1786
+      width: 1205
+      height: 883
+    spriteID: adb853c922e457447868b91cbcf64236
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 819, y: 1650}
+  - name: smoke_slower_Frame_14
+    originalName: 
+    pivot: {x: 0.5195021, y: -0.15402038}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2430
+      y: 1786
+      width: 1205
+      height: 883
+    spriteID: bbdbe706ce32bd646ab6138e912c0121
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2032, y: 1650}
+  - name: smoke_slower_Frame_15
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3643
+      y: 1786
+      width: 1218
+      height: 870
+    spriteID: fbf510dae6fe0934fb0aed0b3e7c9b0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3229, y: 1651}
+  - name: smoke_slower_Frame_16
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4869
+      y: 1786
+      width: 1218
+      height: 870
+    spriteID: 5fc0f2ebfb6bd00438b78599209c4fdc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4455, y: 1651}
+  - name: smoke_slower_Frame_17
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6095
+      y: 1786
+      width: 1218
+      height: 870
+    spriteID: baf7768c895a7d64aae13728f3de3d53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5681, y: 1651}
+  - name: smoke_slower_Frame_18
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2677
+      width: 1218
+      height: 870
+    spriteID: 2260115374de5b24caa98829f001eabd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -410, y: 2542}
+  - name: smoke_slower_Frame_19
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1230
+      y: 2677
+      width: 1218
+      height: 870
+    spriteID: bcf8f6ef3ca0b784a904b4c4e678820d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 816, y: 2542}
+  - name: smoke_slower_Frame_20
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2456
+      y: 2677
+      width: 1218
+      height: 870
+    spriteID: 1152a250bc99a544da6adc9c570abfb4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2042, y: 2542}
+  - name: smoke_slower_Frame_21
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3682
+      y: 2677
+      width: 1218
+      height: 870
+    spriteID: 7ef3153920ad4134c8ec1a48367d13a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3268, y: 2542}
+  - name: smoke_slower_Frame_22
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4908
+      y: 2677
+      width: 1218
+      height: 870
+    spriteID: ee4d4ff34831ab7469b498d6ef063191
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4494, y: 2542}
+  - name: smoke_slower_Frame_23
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6134
+      y: 2677
+      width: 1218
+      height: 870
+    spriteID: 18fd10cbc5b643d4a96f8a6a839ff0a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5720, y: 2542}
+  - name: smoke_slower_Frame_24
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3555
+      width: 1218
+      height: 870
+    spriteID: 8ed91f9280da14d42bfbc565f74acad1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -410, y: 3420}
+  - name: smoke_slower_Frame_25
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1230
+      y: 3555
+      width: 1218
+      height: 870
+    spriteID: c3b9058a4664d5c4d85f544214768212
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 816, y: 3420}
+  - name: smoke_slower_Frame_26
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2456
+      y: 3555
+      width: 1218
+      height: 870
+    spriteID: 28908515e9bc5294e91ea00d8e5a5975
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2042, y: 3420}
+  - name: smoke_slower_Frame_27
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3682
+      y: 3555
+      width: 1218
+      height: 870
+    spriteID: 59b2e15b37062b540ac490f4e034de27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3268, y: 3420}
+  - name: smoke_slower_Frame_28
+    originalName: 
+    pivot: {x: 0.500821, y: -0.15517241}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4908
+      y: 3555
+      width: 1218
+      height: 870
+    spriteID: b941a1e50f679fe4ab53fd656eb27db2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4494, y: 3420}
+  - name: smoke_slower_Frame_29
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6134
+      y: 3555
+      width: 1153
+      height: 849
+    spriteID: fc5b426997b46a64aa1e796530c61fce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5618, y: 3401}
+  - name: smoke_slower_Frame_30
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4433
+      width: 1153
+      height: 849
+    spriteID: 88104fe44620cf14087a1ade0942abe4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -512, y: 4279}
+  - name: smoke_slower_Frame_31
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1165
+      y: 4433
+      width: 1153
+      height: 849
+    spriteID: afad8748e2030774c832eb6625ce648e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 649, y: 4279}
+  - name: smoke_slower_Frame_32
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2326
+      y: 4433
+      width: 1153
+      height: 849
+    spriteID: 50907bbc58bb2344fa1a78f4aef3ca9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1810, y: 4279}
+  - name: smoke_slower_Frame_33
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3487
+      y: 4433
+      width: 1153
+      height: 849
+    spriteID: 262703a50ea3a2b4d99c26db66e815ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2971, y: 4279}
+  - name: smoke_slower_Frame_34
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4648
+      y: 4433
+      width: 1153
+      height: 849
+    spriteID: c28da40648743d24894c5c78da95123a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4132, y: 4279}
+  - name: smoke_slower_Frame_35
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5809
+      y: 4433
+      width: 1153
+      height: 849
+    spriteID: a3f077f80e3e5cd4d8829576b5c870c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5293, y: 4279}
+  - name: smoke_slower_Frame_36
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 6970
+      y: 4433
+      width: 1153
+      height: 849
+    spriteID: 7193d4664b102e643925054502e6da19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6454, y: 4279}
+  - name: smoke_slower_Frame_37
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5290
+      width: 1153
+      height: 849
+    spriteID: f22c29df63a47cd49b39553460c0cca1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -512, y: 5136}
+  - name: smoke_slower_Frame_38
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1165
+      y: 5290
+      width: 1153
+      height: 849
+    spriteID: 6995b3e2da3ec694ead54b376f5cad20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 649, y: 5136}
+  - name: smoke_slower_Frame_39
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2326
+      y: 5290
+      width: 1153
+      height: 849
+    spriteID: 4ff6231778941d54f94a3db7b37a6bf5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1810, y: 5136}
+  - name: smoke_slower_Frame_40
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3487
+      y: 5290
+      width: 1153
+      height: 849
+    spriteID: 10cafcdaedb6d6641a8be4a7a7708046
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2971, y: 5136}
+  - name: smoke_slower_Frame_41
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4648
+      y: 5290
+      width: 1153
+      height: 849
+    spriteID: f81a7293a448fd04fb8eeebf7e3acd17
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4132, y: 5136}
+  - name: smoke_slower_Frame_42
+    originalName: 
+    pivot: {x: 0.4405898, y: -0.18138988}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 5809
+      y: 5290
+      width: 1153
+      height: 849
+    spriteID: 269e6860d28744543ba0fc8ea8402f0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5293, y: 5136}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -639523946
+    name: smoke_slower
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: smoke_slower_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 14737ed12da924f4799218687d935275
+    - name: smoke_slower_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 7ba9cf013560d2945b94efb516dbe7b6
+    - name: smoke_slower_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 039a2502d74a6bb48b14027455b81387
+    - name: smoke_slower_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 9a3681d3b112ec641a710d1acff86824
+    - name: smoke_slower_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: e9c05383ab0306243b38b2d31e548a84
+    - name: smoke_slower_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 1070b681a9e148544a2d9fdebeb3b460
+    - name: smoke_slower_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 349489ab94c62b54db5fb42b196ce1ac
+    - name: smoke_slower_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 2b105e2d74a3b934296f8543bceac298
+    - name: smoke_slower_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: a787418a8bb901343ac7be966fb03d3a
+    - name: smoke_slower_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 8c16dd87dae13b0458869bde67660465
+    - name: smoke_slower_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: bb4c6c27fbbe4664c81d9394c9144c00
+    - name: smoke_slower_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: d79d6c0c511aca5438392c245bbd7e1d
+    - name: smoke_slower_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 6616c38cbeaef3a409677741358b33c9
+    - name: smoke_slower_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: adb853c922e457447868b91cbcf64236
+    - name: smoke_slower_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: bbdbe706ce32bd646ab6138e912c0121
+    - name: smoke_slower_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: fbf510dae6fe0934fb0aed0b3e7c9b0b
+    - name: smoke_slower_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 5fc0f2ebfb6bd00438b78599209c4fdc
+    - name: smoke_slower_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: baf7768c895a7d64aae13728f3de3d53
+    - name: smoke_slower_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 2260115374de5b24caa98829f001eabd
+    - name: smoke_slower_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: bcf8f6ef3ca0b784a904b4c4e678820d
+    - name: smoke_slower_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 1152a250bc99a544da6adc9c570abfb4
+    - name: smoke_slower_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 7ef3153920ad4134c8ec1a48367d13a3
+    - name: smoke_slower_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: ee4d4ff34831ab7469b498d6ef063191
+    - name: smoke_slower_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 18fd10cbc5b643d4a96f8a6a839ff0a1
+    - name: smoke_slower_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 8ed91f9280da14d42bfbc565f74acad1
+    - name: smoke_slower_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: c3b9058a4664d5c4d85f544214768212
+    - name: smoke_slower_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 28908515e9bc5294e91ea00d8e5a5975
+    - name: smoke_slower_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 59b2e15b37062b540ac490f4e034de27
+    - name: smoke_slower_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: b941a1e50f679fe4ab53fd656eb27db2
+    - name: smoke_slower_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: fc5b426997b46a64aa1e796530c61fce
+    - name: smoke_slower_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 88104fe44620cf14087a1ade0942abe4
+    - name: smoke_slower_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: afad8748e2030774c832eb6625ce648e
+    - name: smoke_slower_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 50907bbc58bb2344fa1a78f4aef3ca9f
+    - name: smoke_slower_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 262703a50ea3a2b4d99c26db66e815ea
+    - name: smoke_slower_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: c28da40648743d24894c5c78da95123a
+    - name: smoke_slower_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: a3f077f80e3e5cd4d8829576b5c870c9
+    - name: smoke_slower_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 7193d4664b102e643925054502e6da19
+    - name: smoke_slower_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: f22c29df63a47cd49b39553460c0cca1
+    - name: smoke_slower_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 6995b3e2da3ec694ead54b376f5cad20
+    - name: smoke_slower_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 4ff6231778941d54f94a3db7b37a6bf5
+    - name: smoke_slower_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 10cafcdaedb6d6641a8be4a7a7708046
+    - name: smoke_slower_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: f81a7293a448fd04fb8eeebf7e3acd17
+    - name: smoke_slower_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 2048
+        height: 1080
+      spriteId: 269e6860d28744543ba0fc8ea8402f0d
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 2048, y: 1080}
