@@ -57,12 +57,12 @@ public class Idle : AttackState
             }
             if(character.stateMachine.currentMovementState.GetType().Name == "Crouching")
             {
-                //if(character.gameObject.name == "PianoMan") character.Attack("pianoKnee");
+                if(character.gameObject.name == "PianoMan") character.Attack("pianoCrouchPunch");
                 if(character.gameObject.name == "GuitarLady") character.Attack("guitarCrouchPunch");
             }
             if(character.stateMachine.currentMovementState.GetType().Name == "Airborne")
             {
-                //if(character.gameObject.name == "PianoMan") character.Attack("pianoKnee");
+                if(character.gameObject.name == "PianoMan") character.Attack("pianoAerial");
                 if(character.gameObject.name == "GuitarLady") character.Attack("guitarAerial");
             }
         }

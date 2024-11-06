@@ -1578,7 +1578,7 @@ Transform:
   m_GameObject: {fileID: 318492263}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7049999, y: 0.33375365, z: -13}
+  m_LocalPosition: {x: -0.7449999, y: -0.4862463, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2196,7 +2196,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 38.78789
+  m_FocalLength: 31.91135
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -2211,7 +2211,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 34.381508
+  field of view: 41.216713
   orthographic: 0
   orthographic size: 9.544478
   m_Depth: -1
@@ -2238,7 +2238,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7049999, y: 0.3337537, z: -13}
+  m_LocalPosition: {x: -0.7449999, y: -0.4862463, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2328,7 +2328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!70 &532353743
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2500,6 +2500,7 @@ MonoBehaviour:
   isRunning: 0
   inDashBack: 0
   health: 10
+  dead: 0
   blocking: 0
   isFacingLeft: 0
   dashOnCooldown: 0
@@ -6522,6 +6523,7 @@ MonoBehaviour:
   isRunning: 0
   inDashBack: 0
   health: 10
+  dead: 0
   blocking: 0
   isFacingLeft: 0
   dashOnCooldown: 0
@@ -7857,10 +7859,10 @@ MonoBehaviour:
   m_RotationMode: 1
   m_UpdateMethod: 2
   m_Targets:
-  - target: {fileID: 1346749659}
+  - target: {fileID: 7286693800523892425}
     weight: 1
     radius: 1
-  - target: {fileID: 532353746}
+  - target: {fileID: 1346749659}
     weight: 1
     radius: 1
 --- !u!4 &1799051498
@@ -7872,7 +7874,7 @@ Transform:
   m_GameObject: {fileID: 1799051496}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1314406, y: -0.5012102, z: 0}
+  m_LocalPosition: {x: -1.1941351, y: -1.2199999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9949,11 +9951,15 @@ PrefabInstance:
     - target: {fileID: 6216959920464743924, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: oppponent
       value: 
-      objectReference: {fileID: 532353742}
+      objectReference: {fileID: 1173465104035228840}
     - target: {fileID: 6216959920464743924, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1661628353}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_ActionEvents.Array.size
       value: 6
@@ -9996,7 +10002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9089874994840205989, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.16
+      value: 3.67
       objectReference: {fileID: 0}
     - target: {fileID: 9089874994840205989, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10078,7 +10084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2414402567758569638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10224,7 +10230,7 @@ MonoBehaviour:
     m_Bits: 64
   empty: {fileID: 5110056302384140412, guid: 16fb077a63d82f34b8c61fb49f2ff621, type: 3}
   animator: {fileID: 3038220618340603893}
-  oppponent: {fileID: 532353742}
+  oppponent: {fileID: 1346749652}
   playerCanvas: {fileID: 5854669455027049635}
   maxWalkSpeed: 2.5
   maxRunSpeed: 5
@@ -10235,7 +10241,7 @@ MonoBehaviour:
   aerialDriftAcceleration: 5
   maxAerialDriftSpeed: 5
   jumpSquatFrames: 10
-  groundCheckRadius: 0.5
+  groundCheckRadius: 0.2
   hitAnim: {fileID: 766807044}
   playerCollider: {fileID: 7143569176853034182}
   moveInput: {x: 0, y: 0}
@@ -10246,6 +10252,7 @@ MonoBehaviour:
   isRunning: 0
   inDashBack: 0
   health: 20
+  dead: 0
   blocking: 0
   isFacingLeft: 0
   dashOnCooldown: 0
@@ -10613,6 +10620,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0de6bc13-c4cf-4a12-aa2b-2997da686fbd
     m_ActionName: Debug/Move[/DualShock4GamepadHID/leftStick]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5583659080855531928}
+        m_TargetAssemblyTypeName: PianoMan, Assembly-CSharp
+        m_MethodName: LeftTriggerPress
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e5eb7c23-9305-4624-aa38-23157b87b4a1
+    m_ActionName: Debug/LeftTrigger[/DualShock4GamepadHID/leftTrigger]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Debug
