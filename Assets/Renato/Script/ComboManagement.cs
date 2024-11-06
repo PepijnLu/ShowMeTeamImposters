@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class ComboManagement 
 {
     [SerializeField] private KeyCode key; // P
@@ -15,65 +16,142 @@ public class ComboManagement
     [SerializeField] private Transform instantiatePoint;
 
 
-    public void CheckComboKeyPress(PlayerManager playerManager, int damage)
+    public void CheckComboKeyPress(PlayerUIManagement playerUIManagement, int HP, float layerHP, int damage)
     {
-        if (Input.GetKeyDown(key))
+        if (lastPressTime < 0)
         {
-            if (lastPressTime < 0)
+            // First press initializes the timer and starts the combo
+            lastPressTime = Time.time;
+            TakeDamage(playerUIManagement, HP, layerHP, damage);
+            return; // Exit to avoid further checks on first press
+        }
+        
+        // Calculate time since last successful press
+        float timeSinceLastPress = Time.time - lastPressTime;
+
+        if (Mathf.Abs(timeSinceLastPress - requiredTimeFrame) <= tolerance)
+        {
+            // Successful timing: increase hit counter
+            hitCounter++;
+            lastPressTime = Time.time;
+            Debug.Log($"Successful rhythm hit! Hit counter: {hitCounter}");
+
+            // Increase damage output
+            TakeDamage(playerUIManagement, HP, layerHP, damage);
+
+            // Check if we should increase combo count
+            if (hitCounter == 2)
             {
-                // First press initializes the timer and starts the combo
-                lastPressTime = Time.time;
-                playerManager.TakeDamage(damage);
-                return; // Exit to avoid further checks on first press
-            }
-            
-            // Calculate time since last successful press
-            float timeSinceLastPress = Time.time - lastPressTime;
+                comboCounter++; // Increment combo count
+                hitCounter = 0; // Reset hit counter after two successful hits
 
-            if (Mathf.Abs(timeSinceLastPress - requiredTimeFrame) <= tolerance)
-            {
-                // Successful timing: increase hit counter
-                hitCounter++;
-                lastPressTime = Time.time;
-                Debug.Log($"Successful rhythm hit! Hit counter: {hitCounter}");
-
-                // Increase damage output
-                playerManager.TakeDamage(damage);
-
-                // Check if we should increase combo count
-                if (hitCounter == 2)
+                // Spawn combo note for every two combo hits
+                if (comboCounter % 2 == 0)
                 {
-                    comboCounter++; // Increment combo count
-                    hitCounter = 0; // Reset hit counter after two successful hits
+                    playerUIManagement.InstantiateComboUIElement(ref comboCounter, ref lastPressTime);
 
-                    // Spawn combo note for every two combo hits
-                    if (comboCounter % 2 == 0)
+                    // Check for activating a power note
+                    comboNoteCounter++; // Increment combo note counter
+
+                    if (comboNoteCounter % 2 == 0)
                     {
-                        playerManager.playerUIManagement.InstantiateComboUIElement(ref comboCounter, ref lastPressTime);
-
-                        // Check for activating a power note
-                        comboNoteCounter++; // Increment combo note counter
-
-                        if (comboNoteCounter % 2 == 0)
-                        {
-                            playerManager.playerUIManagement.UpdateComboBar(ref playerManager.playerUIManagement.powerNoteBarIndex, ref playerManager.playerUIManagement.powerNoteIndex, playerManager.playerUIManagement.totalPowerNotesActiveAtOnce, null, ref comboCounter, ref lastPressTime);
-                        }
+                        playerUIManagement.UpdateComboBar(ref playerUIManagement.powerNoteBarIndex, ref playerUIManagement.powerNoteIndex, playerUIManagement.totalPowerNotesActiveAtOnce, null, ref comboCounter, ref lastPressTime);
                     }
                 }
             }
-            else
-            {
-                // Reset if timing fails
-                playerManager.playerUIManagement.ResetComboSystem(ref comboCounter, ref lastPressTime);
-            }
         }
-
+        else
+        {
+            // Reset if timing fails
+            playerUIManagement.ResetComboSystem(ref comboCounter, ref lastPressTime);
+        }
+        
         // Reset if too much time has passed without a successful hit
         if (lastPressTime >= 0 && Time.time - lastPressTime > requiredTimeFrame + tolerance + 2f)
         {
-            playerManager.playerUIManagement.ResetComboSystem(ref comboCounter, ref lastPressTime);
+            playerUIManagement.ResetComboSystem(ref comboCounter, ref lastPressTime);
         }
     }
+
+    public void TakeDamage(PlayerUIManagement playerUIManagement, int HP, float layerHP, int incomingDamage) 
+    {
+        HP -= incomingDamage;
+        HP = Mathf.Max(HP, 0);
+
+        layerHP -= incomingDamage;
+        layerHP = MathF.Max(layerHP, 0);
+
+        // Debug.Log($"Layer HP: {layerHP} + Player HP: {HP}");
+
+        playerUIManagement.UpdateHealthBar(HP, ref layerHP);
+
+        if(HP <= 0) 
+        {
+            HP = 0;
+            Debug.Log("Death...");
+            // RestartPlayMode();
+        }
+    }
+
+    // public void CheckComboKeyPress(PlayerManager playerManager, int damage)
+    // {
+    //     if (Input.GetKeyDown(key))
+    //     {
+    //         if (lastPressTime < 0)
+    //         {
+    //             // First press initializes the timer and starts the combo
+    //             lastPressTime = Time.time;
+    //             playerManager.TakeDamage(damage);
+    //             return; // Exit to avoid further checks on first press
+    //         }
+            
+    //         // Calculate time since last successful press
+    //         float timeSinceLastPress = Time.time - lastPressTime;
+
+    //         if (Mathf.Abs(timeSinceLastPress - requiredTimeFrame) <= tolerance)
+    //         {
+    //             // Successful timing: increase hit counter
+    //             hitCounter++;
+    //             lastPressTime = Time.time;
+    //             Debug.Log($"Successful rhythm hit! Hit counter: {hitCounter}");
+
+    //             // Increase damage output
+    //             playerManager.TakeDamage(damage);
+
+    //             // Check if we should increase combo count
+    //             if (hitCounter == 2)
+    //             {
+    //                 comboCounter++; // Increment combo count
+    //                 hitCounter = 0; // Reset hit counter after two successful hits
+
+    //                 // Spawn combo note for every two combo hits
+    //                 if (comboCounter % 2 == 0)
+    //                 {
+    //                     playerManager.playerUIManagement.InstantiateComboUIElement(ref comboCounter, ref lastPressTime);
+
+    //                     // Check for activating a power note
+    //                     comboNoteCounter++; // Increment combo note counter
+
+    //                     if (comboNoteCounter % 2 == 0)
+    //                     {
+    //                         playerManager.playerUIManagement.UpdateComboBar(ref playerManager.playerUIManagement.powerNoteBarIndex, ref playerManager.playerUIManagement.powerNoteIndex, playerManager.playerUIManagement.totalPowerNotesActiveAtOnce, null, ref comboCounter, ref lastPressTime);
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         else
+    //         {
+    //             // Reset if timing fails
+    //             playerManager.playerUIManagement.ResetComboSystem(ref comboCounter, ref lastPressTime);
+    //         }
+    //     }
+
+    //     // Reset if too much time has passed without a successful hit
+    //     if (lastPressTime >= 0 && Time.time - lastPressTime > requiredTimeFrame + tolerance + 2f)
+    //     {
+    //         playerManager.playerUIManagement.ResetComboSystem(ref comboCounter, ref lastPressTime);
+    //     }
+    // }
 
     // public void CheckComboKeyPress(PlayerManager playerManager, int damage)
     // {

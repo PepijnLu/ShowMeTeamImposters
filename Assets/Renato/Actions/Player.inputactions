@@ -1,0 +1,46 @@
+{
+    "name": "Player",
+    "maps": [
+        {
+            "name": "Attack",
+            "id": "a34b8a53-ce41-438d-a266-7c7537e3f762",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "71b5fcd5-f382-4053-ad64-2717fad9824b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5e1b2c96-a569-4669-bae9-865badde1165",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

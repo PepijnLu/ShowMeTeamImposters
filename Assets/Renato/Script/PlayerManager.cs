@@ -1,6 +1,6 @@
-using System;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -19,30 +19,39 @@ public class PlayerManager : MonoBehaviour
         playerUIManagement.InstantiatePlayerUI(UIManager.instance.UIPrefab, UIManager.instance.player1_UI);
     }
 
-    void Update()
+    // void Update()
+    // {
+    //     comboManagement.CheckComboKeyPress(playerUIManagement, HP, layerHP, damage);
+    // }
+
+    public void Attack(InputAction.CallbackContext ctx) 
     {
-        comboManagement.CheckComboKeyPress(this, damage);
-    }
-
-    public void TakeDamage(int incomingDamage) 
-    {
-        HP -= incomingDamage;
-        HP = Mathf.Max(HP, 0);
-
-        layerHP -= incomingDamage;
-        layerHP = MathF.Max(layerHP, 0);
-
-        // Debug.Log($"Layer HP: {layerHP} + Player HP: {HP}");
-
-        playerUIManagement.UpdateHealthBar(HP, ref layerHP);
-
-        if(HP <= 0) 
+        if(ctx.performed) 
         {
-            HP = 0;
-            Debug.Log("Death...");
-            // RestartPlayMode();
+            Debug.Log("Input Detected");
+            comboManagement.CheckComboKeyPress(playerUIManagement, HP, layerHP, damage);
         }
-    }
+    }    
+
+    // public void DoDamage(int incomingDamage) 
+    // {
+    //     HP -= incomingDamage;
+    //     HP = Mathf.Max(HP, 0);
+
+    //     layerHP -= incomingDamage;
+    //     layerHP = MathF.Max(layerHP, 0);
+
+    //     // Debug.Log($"Layer HP: {layerHP} + Player HP: {HP}");
+
+    //     playerUIManagement.UpdateHealthBar(HP, ref layerHP);
+
+    //     if(HP <= 0) 
+    //     {
+    //         HP = 0;
+    //         Debug.Log("Death...");
+    //         // RestartPlayMode();
+    //     }
+    // }
 
     private void RestartPlayMode() 
     {
