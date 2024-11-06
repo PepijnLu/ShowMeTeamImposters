@@ -48,7 +48,24 @@ public class Idle : AttackState
     public override void APress(InputAction.CallbackContext context)
     {
         Debug.Log("Idle state A press");
-        if(!character.inHitStun) character.Attack("pianoKnee");
+        if(!character.inHitStun) 
+        {
+            if(character.stateMachine.currentMovementState.GetType().Name == "Grounded")
+            {
+                if(character.gameObject.name == "PianoMan") character.Attack("pianoKnee");
+                if(character.gameObject.name == "GuitarLady") character.Attack("guitarPunch1");
+            }
+            if(character.stateMachine.currentMovementState.GetType().Name == "Crouching")
+            {
+                //if(character.gameObject.name == "PianoMan") character.Attack("pianoKnee");
+                if(character.gameObject.name == "GuitarLady") character.Attack("guitarCrouchPunch");
+            }
+            if(character.stateMachine.currentMovementState.GetType().Name == "Airborne")
+            {
+                //if(character.gameObject.name == "PianoMan") character.Attack("pianoKnee");
+                if(character.gameObject.name == "GuitarLady") character.Attack("guitarAerial");
+            }
+        }
     }
 
     public override void YPress(InputAction.CallbackContext context)
@@ -64,8 +81,9 @@ public class Startup : AttackState
     {
         if(character.activeMove.moveName != "nullMove" && !character.moveBuffered)
         {
-            Debug.Log("Startup A Press");
-            if(character.activeMove.moveName == "pianoKnee") Debug.Log("Set Buffered Move To: " + character.bufferedMove); character.bufferedMove = character.attackMoves["pianoKick"]; character.moveBuffered = true;
+            Debug.Log("Atm active move: " + character.activeMove.moveName);
+            if(character.activeMove.moveName == "pianoKnee") character.bufferedMove = character.attackMoves["pianoKick"]; character.moveBuffered = true;
+            if(character.activeMove.moveName == "guitarPunch1") character.bufferedMove = character.attackMoves["guitarPunch2"]; character.moveBuffered = true;
         }
     }
 }
@@ -77,7 +95,8 @@ public class Active : AttackState
         if(character.activeMove.moveName != "nullMove" && !character.moveBuffered)
         {
             Debug.Log("Startup A Press");
-            if(character.activeMove.moveName == "pianoKnee") Debug.Log("Set Buffered Move To: " + character.bufferedMove); character.bufferedMove = character.attackMoves["pianoKick"]; character.moveBuffered = true;
+            if(character.activeMove.moveName == "pianoKnee") character.bufferedMove = character.attackMoves["pianoKick"]; character.moveBuffered = true;
+            if(character.activeMove.moveName == "guitarPunch1") character.bufferedMove = character.attackMoves["guitarPunch2"]; character.moveBuffered = true;
         }
     }
 }
@@ -89,7 +108,8 @@ public class Recovery : AttackState
         if(character.activeMove.moveName != "nullMove" && !character.moveBuffered)
         {
             Debug.Log("Startup A Press");
-            if(character.activeMove.moveName == "pianoKnee") Debug.Log("Set Buffered Move To: " + character.bufferedMove); character.bufferedMove = character.attackMoves["pianoKick"]; character.moveBuffered = true;
+            if(character.activeMove.moveName == "pianoKnee") character.bufferedMove = character.attackMoves["pianoKick"]; character.moveBuffered = true;
+            if(character.activeMove.moveName == "guitarPunch1") character.bufferedMove = character.attackMoves["guitarPunch2"]; character.moveBuffered = true;
         }
     }  
 }

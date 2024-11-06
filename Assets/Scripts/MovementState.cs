@@ -42,6 +42,12 @@ public class MovementState : AState
         Debug.Log("X button pressed");
     }
 
+    public virtual void LeftTriggerPress(InputAction.CallbackContext context, bool pressed)
+    {
+        if(pressed) character.blocking = true;
+        else character.blocking = false;
+    }
+
     public virtual void Move()
     {
         moveInput = character.moveInput;
@@ -133,6 +139,15 @@ public class Grounded : MovementState
     {
         Jump();
     }
+
+    public override void LeftTriggerPress(InputAction.CallbackContext context, bool pressed)
+    {
+        base.LeftTriggerPress(context, pressed);
+        if(pressed)
+        {
+            character.stateMachine.SetState("MovementState", new Blocking());
+        }
+    }
     public override void Move()
     {
         if(character.inHitStun) return;
@@ -151,6 +166,7 @@ public class Grounded : MovementState
                 Debug.Log("1Movement: Facing left, running left");
 
                 if(!character.isRunning) character.stateMachine.SetState("ActionState", new DashForward());
+                else if(character.stateMachine.currentActionState.GetType().Name != "Running") character.stateMachine.SetState("ActionState", new Running());
                 character.isRunning = true;
                 //requiredForce = -(character.maxRunSpeed - rb.velocity.x) * rb.mass;
                 requiredForce = -character.dashBackSpeed;
@@ -214,6 +230,7 @@ public class Grounded : MovementState
 
                 Debug.Log("character.isRunning: " + character.isRunning);
                 if(!character.isRunning) character.stateMachine.SetState("ActionState", new DashForward());
+                else if(character.stateMachine.currentActionState.GetType().Name != "Running") character.stateMachine.SetState("ActionState", new Running());
                 character.isRunning = true;
                 //requiredForce = (character.maxRunSpeed - rb.velocity.x) * rb.mass;
                 requiredForce = character.dashBackSpeed;
@@ -364,6 +381,7 @@ public class Crouching : MovementState
     {
         base.StateStart(runner);
         Debug.Log("Switched to crouching");
+        character.animator.ResetTrigger("CrouchOut");
         character.animator.SetTrigger("CrouchIn");
         character.animator.SetBool("Crouch", true);
         //character.playerCollider.size = new Vector2(1, 0.5f);
@@ -387,6 +405,35 @@ public class Crouching : MovementState
         character.animator.SetTrigger("CrouchOut");
         //character.playerCollider.size = character.originalSize;
         //character.playerCollider.transform.localScale = character.originalSize;
+    }
+}
+
+public class Blocking : MovementState
+{
+    public override void StateStart(GameObject runner)
+    {
+        base.StateStart(runner);
+        Debug.Log("Switched to blocking");
+        character.animator.ResetTrigger("BlockOut");
+        character.animator.SetTrigger("BlockIn");
+    }
+    public override void StateFixedUpdate(GameObject runner)
+    {
+        base.StateFixedUpdate(runner);
+        if(!character.blocking)
+        {
+            character.stateMachine.SetState("MovementState", new Grounded());
+        }
+    }
+
+    public override void LeftTriggerPress(InputAction.CallbackContext context, bool pressed)
+    {
+        base.LeftTriggerPress(context, pressed);
+    }
+
+    public override void StateComplete(GameObject runner)
+    {
+        character.animator.SetTrigger("BlockOut");
     }
 }
 

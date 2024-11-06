@@ -2500,6 +2500,7 @@ MonoBehaviour:
   isRunning: 0
   inDashBack: 0
   health: 10
+  blocking: 0
   isFacingLeft: 0
   dashOnCooldown: 0
   jumpOnCooldown: 0
@@ -2507,6 +2508,8 @@ MonoBehaviour:
   walkAnimationTriggered: 0
   walkBackAnimationTriggered: 0
   crouchOnCooldown: 0
+  moveBuffered: 0
+  firstAerialLadyHit: 0
 --- !u!1 &594108596
 GameObject:
   m_ObjectHideFlags: 0
@@ -6254,6 +6257,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 824946021279027396, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
   m_PrefabInstance: {fileID: 593747129134028988}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1346749654 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6216959920464743924, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+  m_PrefabInstance: {fileID: 593747129134028988}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346749652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546d52925a9059a49be72ac3a60b2532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1346749659 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9089874994840205989, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+  m_PrefabInstance: {fileID: 593747129134028988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1371698336
 GameObject:
   m_ObjectHideFlags: 0
@@ -6503,6 +6522,7 @@ MonoBehaviour:
   isRunning: 0
   inDashBack: 0
   health: 10
+  blocking: 0
   isFacingLeft: 0
   dashOnCooldown: 0
   jumpOnCooldown: 0
@@ -6510,6 +6530,8 @@ MonoBehaviour:
   walkAnimationTriggered: 0
   walkBackAnimationTriggered: 0
   crouchOnCooldown: 0
+  moveBuffered: 0
+  firstAerialLadyHit: 0
 --- !u!70 &1371698341
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -7835,7 +7857,7 @@ MonoBehaviour:
   m_RotationMode: 1
   m_UpdateMethod: 2
   m_Targets:
-  - target: {fileID: 7286693800523892425}
+  - target: {fileID: 1346749659}
     weight: 1
     radius: 1
   - target: {fileID: 532353746}
@@ -9918,7 +9940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824946021279027396, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6216959920464743924, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: hitAnim
@@ -9932,6 +9954,46 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1661628353}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      value: e5eb7c23-9305-4624-aa38-23157b87b4a1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      value: Debug/LeftTrigger[/DualShock4GamepadHID/leftTrigger]
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1346749654}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LeftTriggerPress
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PianoMan, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9089874994840205989, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.16
@@ -10016,7 +10078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2414402567758569638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10184,6 +10246,7 @@ MonoBehaviour:
   isRunning: 0
   inDashBack: 0
   health: 20
+  blocking: 0
   isFacingLeft: 0
   dashOnCooldown: 0
   jumpOnCooldown: 0
@@ -10191,6 +10254,8 @@ MonoBehaviour:
   walkAnimationTriggered: 0
   walkBackAnimationTriggered: 0
   crouchOnCooldown: 0
+  moveBuffered: 0
+  firstAerialLadyHit: 0
 --- !u!212 &5661664022551838785
 SpriteRenderer:
   m_ObjectHideFlags: 0

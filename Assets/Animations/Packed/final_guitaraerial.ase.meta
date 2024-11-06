@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: 375e3ec8658630e4c889c343e2b74751
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: final_guitaraerial_Frame_0
+    originalName: 
+    pivot: {x: 0.49118045, y: -0.1703107}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 737
+      height: 869
+    spriteID: a16b413dec5b41443b7f8febb0692e11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -310, y: -136}
+  - name: final_guitaraerial_Frame_1
+    originalName: 
+    pivot: {x: 0.49118045, y: -0.1703107}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 881
+      width: 737
+      height: 869
+    spriteID: b9468fc694ddc5547877d971ca296c81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -310, y: 741}
+  - name: final_guitaraerial_Frame_2
+    originalName: 
+    pivot: {x: 0.49118045, y: -0.1703107}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1758
+      width: 737
+      height: 869
+    spriteID: c66d90ddfba04a14f98fafd354e9e991
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -310, y: 1618}
+  - name: final_guitaraerial_Frame_3
+    originalName: 
+    pivot: {x: 0.6254356, y: -0.095801935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2635
+      width: 574
+      height: 929
+    spriteID: 65fdb53c9b683644397fc5b5f8bee571
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -313, y: 2554}
+  - name: final_guitaraerial_Frame_4
+    originalName: 
+    pivot: {x: 0.6254356, y: -0.095801935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 749
+      y: 4
+      width: 574
+      height: 929
+    spriteID: ec4fa81b0120332429d95b682cc8851a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 432, y: -77}
+  - name: final_guitaraerial_Frame_5
+    originalName: 
+    pivot: {x: 0.6254356, y: -0.095801935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 749
+      y: 941
+      width: 574
+      height: 929
+    spriteID: 633412c2cf148684aa867169fa0fe1be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 432, y: 860}
+  - name: final_guitaraerial_Frame_6
+    originalName: 
+    pivot: {x: 0.70114946, y: -0.14382023}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 749
+      y: 1878
+      width: 522
+      height: 890
+    spriteID: 622624ae95d9bb648a920b1e05d5ac00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 439, y: 1758}
+  - name: final_guitaraerial_Frame_7
+    originalName: 
+    pivot: {x: 0.70114946, y: -0.14382023}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 749
+      y: 2776
+      width: 522
+      height: 890
+    spriteID: 7b3c5aece6d34c345a05cdb86d33dbf6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 439, y: 2656}
+  - name: final_guitaraerial_Frame_8
+    originalName: 
+    pivot: {x: 0.70114946, y: -0.14382023}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1331
+      y: 4
+      width: 522
+      height: 890
+    spriteID: ea12f2783e872e6418455e8d5a85354a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1021, y: -116}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1902048435
+    name: final_guitaraerial
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: final_guitaraerial_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: -248
+        y: 8
+        width: 1600
+        height: 1200
+      spriteId: a16b413dec5b41443b7f8febb0692e11
+    - name: final_guitaraerial_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: -248
+        y: 8
+        width: 1600
+        height: 1200
+      spriteId: b9468fc694ddc5547877d971ca296c81
+    - name: final_guitaraerial_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: -248
+        y: 8
+        width: 1600
+        height: 1200
+      spriteId: c66d90ddfba04a14f98fafd354e9e991
+    - name: final_guitaraerial_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: -248
+        y: 8
+        width: 1600
+        height: 1200
+      spriteId: 65fdb53c9b683644397fc5b5f8bee571
+    - name: final_guitaraerial_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: -248
+        y: 8
+        width: 1600
+        height: 1200
+      spriteId: ec4fa81b0120332429d95b682cc8851a
+    - name: final_guitaraerial_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: -248
+        y: 8
+        width: 1600
+        height: 1200
+      spriteId: 633412c2cf148684aa867169fa0fe1be
+    - name: final_guitaraerial_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: -248
+        y: 8
+        width: 1600
+        height: 1200
+      spriteId: 622624ae95d9bb648a920b1e05d5ac00
+    - name: final_guitaraerial_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: -248
+        y: 8
+        width: 1600
+        height: 1200
+      spriteId: 7b3c5aece6d34c345a05cdb86d33dbf6
+    - name: final_guitaraerial_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: -248
+        y: 8
+        width: 1600
+        height: 1200
+      spriteId: ea12f2783e872e6418455e8d5a85354a
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 856, y: 1200}

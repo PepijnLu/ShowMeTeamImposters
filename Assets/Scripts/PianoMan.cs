@@ -27,12 +27,12 @@ public class PianoMan : MonoBehaviour
     public float health;
     private bool readingInputs;
     private Rigidbody2D rb;
-    private AttackMove pianoKnee, pianoKick;
+    private AttackMove pianoKnee, pianoKick, guitarPunch1, guitarPunch2, guitarCrouchPunch, guitarAerial, guitarAerial2;
     public Dictionary<string, AttackMove> attackMoves = new();
     private Vector2 gizmoPos;
     private float gizmoSize;
     private int frameCountForGroundCheck;
-    public bool isFacingLeft, dashOnCooldown, jumpOnCooldown, dashedBackOnInput, walkAnimationTriggered, walkBackAnimationTriggered, crouchOnCooldown, moveBuffered;
+    public bool dead, blocking, isFacingLeft, dashOnCooldown, jumpOnCooldown, dashedBackOnInput, walkAnimationTriggered, walkBackAnimationTriggered, crouchOnCooldown, moveBuffered, firstAerialLadyHit;
     public AttackMove activeMove, bufferedMove, nullMove;
 
     void Start()
@@ -67,6 +67,9 @@ public class PianoMan : MonoBehaviour
         if(health <= 0)
         {
             health = 0;
+            animator.SetBool("Dead", true);
+            dead = true;
+            readingInputs = false;
             //Die logic
         }
     }
@@ -142,6 +145,12 @@ public class PianoMan : MonoBehaviour
         if (context.performed && readingInputs) stateMachine.XPress(context);
     }
 
+    public void LeftTriggerPress(InputAction.CallbackContext context)
+    {
+        if (context.performed && readingInputs) stateMachine.LeftTriggerPress(context, true);
+        if (context.canceled && readingInputs) stateMachine.LeftTriggerPress(context, false);
+    }
+
     public void OnMove(InputAction.CallbackContext context)
     {
         if (context.performed && readingInputs)
@@ -170,6 +179,11 @@ public class PianoMan : MonoBehaviour
         movePos.transform.SetParent(gameObject.transform);
 
         //startup logic
+        if(moveName == "guitarAerial") 
+        {
+            Debug.Log("Aerial kick 2 buffered");
+            bufferedMove = attackMoves["guitarAerial2"];
+        }
         //animator.SetTrigger("Kick");
         activeMove = attackMoves[moveName];
 
@@ -185,6 +199,7 @@ public class PianoMan : MonoBehaviour
 
         //become active logic
         stateMachine.SetState("AttackState", new Active());
+        bool attackHit = false;
         for(int i = 0; i < activeFrames; i++) 
         {
             //Check for collision
@@ -202,7 +217,8 @@ public class PianoMan : MonoBehaviour
                     {
                         if ((!hitCharacters.Contains(hitCollider.gameObject.name) || multiHit) && (hitCollider.gameObject.name != gameObject.name))
                         {
-                            StartCoroutine(HitCharacter(movePos.transform.position, hitCollider.gameObject, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames));
+                            attackHit = true;
+                            StartCoroutine(HitCharacter(moveName, movePos.transform.position, hitCollider.gameObject, damage, launchAngle, launchStrength, hitstunFrames, hitstopFrames));
                             hitCharacters.Add(hitCollider.gameObject.name);
                             Debug.Log("111" + hitCharacters[0]);
                         }
@@ -240,10 +256,10 @@ public class PianoMan : MonoBehaviour
         yield return null;
     }
 
-    IEnumerator HitCharacter(Vector2 position, GameObject character, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames)
+    IEnumerator HitCharacter(string moveName, Vector2 position, GameObject character, float damage, Vector2 launchAngle, float launchStrength, float hitstunFrames, float hitstopFrames)
     {
         GameManager.instance.snare.Play();
-        Debug.Log($" HitDetection: {character.name} hit");
+        Debug.Log($" HitDetection: {character.name} hit with move {moveName}");
         string accuracy = GameManager.instance.GetAccuracyOnBeat();
         float damageMult = 0;
         float launchStrengthMult = 0;
@@ -255,8 +271,10 @@ public class PianoMan : MonoBehaviour
         hitAnim.spriteRenderer.enabled = true;
 
         //Manual
-        if(activeMove.moveName == "pianoKnee") hitAnim.animator.SetTrigger("1Hit");
-        if(activeMove.moveName == "pianoKick") hitAnim.animator.SetTrigger("2Hit");
+        if(moveName == "pianoKick") hitAnim.animator.SetTrigger("2Hit");
+        else if(moveName == "guitarPunch2") hitAnim.animator.SetTrigger("2Hit");
+        else if(moveName == "guitarAerial2") hitAnim.animator.SetTrigger("2Hit");
+        else hitAnim.animator.SetTrigger("1Hit");
 
         switch(accuracy)
         {
@@ -316,8 +334,26 @@ public class PianoMan : MonoBehaviour
     private IEnumerator HandleHitStun(PianoMan character, float hitstunFrames)
     {
         character.inHitStun = true;
+        if(character.stateMachine.currentMovementState.GetType().Name == "Airborne")
+        {
+            character.animator.ResetTrigger("stunAirOut");
+            character.animator.SetTrigger("stunAirIn");
+        }
+        else
+        {
+            character.animator.ResetTrigger("stunGroundOut");
+            character.animator.SetTrigger("stunGroundIn");
+        }
         for(int i = 0; i < hitstunFrames; i++) yield return new WaitForFixedUpdate(); 
         character.inHitStun = false;
+        if(character.stateMachine.currentMovementState.GetType().Name == "Airborne")
+        {
+            character.animator.SetTrigger("stunAirOut");
+        }
+        else
+        {
+            character.animator.SetTrigger("stunGroundOut");
+        }
     }
     
     private IEnumerator Jump()
@@ -367,7 +403,6 @@ public class PianoMan : MonoBehaviour
             //5 is perfect
             hitstopFrames = 3,
             multiHit = false,
-            followupMove = "pianoKick"
         };
 
         pianoKick = new()
@@ -387,9 +422,99 @@ public class PianoMan : MonoBehaviour
             multiHit = false
         };
 
+        guitarPunch1 = new()
+        {
+            moveName = "guitarPunch1",
+            position = new Vector2(0.7f, 1.6f),
+            startupFrames = 12,
+            activeFrames = 15,
+            recoveryFrames = 25,
+            hitbox = 0.1f,
+            damage = 1, 
+            launchAngle = new Vector2(0.5f, 0.5f),
+            launchStrength = 50,
+            hitstunFrames = 15,
+            //5 is perfect
+            hitstopFrames = 10,
+            multiHit = false
+        };
+
+        guitarPunch2 = new()
+        {
+            moveName = "guitarPunch2",
+            position = new Vector2(0.7f, 2f),
+            startupFrames = 10,
+            activeFrames = 9,
+            recoveryFrames = 25,
+            hitbox = 0.1f,
+            damage = 1, 
+            launchAngle = new Vector2(0.5f, 0.5f),
+            launchStrength = 300,
+            hitstunFrames = 15,
+            //5 is perfect
+            hitstopFrames = 10,
+            multiHit = false
+        };
+
+        guitarCrouchPunch = new()
+        {
+            moveName = "guitarCrouchPunch",
+            position = new Vector2(0.55f, 1.45f),
+            startupFrames = 10,
+            activeFrames = 9,
+            recoveryFrames = 25,
+            hitbox = 0.1f,
+            damage = 1, 
+            launchAngle = new Vector2(0.5f, 0.5f),
+            launchStrength = 300,
+            hitstunFrames = 15,
+            //5 is perfect
+            hitstopFrames = 10,
+            multiHit = false
+        };
+
+        guitarAerial = new()
+        {
+            moveName = "guitarAerial",
+            position = new Vector2(.3f, .4f),
+            startupFrames = 10,
+            activeFrames = 9,
+            recoveryFrames = 1,
+            hitbox = 0.2f,
+            damage = 1, 
+            launchAngle = new Vector2(0.5f, 0.5f),
+            launchStrength = 50,
+            hitstunFrames = 15,
+            //5 is perfect
+            hitstopFrames = 10,
+            multiHit = false
+        };
+
+        guitarAerial2 = new()
+        {
+            moveName = "guitarAerial2",
+            position = new Vector2(0.75f, .5f),
+            startupFrames = 10,
+            activeFrames = 9,
+            recoveryFrames = 25,
+            hitbox = 0.2f,
+            damage = 1, 
+            launchAngle = new Vector2(0.5f, 0.5f),
+            launchStrength = 300,
+            hitstunFrames = 15,
+            //5 is perfect
+            hitstopFrames = 10,
+            multiHit = false
+        };
+
         attackMoves.Add("pianoKnee", pianoKnee);
         attackMoves.Add("pianoKick", pianoKick);
+        attackMoves.Add("guitarPunch1", guitarPunch1);
+        attackMoves.Add("guitarPunch2", guitarPunch2);
+        attackMoves.Add("guitarCrouchPunch", guitarCrouchPunch);
         attackMoves.Add("nullMove", nullMove);
+        attackMoves.Add("guitarAerial", guitarAerial);
+        attackMoves.Add("guitarAerial2", guitarAerial2);
 
         bufferedMove = nullMove;
     }

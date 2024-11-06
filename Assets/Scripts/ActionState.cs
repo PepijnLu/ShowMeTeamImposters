@@ -73,29 +73,19 @@ public class WalkingForward : ActionState
     }
 }
 
-public class RunningBack : ActionState
+public class Running : ActionState
 {
     public override void StateStart(GameObject runner)
     {
         base.StateStart(runner);
+        character.animator.ResetTrigger("RunOut");
+        character.animator.SetTrigger("RunIn");
     }
 
     public override void StateComplete(GameObject runner)
     {
         base.StateComplete(runner);
-    }
-}
-
-public class RunningForward : ActionState
-{
-    public override void StateStart(GameObject runner)
-    {
-        base.StateStart(runner);
-    }
-
-    public override void StateComplete(GameObject runner)
-    {
-        base.StateComplete(runner);
+        character.animator.SetTrigger("RunOut");
     }
 }
 

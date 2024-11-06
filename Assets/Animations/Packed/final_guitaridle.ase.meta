@@ -1,0 +1,1009 @@
+fileFormatVersion: 2
+guid: a021b272aa2603a49ac6b3eb921d9498
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: final_guitaridle_Frame_0
+    originalName: 
+    pivot: {x: 0.5402505, y: -0.0018674138}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6568
+      width: 559
+      height: 1071
+    spriteID: a61efac75ee98bf498002b11058e7e6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -174, y: 6566}
+  - name: final_guitaridle_Frame_1
+    originalName: 
+    pivot: {x: 0.5402505, y: -0.0018674138}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 4
+      width: 559
+      height: 1071
+    spriteID: f65e9ff44ff307e4489e2ca434253fb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 407, y: 2}
+  - name: final_guitaridle_Frame_2
+    originalName: 
+    pivot: {x: 0.5402505, y: -0.0018674138}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 1083
+      width: 559
+      height: 1071
+    spriteID: 71dff9c82c3f38e4d8db3c60fe886984
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 407, y: 1081}
+  - name: final_guitaridle_Frame_3
+    originalName: 
+    pivot: {x: 0.5377856, y: -0.00484966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1152
+      y: 4
+      width: 569
+      height: 1031
+    spriteID: ff483eccb6499aa408845882e4df73fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 978, y: -1}
+  - name: final_guitaridle_Frame_4
+    originalName: 
+    pivot: {x: 0.5377856, y: -0.00484966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1152
+      y: 1043
+      width: 569
+      height: 1031
+    spriteID: 5fe30215527154248a930193f38bf54f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 978, y: 1038}
+  - name: final_guitaridle_Frame_5
+    originalName: 
+    pivot: {x: 0.5377856, y: -0.00484966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1152
+      y: 2082
+      width: 569
+      height: 1031
+    spriteID: 3d9d103fa0a4e5e4c8d5da14cb73e551
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 978, y: 2077}
+  - name: final_guitaridle_Frame_6
+    originalName: 
+    pivot: {x: 0.5153707, y: -0.005671077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1152
+      y: 6238
+      width: 553
+      height: 1058
+    spriteID: d44b060f6bcbfb940a2757ef1867a18d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 957, y: 6232}
+  - name: final_guitaridle_Frame_7
+    originalName: 
+    pivot: {x: 0.5153707, y: -0.005671077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 5399
+      width: 553
+      height: 1058
+    spriteID: e83352a594d2ebc48afcf2a94ab76188
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 390, y: 5393}
+  - name: final_guitaridle_Frame_8
+    originalName: 
+    pivot: {x: 0.5153707, y: -0.005671077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 6465
+      width: 553
+      height: 1058
+    spriteID: ae9c2ab75f27078429d0ec7b0e85bf01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 390, y: 6459}
+  - name: final_guitaridle_Frame_9
+    originalName: 
+    pivot: {x: 0.5287958, y: -0.0055248616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 573
+      height: 1086
+    spriteID: 012c28593f57e3e4eb7d3ded31d90a87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -173, y: -2}
+  - name: final_guitaridle_Frame_10
+    originalName: 
+    pivot: {x: 0.5287958, y: -0.0055248616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1098
+      width: 573
+      height: 1086
+    spriteID: e37074ec8a5a667438941fefae144309
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -173, y: 1092}
+  - name: final_guitaridle_Frame_11
+    originalName: 
+    pivot: {x: 0.5287958, y: -0.0055248616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2192
+      width: 573
+      height: 1086
+    spriteID: 269de8a8c5f5a0d4d89f566ff793513a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -173, y: 2186}
+  - name: final_guitaridle_Frame_12
+    originalName: 
+    pivot: {x: 0.48349518, y: -0.007233273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1729
+      y: 3202
+      width: 515
+      height: 1106
+    spriteID: d8b7d18d70d043344b6680b79bb159f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1498, y: 3194}
+  - name: final_guitaridle_Frame_13
+    originalName: 
+    pivot: {x: 0.48349518, y: -0.007233273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1729
+      y: 4316
+      width: 515
+      height: 1106
+    spriteID: 905130e12a14d9847ae58a4efdfce6ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1498, y: 4308}
+  - name: final_guitaridle_Frame_14
+    originalName: 
+    pivot: {x: 0.48349518, y: -0.007233273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1729
+      y: 5430
+      width: 515
+      height: 1106
+    spriteID: 1192662a979b90e44a1ad0cc77b5f8ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1498, y: 5422}
+  - name: final_guitaridle_Frame_15
+    originalName: 
+    pivot: {x: 0.5402505, y: -0.0018674138}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 2162
+      width: 559
+      height: 1071
+    spriteID: 29e7098075b634d4196bb87a9c6b8065
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 407, y: 2160}
+  - name: final_guitaridle_Frame_16
+    originalName: 
+    pivot: {x: 0.5402505, y: -0.0018674138}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 3241
+      width: 559
+      height: 1071
+    spriteID: 1f1a028e403ebdb4ea99cd5871a7c90d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 407, y: 3239}
+  - name: final_guitaridle_Frame_17
+    originalName: 
+    pivot: {x: 0.5402505, y: -0.0018674138}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 585
+      y: 4320
+      width: 559
+      height: 1071
+    spriteID: 46f94efd4d3cbea41a849d4289a082d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 407, y: 4318}
+  - name: final_guitaridle_Frame_18
+    originalName: 
+    pivot: {x: 0.5377856, y: -0.00484966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1152
+      y: 3121
+      width: 569
+      height: 1031
+    spriteID: 27a197b5c73264349a402e2fcbfcb611
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 978, y: 3116}
+  - name: final_guitaridle_Frame_19
+    originalName: 
+    pivot: {x: 0.5377856, y: -0.00484966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1152
+      y: 4160
+      width: 569
+      height: 1031
+    spriteID: ac3021a3455d0274b9a44c15d347b91f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 978, y: 4155}
+  - name: final_guitaridle_Frame_20
+    originalName: 
+    pivot: {x: 0.5377856, y: -0.00484966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1152
+      y: 5199
+      width: 569
+      height: 1031
+    spriteID: f035e3e300361534fb6bd0a86218c233
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 978, y: 5194}
+  - name: final_guitaridle_Frame_21
+    originalName: 
+    pivot: {x: 0.5153707, y: -0.005671077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1729
+      y: 4
+      width: 553
+      height: 1058
+    spriteID: 1657a2f3ddc9100419a70f5739f8ad07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1534, y: -2}
+  - name: final_guitaridle_Frame_22
+    originalName: 
+    pivot: {x: 0.5153707, y: -0.005671077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1729
+      y: 1070
+      width: 553
+      height: 1058
+    spriteID: c7728ec1dc912b543a2e7246a1becbbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1534, y: 1064}
+  - name: final_guitaridle_Frame_23
+    originalName: 
+    pivot: {x: 0.5153707, y: -0.005671077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1729
+      y: 2136
+      width: 553
+      height: 1058
+    spriteID: f732e3c3e5f6df74494f98073f6d9204
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1534, y: 2130}
+  - name: final_guitaridle_Frame_24
+    originalName: 
+    pivot: {x: 0.5287958, y: -0.0055248616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3286
+      width: 573
+      height: 1086
+    spriteID: 90ba1200f39fd814bb1f4d9b083f42b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -173, y: 3280}
+  - name: final_guitaridle_Frame_25
+    originalName: 
+    pivot: {x: 0.5287958, y: -0.0055248616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4380
+      width: 573
+      height: 1086
+    spriteID: 9624f00024766da49a6f01b9547616cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -173, y: 4374}
+  - name: final_guitaridle_Frame_26
+    originalName: 
+    pivot: {x: 0.5287958, y: -0.0055248616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5474
+      width: 573
+      height: 1086
+    spriteID: 06829dfb2f3828945ba2fa6cbe59be9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -173, y: 5468}
+  - name: final_guitaridle_Frame_27
+    originalName: 
+    pivot: {x: 0.48349518, y: -0.007233273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1729
+      y: 6544
+      width: 515
+      height: 1106
+    spriteID: 6626dd2e447850f40aca2c95cee30950
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1498, y: 6536}
+  - name: final_guitaridle_Frame_28
+    originalName: 
+    pivot: {x: 0.48349518, y: -0.007233273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2290
+      y: 4
+      width: 515
+      height: 1106
+    spriteID: 39cbdc0dbf885dc4f8f2116282074d9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2059, y: -4}
+  - name: final_guitaridle_Frame_29
+    originalName: 
+    pivot: {x: 0.48349518, y: -0.007233273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2290
+      y: 1118
+      width: 515
+      height: 1106
+    spriteID: 50b3ca4a3ab06074ea7236a5c98856bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2059, y: 1110}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -473226705
+    name: final_guitaridle
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: final_guitaridle_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: a61efac75ee98bf498002b11058e7e6a
+    - name: final_guitaridle_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: f65e9ff44ff307e4489e2ca434253fb1
+    - name: final_guitaridle_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 71dff9c82c3f38e4d8db3c60fe886984
+    - name: final_guitaridle_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: ff483eccb6499aa408845882e4df73fb
+    - name: final_guitaridle_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 5fe30215527154248a930193f38bf54f
+    - name: final_guitaridle_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 3d9d103fa0a4e5e4c8d5da14cb73e551
+    - name: final_guitaridle_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: d44b060f6bcbfb940a2757ef1867a18d
+    - name: final_guitaridle_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: e83352a594d2ebc48afcf2a94ab76188
+    - name: final_guitaridle_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: ae9c2ab75f27078429d0ec7b0e85bf01
+    - name: final_guitaridle_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 012c28593f57e3e4eb7d3ded31d90a87
+    - name: final_guitaridle_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: e37074ec8a5a667438941fefae144309
+    - name: final_guitaridle_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 269de8a8c5f5a0d4d89f566ff793513a
+    - name: final_guitaridle_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: d8b7d18d70d043344b6680b79bb159f8
+    - name: final_guitaridle_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 905130e12a14d9847ae58a4efdfce6ef
+    - name: final_guitaridle_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 1192662a979b90e44a1ad0cc77b5f8ff
+    - name: final_guitaridle_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 29e7098075b634d4196bb87a9c6b8065
+    - name: final_guitaridle_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 1f1a028e403ebdb4ea99cd5871a7c90d
+    - name: final_guitaridle_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 46f94efd4d3cbea41a849d4289a082d1
+    - name: final_guitaridle_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 27a197b5c73264349a402e2fcbfcb611
+    - name: final_guitaridle_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: ac3021a3455d0274b9a44c15d347b91f
+    - name: final_guitaridle_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: f035e3e300361534fb6bd0a86218c233
+    - name: final_guitaridle_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 1657a2f3ddc9100419a70f5739f8ad07
+    - name: final_guitaridle_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: c7728ec1dc912b543a2e7246a1becbbf
+    - name: final_guitaridle_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: f732e3c3e5f6df74494f98073f6d9204
+    - name: final_guitaridle_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 90ba1200f39fd814bb1f4d9b083f42b0
+    - name: final_guitaridle_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 9624f00024766da49a6f01b9547616cf
+    - name: final_guitaridle_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 06829dfb2f3828945ba2fa6cbe59be9b
+    - name: final_guitaridle_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 6626dd2e447850f40aca2c95cee30950
+    - name: final_guitaridle_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 39cbdc0dbf885dc4f8f2116282074d9d
+    - name: final_guitaridle_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: -104
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 50b3ca4a3ab06074ea7236a5c98856bb
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 752, y: 1196}
