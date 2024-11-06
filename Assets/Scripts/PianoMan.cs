@@ -28,11 +28,12 @@ public class PianoMan : MonoBehaviour
     private bool readingInputs;
     private Rigidbody2D rb;
     private AttackMove pianoKnee, pianoKick;
-    private Dictionary<string, AttackMove> attackMoves = new();
+    public Dictionary<string, AttackMove> attackMoves = new();
     private Vector2 gizmoPos;
     private float gizmoSize;
     private int frameCountForGroundCheck;
-    public bool isFacingLeft, dashOnCooldown, jumpOnCooldown, dashedBackOnInput, walkAnimationTriggered, walkBackAnimationTriggered, crouchOnCooldown;
+    public bool isFacingLeft, dashOnCooldown, jumpOnCooldown, dashedBackOnInput, walkAnimationTriggered, walkBackAnimationTriggered, crouchOnCooldown, moveBuffered;
+    public AttackMove activeMove, bufferedMove, nullMove;
 
     void Start()
     {   
@@ -170,6 +171,8 @@ public class PianoMan : MonoBehaviour
 
         //startup logic
         //animator.SetTrigger("Kick");
+        activeMove = attackMoves[moveName];
+
         Debug.Log("Move name = " + moveName);
         animator.SetTrigger(moveName);
         stateMachine.SetState("AttackState", new Startup());
@@ -218,11 +221,22 @@ public class PianoMan : MonoBehaviour
         for(int i = 0; i < recoveryFrames; i++) 
         {
             //during recovery logic
+            if(bufferedMove.moveName != "nullMove")
+            {
+                Debug.Log("Attack Buffered Move: " + bufferedMove.moveName);
+                Vector2 movePos2 = Vector2.zero;
+                if(isFacingLeft) movePos2 = new Vector2(transform.position.x, transform.position.y) + new Vector2(-bufferedMove.position.x, bufferedMove.position.y);
+                if(!isFacingLeft) movePos2 = new Vector2(transform.position.x, transform.position.y) + new Vector2(bufferedMove.position.x, bufferedMove.position.y);
+                StartAttackMove(bufferedMove.moveName, movePos2, bufferedMove.startupFrames, bufferedMove.activeFrames, bufferedMove.recoveryFrames, bufferedMove.hitbox, bufferedMove.damage, bufferedMove.launchAngle, bufferedMove.launchStrength, bufferedMove.hitstunFrames, bufferedMove.hitstopFrames, bufferedMove.multiHit);
+            }
+        bufferedMove = nullMove;
             yield return new WaitForFixedUpdate();
         }
 
         //end recovery logic
         stateMachine.SetState("AttackState", new Idle());
+        activeMove = nullMove;
+        moveBuffered = false;
         yield return null;
     }
 
@@ -239,7 +253,10 @@ public class PianoMan : MonoBehaviour
 
         hitAnim.transform.position = position;
         hitAnim.spriteRenderer.enabled = true;
-        hitAnim.animator.SetTrigger("1Hit");
+
+        //Manual
+        if(activeMove.moveName == "pianoKnee") hitAnim.animator.SetTrigger("1Hit");
+        if(activeMove.moveName == "pianoKick") hitAnim.animator.SetTrigger("2Hit");
 
         switch(accuracy)
         {
@@ -330,8 +347,14 @@ public class PianoMan : MonoBehaviour
 
     void InitializeMoves()
     {
+        nullMove = new()
+        {
+            moveName = "nullMove"
+        };
+
         pianoKnee = new()
         {
+            moveName = "pianoKnee",
             position = new Vector2(1f, 1.25f),
             startupFrames = 10,
             activeFrames = 9,
@@ -339,16 +362,18 @@ public class PianoMan : MonoBehaviour
             hitbox = 0.25f,
             damage = 1, 
             launchAngle = new Vector2(0.5f, 0.5f),
-            launchStrength = 300,
+            launchStrength = 50,
             hitstunFrames = 15,
             //5 is perfect
-            hitstopFrames = 10,
-            multiHit = false
+            hitstopFrames = 3,
+            multiHit = false,
+            followupMove = "pianoKick"
         };
 
         pianoKick = new()
         {
-            position = new Vector2(2f, 1.25f),
+            moveName = "pianoKick",
+            position = new Vector2(1.5f, 1.25f),
             startupFrames = 10,
             activeFrames = 9,
             recoveryFrames = 25,
@@ -364,6 +389,9 @@ public class PianoMan : MonoBehaviour
 
         attackMoves.Add("pianoKnee", pianoKnee);
         attackMoves.Add("pianoKick", pianoKick);
+        attackMoves.Add("nullMove", nullMove);
+
+        bufferedMove = nullMove;
     }
 
     public void StartDashCooldown()

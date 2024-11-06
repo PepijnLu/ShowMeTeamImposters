@@ -4,6 +4,7 @@ using UnityEngine;
 
 public struct AttackMove 
 {
+   public string moveName;
    public Vector2 position;
    public float startupFrames;
    public float activeFrames;
@@ -15,5 +16,6 @@ public struct AttackMove
    public float hitstunFrames;
    public float hitstopFrames;
    public bool multiHit;
+   public string followupMove;
    
 }

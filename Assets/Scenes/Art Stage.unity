@@ -242,7 +242,7 @@ MonoBehaviour:
   perfectTimingFrameWindow: 5
   goodTimingFrameWindow: 15
   badTimingFrameWindow: 36
-  pianoMan: {fileID: 1371698340}
+  pianoMan: {fileID: 5583659080855531928}
   dummy: {fileID: 532353747}
   audioSource: {fileID: 316382586}
   snare: {fileID: 1915607243}
@@ -6254,11 +6254,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 824946021279027396, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
   m_PrefabInstance: {fileID: 593747129134028988}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1346749655 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9089874994840205989, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
-  m_PrefabInstance: {fileID: 593747129134028988}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1371698336
 GameObject:
   m_ObjectHideFlags: 0
@@ -7840,7 +7835,7 @@ MonoBehaviour:
   m_RotationMode: 1
   m_UpdateMethod: 2
   m_Targets:
-  - target: {fileID: 1346749655}
+  - target: {fileID: 7286693800523892425}
     weight: 1
     radius: 1
   - target: {fileID: 532353746}
@@ -9923,7 +9918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824946021279027396, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6216959920464743924, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: hitAnim
@@ -10021,7 +10016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2414402567758569638
 MonoBehaviour:
   m_ObjectHideFlags: 0

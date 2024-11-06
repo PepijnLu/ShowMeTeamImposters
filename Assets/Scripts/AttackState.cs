@@ -54,22 +54,43 @@ public class Idle : AttackState
     public override void YPress(InputAction.CallbackContext context)
     {
         Debug.Log("Idle state Y press");
-        if(!character.inHitStun) character.Attack("pianoKick");
+        //if(!character.inHitStun) character.Attack("pianoKick");
     }
 }
 
 public class Startup : AttackState
 {
-
+    public override void APress(InputAction.CallbackContext context)
+    {
+        if(character.activeMove.moveName != "nullMove" && !character.moveBuffered)
+        {
+            Debug.Log("Startup A Press");
+            if(character.activeMove.moveName == "pianoKnee") Debug.Log("Set Buffered Move To: " + character.bufferedMove); character.bufferedMove = character.attackMoves["pianoKick"]; character.moveBuffered = true;
+        }
+    }
 }
 
 public class Active : AttackState
 {
-    
+    public override void APress(InputAction.CallbackContext context)
+    {
+        if(character.activeMove.moveName != "nullMove" && !character.moveBuffered)
+        {
+            Debug.Log("Startup A Press");
+            if(character.activeMove.moveName == "pianoKnee") Debug.Log("Set Buffered Move To: " + character.bufferedMove); character.bufferedMove = character.attackMoves["pianoKick"]; character.moveBuffered = true;
+        }
+    }
 }
 
 public class Recovery : AttackState
 {
-    
+    public override void APress(InputAction.CallbackContext context)
+    {
+        if(character.activeMove.moveName != "nullMove" && !character.moveBuffered)
+        {
+            Debug.Log("Startup A Press");
+            if(character.activeMove.moveName == "pianoKnee") Debug.Log("Set Buffered Move To: " + character.bufferedMove); character.bufferedMove = character.attackMoves["pianoKick"]; character.moveBuffered = true;
+        }
+    }  
 }
 

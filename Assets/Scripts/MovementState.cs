@@ -112,6 +112,7 @@ public class Airborne : MovementState
         {
             rb.velocity = new Vector2(rb.velocity.x, 0f);
             rb.AddForce(Vector2.up * character.jumpForce, ForceMode2D.Impulse);  // Apply upward force for the jump
+            character.animator.SetTrigger("Jump");
         }
         jumped = true;
         Debug.Log("Player Double Jump");
