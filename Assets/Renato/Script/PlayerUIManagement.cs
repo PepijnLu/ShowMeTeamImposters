@@ -176,18 +176,19 @@ public class PlayerUIManagement
     }
 
 
-    public void UpdateHealthBar(int HP, ref float layerHP) 
+    public void UpdateHealthBar(float HP, ref float layerHP) 
     {        
+        Debug.Log($"LayerHP: {layerHP}");
         if (HP > 0) 
         {
-            float notesLeftInLayer = layerHP / 25f;
+            float notesLeftInLayer = layerHP / 2f;
             UpdateNotesInLayer(healthBarLayerIndex, notesLeftInLayer); // Update notes based on remaining HP in the current layer
 
             // Check if we need to switch to a new layer
             if (layerHP <= 0 && healthBarLayerIndex < 3) 
             {
                 SwitchToLayer(healthBarLayerIndex + 1);
-                layerHP = 100; // Reset layer HP for the new layer
+                layerHP = 10; // Reset layer HP for the new layer
             }
         } 
         else if (HP == 0) 

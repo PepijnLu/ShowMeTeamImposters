@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,16 @@ public class PianoMan : MonoBehaviour
     public bool dead, blocking, isFacingLeft, dashOnCooldown, jumpOnCooldown, dashedBackOnInput, walkAnimationTriggered, walkBackAnimationTriggered, crouchOnCooldown, moveBuffered, firstAerialLadyHit;
     public AttackMove activeMove, bufferedMove, nullMove;
 
+    // ------------------------------------------------------
+
+    [SerializeField] private float layerHP = 100f; // Initialize with full layer capacity
+    [SerializeField] private string playerName = "";
+    
+    // PlayerUIManagement
+    public PlayerUIManagement playerUIManagement;
+    private int hitCounter = 0;
+    private int comboCounter = 0;
+
     void Start()
     {   
         healthSlider.maxValue = health;
@@ -44,6 +55,16 @@ public class PianoMan : MonoBehaviour
         originalSize = playerCollider.size;
         //originalSize = gameObject.transform.localScale;
         InitializeMoves();
+
+        if(playerName == "Player1") 
+        {
+            playerUIManagement.InstantiatePlayerUI(UIManager.instance.UIPrefabPlayer1, UIManager.instance.player1_UI);
+        }
+        
+        if(playerName == "Player2") 
+        {
+            playerUIManagement.InstantiatePlayerUI(UIManager.instance.UIPrefabPlayer2, UIManager.instance.player2_UI);
+        }
     }
 
     void Update()
@@ -61,8 +82,16 @@ public class PianoMan : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        Debug.Log($"Damage output:{damage}" );
         health -= damage;
         healthSlider.value = health;
+        health = Mathf.Max(health, 0);
+
+        layerHP -= damage;
+        layerHP = MathF.Max(layerHP, 0);
+
+        playerUIManagement.UpdateHealthBar(health, ref layerHP);
+
 
         if(health <= 0)
         {
@@ -329,6 +358,7 @@ public class PianoMan : MonoBehaviour
             }
 
             component.TakeDamage(damage);
+            
             //Handle hitstop
             Coroutine hitstopRoutine = StartCoroutine(GameManager.instance.HandleHitStop(hitstopFrames, hitstopBeats));
             yield return hitstopRoutine; 
