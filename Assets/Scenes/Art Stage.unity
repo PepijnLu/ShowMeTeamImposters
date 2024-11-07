@@ -3302,7 +3302,7 @@ Transform:
   m_GameObject: {fileID: 318492263}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7049999, y: 1.0675071, z: -13}
+  m_LocalPosition: {x: 3.6700003, y: 0.24750724, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5781,7 +5781,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 31.91135
+  m_FocalLength: 44.78461
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -5796,7 +5796,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 41.216713
+  field of view: 30.000002
   orthographic: 0
   orthographic size: 9.544478
   m_Depth: -1
@@ -5823,7 +5823,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7049999, y: 1.0675071, z: -13}
+  m_LocalPosition: {x: 3.67, y: 0.24750698, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6185,6 +6185,7 @@ MonoBehaviour:
   walkBackAnimationTriggered: 0
   crouchOnCooldown: 0
   moveBuffered: 0
+  firstAerialLadyHit: 0
 --- !u!1 &534928137
 GameObject:
   m_ObjectHideFlags: 0
@@ -14508,6 +14509,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9089874994840205989, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
   m_PrefabInstance: {fileID: 593747129134028988}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1346749661 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6216959920464743924, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+  m_PrefabInstance: {fileID: 593747129134028988}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346749652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546d52925a9059a49be72ac3a60b2532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1349315242
 GameObject:
   m_ObjectHideFlags: 0
@@ -14949,6 +14961,7 @@ MonoBehaviour:
   walkBackAnimationTriggered: 0
   crouchOnCooldown: 0
   moveBuffered: 0
+  firstAerialLadyHit: 0
 --- !u!70 &1371698341
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -19291,7 +19304,7 @@ Transform:
   m_GameObject: {fileID: 1799051496}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2785594, y: -0.29878983, z: 0}
+  m_LocalPosition: {x: 3.67, y: -1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23442,7 +23455,7 @@ PrefabInstance:
     - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1346749654}
+      objectReference: {fileID: 1346749661}
     - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -23721,6 +23734,7 @@ MonoBehaviour:
   walkBackAnimationTriggered: 0
   crouchOnCooldown: 0
   moveBuffered: 0
+  firstAerialLadyHit: 0
 --- !u!212 &5661664022551838785
 SpriteRenderer:
   m_ObjectHideFlags: 0
