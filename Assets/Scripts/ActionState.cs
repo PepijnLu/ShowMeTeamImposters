@@ -95,6 +95,17 @@ public class DashForward : ActionState
     {
         base.StateStart(runner);
         character.animator.SetTrigger("DashForw");
+        if(!character.isFacingLeft)
+        {
+            character.wavedashAnimator.gameObject.transform.localScale = new Vector3(0.2546144f, 0.2546144f, 0.2546144f);
+            character.wavedashAnimator.gameObject.transform.position = character.transform.position + new Vector3(0.5f, 0, 0);
+        }
+        else
+        {
+            character.wavedashAnimator.gameObject.transform.localScale = new Vector3(-0.2546144f, 0.2546144f, 0.2546144f);
+            character.wavedashAnimator.gameObject.transform.position = character.transform.position + new Vector3(-0.5f, 0, 0);
+        }
+        character.wavedashAnimator.SetTrigger("Dash");
     }
 
     public override void StateComplete(GameObject runner)
@@ -109,6 +120,17 @@ public class DashBack : ActionState
     {
         base.StateStart(runner);
         character.animator.SetTrigger("DashBack");
+        if(!character.isFacingLeft)
+        {
+            character.wavedashAnimator.gameObject.transform.localScale = new Vector3(-0.2546144f, 0.2546144f, 0.2546144f);
+            character.wavedashAnimator.gameObject.transform.position = character.transform.position + new Vector3(-0.5f, 0, 0);
+        }
+        else
+        {
+            character.wavedashAnimator.gameObject.transform.localScale = new Vector3(0.2546144f, 0.2546144f, 0.2546144f);
+            character.wavedashAnimator.gameObject.transform.position = character.transform.position + new Vector3(0.5f, 0, 0);
+        }
+        character.wavedashAnimator.SetTrigger("Dash");
     }
 
     public override void StateComplete(GameObject runner)

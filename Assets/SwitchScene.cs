@@ -13,7 +13,7 @@ public class SwitchScene : MonoBehaviour
     {
         StartCoroutine(FadeIn());
 
-        SceneManager.LoadScene("GameplayScene");
+        SceneManager.LoadScene("Art Stage");
     }
 
     private IEnumerator FadeIn()

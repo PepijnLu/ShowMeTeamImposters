@@ -13,7 +13,7 @@ public class PianoMan : MonoBehaviour
     [SerializeField] public Transform groundCheck;
     [SerializeField] public LayerMask groundLayer;
     [SerializeField] private GameObject empty;
-    [SerializeField] public Animator animator;
+    [SerializeField] public Animator animator, wavedashAnimator;
     [SerializeField] private GameObject oppponent, playerCanvas;
     [SerializeField] public float maxWalkSpeed, maxRunSpeed, acceleration, jumpForce, dashCooldown, dashBackSpeed, aerialDriftAcceleration, maxAerialDriftSpeed, jumpSquatFrames;
     [SerializeField] public float groundCheckRadius;
@@ -35,6 +35,9 @@ public class PianoMan : MonoBehaviour
     private int frameCountForGroundCheck;
     public bool dead, blocking, isFacingLeft, dashOnCooldown, jumpOnCooldown, dashedBackOnInput, walkAnimationTriggered, walkBackAnimationTriggered, crouchOnCooldown, moveBuffered, firstAerialLadyHit;
     public AttackMove activeMove, bufferedMove, nullMove;
+    private float timeAtLastHit;
+    private int comboNumber;
+    public float comboTime;
 
     // ------------------------------------------------------
 
@@ -300,10 +303,10 @@ public class PianoMan : MonoBehaviour
         hitAnim.spriteRenderer.enabled = true;
 
         //Manual
-        if(moveName == "pianoKick") hitAnim.animator.SetTrigger("2Hit");
-        else if(moveName == "guitarPunch2") hitAnim.animator.SetTrigger("2Hit");
-        else if(moveName == "guitarAerial2") hitAnim.animator.SetTrigger("2Hit");
-        else hitAnim.animator.SetTrigger("1Hit");
+        // if(moveName == "pianoKick") hitAnim.animator.SetTrigger("2Hit");
+        // else if(moveName == "guitarPunch2") hitAnim.animator.SetTrigger("2Hit");
+        // else if(moveName == "guitarAerial2") hitAnim.animator.SetTrigger("2Hit");
+        // else hitAnim.animator.SetTrigger("1Hit");
 
         switch(accuracy)
         {
@@ -343,6 +346,38 @@ public class PianoMan : MonoBehaviour
 
         if(character.TryGetComponent<PianoMan>(out PianoMan component))
         {
+            if(timeAtLastHit != 0)
+            {
+                if(Time.time - timeAtLastHit <= comboTime)
+                {
+                    comboNumber++;
+                    if(comboNumber == 5) comboNumber = 1;
+                    switch(comboNumber)
+                    {
+                        case 1:
+                            hitAnim.animator.SetTrigger("1Hit");
+                            break;
+                        case 2:
+                            hitAnim.animator.SetTrigger("2Hit");
+                            break;
+                        case 3:
+                            hitAnim.animator.SetTrigger("3Hit");
+                            break;
+                        case 4:
+                            hitAnim.animator.SetTrigger("4Hit");
+                            break; 
+
+                    }
+                }
+                else
+                {
+                    comboNumber = 1;
+                    hitAnim.animator.SetTrigger("1Hit");
+                }
+                
+            }
+            timeAtLastHit = Time.time;
+
             launchAngle.Normalize();
             if(isFacingLeft)
             {
