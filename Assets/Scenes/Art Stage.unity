@@ -6409,6 +6409,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0de6bc13-c4cf-4a12-aa2b-2997da686fbd
     m_ActionName: Debug/Move[/DualShock4GamepadHID/leftStick]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e5eb7c23-9305-4624-aa38-23157b87b4a1
+    m_ActionName: Debug/LeftTrigger[/DualShock4GamepadHID/leftTrigger]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Debug
@@ -9958,7 +9962,7 @@ PrefabInstance:
       objectReference: {fileID: 1661628353}
     - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_ActionEvents.Array.size
