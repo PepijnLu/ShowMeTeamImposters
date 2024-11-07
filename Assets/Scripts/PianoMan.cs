@@ -159,38 +159,38 @@ public class PianoMan : MonoBehaviour
 
     public void APress(InputAction.CallbackContext context)
     {
-        if (context.performed && readingInputs) stateMachine.APress(context);
+        if (context.performed && readingInputs && !dead) stateMachine.APress(context);
     }
 
     public void YPress(InputAction.CallbackContext context)
     {
-        if (context.performed && readingInputs) stateMachine.YPress(context);
+        if (context.performed && readingInputs && !dead) stateMachine.YPress(context);
     }
 
     public void BPress(InputAction.CallbackContext context)
     {
-        if (context.performed && readingInputs) stateMachine.BPress(context);
+        if (context.performed && readingInputs && !dead) stateMachine.BPress(context);
     }
 
     public void XPress(InputAction.CallbackContext context)
     {
-        if (context.performed && readingInputs) stateMachine.XPress(context);
+        if (context.performed && readingInputs && !dead) stateMachine.XPress(context);
     }
 
     public void LeftTriggerPress(InputAction.CallbackContext context)
     {
-        if (context.performed && readingInputs) stateMachine.LeftTriggerPress(context, true);
-        if (context.canceled && readingInputs) stateMachine.LeftTriggerPress(context, false);
+        if (context.performed && readingInputs && !dead) stateMachine.LeftTriggerPress(context, true);
+        if (context.canceled && readingInputs && !dead) stateMachine.LeftTriggerPress(context, false);
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (context.performed && readingInputs)
+        if (context.performed && readingInputs && !dead)
         {
             moveInput = context.ReadValue<Vector2>();  // Read the Vector2 value (X and Y)
             Debug.Log("Joystick movement: " + moveInput);
         }
-        else
+        else if (!dead)
         {
             moveInput = Vector2.zero;
         }
@@ -412,7 +412,8 @@ public class PianoMan : MonoBehaviour
             character.animator.ResetTrigger("stunAirOut");
             character.animator.SetTrigger("stunAirIn");
         }
-        else
+        else if(character.stateMachine.currentMovementState.GetType().Name != "Blocking")
+        
         {
             character.animator.ResetTrigger("stunGroundOut");
             character.animator.SetTrigger("stunGroundIn");
@@ -424,7 +425,7 @@ public class PianoMan : MonoBehaviour
             character.animator.ResetTrigger("stunAirIn");
             character.animator.SetTrigger("stunAirOut");
         }
-        else
+        else if(character.stateMachine.currentMovementState.GetType().Name != "Blocking")
         {
             character.animator.ResetTrigger("stunGroundIn");
             character.animator.SetTrigger("stunGroundOut");
@@ -467,7 +468,7 @@ public class PianoMan : MonoBehaviour
         {
             moveName = "pianoKnee",
             position = new Vector2(1f, 1.25f),
-            startupFrames = 10,
+            startupFrames = 12,
             activeFrames = 9,
             recoveryFrames = 25,
             hitbox = 0.25f,
@@ -484,7 +485,7 @@ public class PianoMan : MonoBehaviour
         {
             moveName = "pianoKick",
             position = new Vector2(1.5f, 1.25f),
-            startupFrames = 10,
+            startupFrames = 18,
             activeFrames = 9,
             recoveryFrames = 25,
             hitbox = 0.25f,
@@ -508,7 +509,7 @@ public class PianoMan : MonoBehaviour
             damage = 1, 
             launchAngle = new Vector2(0.5f, 0.5f),
             launchStrength = 50,
-            hitstunFrames = 15,
+            hitstunFrames = 2,
             //5 is perfect
             hitstopFrames = 10,
             multiHit = false
@@ -535,7 +536,7 @@ public class PianoMan : MonoBehaviour
         {
             moveName = "guitarCrouchPunch",
             position = new Vector2(0.55f, 1.45f),
-            startupFrames = 10,
+            startupFrames = 12,
             activeFrames = 9,
             recoveryFrames = 25,
             hitbox = 0.1f,
@@ -552,7 +553,7 @@ public class PianoMan : MonoBehaviour
         {
             moveName = "guitarAerial",
             position = new Vector2(.3f, .4f),
-            startupFrames = 10,
+            startupFrames = 12,
             activeFrames = 9,
             recoveryFrames = 1,
             hitbox = 0.2f,
@@ -561,7 +562,7 @@ public class PianoMan : MonoBehaviour
             launchStrength = 50,
             hitstunFrames = 15,
             //5 is perfect
-            hitstopFrames = 10,
+            hitstopFrames = 2,
             multiHit = false
         };
 
@@ -569,7 +570,7 @@ public class PianoMan : MonoBehaviour
         {
             moveName = "guitarAerial2",
             position = new Vector2(0.75f, .5f),
-            startupFrames = 10,
+            startupFrames = 12,
             activeFrames = 9,
             recoveryFrames = 25,
             hitbox = 0.2f,
@@ -586,7 +587,7 @@ public class PianoMan : MonoBehaviour
         {
             moveName = "pianoAerial",
             position = new Vector2(1f, .7f),
-            startupFrames = 10,
+            startupFrames = 12,
             activeFrames = 9,
             recoveryFrames = 1,
             hitbox = 0.2f,
@@ -603,7 +604,7 @@ public class PianoMan : MonoBehaviour
         {
             moveName = "pianoCrouchPunch",
             position = new Vector2(.5f, .3f),
-            startupFrames = 10,
+            startupFrames = 12,
             activeFrames = 9,
             recoveryFrames = 1,
             hitbox = 0.1f,
