@@ -1,0 +1,574 @@
+fileFormatVersion: 2
+guid: 2e632adad78052c4ead5524300227fb9
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: PianoDashF_Frame_0
+    originalName: 
+    pivot: {x: 0.5519399, y: -0.1581921}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 799
+      height: 531
+    spriteID: ba766c31fcf0549468983320aa88bbc6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: PianoDashF_Frame_1
+    originalName: 
+    pivot: {x: 0.5519399, y: -0.1581921}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 543
+      width: 799
+      height: 531
+    spriteID: 49775141733f13b4d9feb43d9ba69551
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 543}
+  - name: PianoDashF_Frame_2
+    originalName: 
+    pivot: {x: 0.5519399, y: -0.1581921}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1082
+      width: 799
+      height: 531
+    spriteID: 00f7bd4b86be40541ba321d681c31647
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1082}
+  - name: PianoDashF_Frame_3
+    originalName: 
+    pivot: {x: 0.44556963, y: -0.17208414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1621
+      width: 790
+      height: 523
+    spriteID: 4364dcc5ceeec9f429767c94af2c1e48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1621}
+  - name: PianoDashF_Frame_4
+    originalName: 
+    pivot: {x: 0.44556963, y: -0.17208414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2152
+      width: 790
+      height: 523
+    spriteID: 70fa5b12bcc2def46836d898652266db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2152}
+  - name: PianoDashF_Frame_5
+    originalName: 
+    pivot: {x: 0.44556963, y: -0.17208414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2683
+      width: 790
+      height: 523
+    spriteID: b4b552451eee35845911359901c115fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2683}
+  - name: PianoDashF_Frame_6
+    originalName: 
+    pivot: {x: 0.50613153, y: -0.24017468}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 811
+      y: 4
+      width: 897
+      height: 458
+    spriteID: 2c5f075b47717334c979a57ffa6e895c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 811, y: 4}
+  - name: PianoDashF_Frame_7
+    originalName: 
+    pivot: {x: 0.50613153, y: -0.24017468}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 811
+      y: 470
+      width: 897
+      height: 458
+    spriteID: 762daec5e878efa4ab0488afb10204de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 811, y: 470}
+  - name: PianoDashF_Frame_8
+    originalName: 
+    pivot: {x: 0.50613153, y: -0.24017468}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 811
+      y: 936
+      width: 897
+      height: 458
+    spriteID: d797f6aa92933994aa585a4d7d1cd435
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 811, y: 936}
+  - name: PianoDashF_Frame_9
+    originalName: 
+    pivot: {x: 0.4056604, y: -0.14150944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3214
+      width: 636
+      height: 636
+    spriteID: c0d60fc56690fa341905dd56cc500ff5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3214}
+  - name: PianoDashF_Frame_10
+    originalName: 
+    pivot: {x: 0.4056604, y: -0.14150944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 811
+      y: 1402
+      width: 636
+      height: 636
+    spriteID: ff6aa12dba8981042a74ed6f3534e0d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 811, y: 1402}
+  - name: PianoDashF_Frame_11
+    originalName: 
+    pivot: {x: 0.4056604, y: -0.14150944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 811
+      y: 2046
+      width: 636
+      height: 636
+    spriteID: 233500c0a10664e4ca2b661f47776a24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 811, y: 2046}
+  - name: PianoDashF_Frame_12
+    originalName: 
+    pivot: {x: 0.4509804, y: -0.0972973}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 811
+      y: 2690
+      width: 510
+      height: 740
+    spriteID: 33547782d97e88b4ba39291f71000b4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 811, y: 2690}
+  - name: PianoDashF_Frame_13
+    originalName: 
+    pivot: {x: 0.4509804, y: -0.0972973}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1455
+      y: 2046
+      width: 510
+      height: 740
+    spriteID: bbf9e9976186196479bb2626a7bd9c9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1455, y: 2046}
+  - name: PianoDashF_Frame_14
+    originalName: 
+    pivot: {x: 0.4509804, y: -0.0972973}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1455
+      y: 2794
+      width: 510
+      height: 740
+    spriteID: ede4530a3a6c683408232a6718dbd50b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1455, y: 2794}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -327010851
+    name: PianoDashF
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: PianoDashF_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 99
+        y: 84
+        width: 799
+        height: 531
+      spriteId: ba766c31fcf0549468983320aa88bbc6
+    - name: PianoDashF_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 99
+        y: 84
+        width: 799
+        height: 531
+      spriteId: 49775141733f13b4d9feb43d9ba69551
+    - name: PianoDashF_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 99
+        y: 84
+        width: 799
+        height: 531
+      spriteId: 00f7bd4b86be40541ba321d681c31647
+    - name: PianoDashF_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 90
+        width: 790
+        height: 523
+      spriteId: 4364dcc5ceeec9f429767c94af2c1e48
+    - name: PianoDashF_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 90
+        width: 790
+        height: 523
+      spriteId: 70fa5b12bcc2def46836d898652266db
+    - name: PianoDashF_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 188
+        y: 90
+        width: 790
+        height: 523
+      spriteId: b4b552451eee35845911359901c115fc
+    - name: PianoDashF_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 86
+        y: 110
+        width: 897
+        height: 458
+      spriteId: 2c5f075b47717334c979a57ffa6e895c
+    - name: PianoDashF_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 86
+        y: 110
+        width: 897
+        height: 458
+      spriteId: 762daec5e878efa4ab0488afb10204de
+    - name: PianoDashF_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 86
+        y: 110
+        width: 897
+        height: 458
+      spriteId: d797f6aa92933994aa585a4d7d1cd435
+    - name: PianoDashF_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 282
+        y: 90
+        width: 636
+        height: 636
+      spriteId: c0d60fc56690fa341905dd56cc500ff5
+    - name: PianoDashF_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 282
+        y: 90
+        width: 636
+        height: 636
+      spriteId: ff6aa12dba8981042a74ed6f3534e0d9
+    - name: PianoDashF_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 282
+        y: 90
+        width: 636
+        height: 636
+      spriteId: 233500c0a10664e4ca2b661f47776a24
+    - name: PianoDashF_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 310
+        y: 72
+        width: 510
+        height: 740
+      spriteId: 33547782d97e88b4ba39291f71000b4a
+    - name: PianoDashF_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 310
+        y: 72
+        width: 510
+        height: 740
+      spriteId: bbf9e9976186196479bb2626a7bd9c9b
+    - name: PianoDashF_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 310
+        y: 72
+        width: 510
+        height: 740
+      spriteId: ede4530a3a6c683408232a6718dbd50b
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1080, y: 1080}

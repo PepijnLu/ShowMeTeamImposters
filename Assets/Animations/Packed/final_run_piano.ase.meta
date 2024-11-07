@@ -1,0 +1,835 @@
+fileFormatVersion: 2
+guid: e2b2da4947f197e4282531ef1c144e82
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: final_run_piano_Frame_0
+    originalName: 
+    pivot: {x: 0.45542637, y: -0.021093002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6331
+      width: 774
+      height: 1043
+    spriteID: c7c0d6a307cc6a244b1f36ceaba07ce8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -200, y: 6309}
+  - name: final_run_piano_Frame_1
+    originalName: 
+    pivot: {x: 0.45542637, y: -0.021093002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 909
+      y: 4
+      width: 774
+      height: 1043
+    spriteID: 205a66d9ab751984180e49142ea42200
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 705, y: -18}
+  - name: final_run_piano_Frame_2
+    originalName: 
+    pivot: {x: 0.45542637, y: -0.021093002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 909
+      y: 1055
+      width: 774
+      height: 1043
+    spriteID: 09478a73151ce3643967c64b0ca93384
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 705, y: 1033}
+  - name: final_run_piano_Frame_3
+    originalName: 
+    pivot: {x: 0.18828213, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3199
+      width: 879
+      height: 1036
+    spriteID: 54c23eefca94d7d4c85e4aa294868645
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -387, y: 3199}
+  - name: final_run_piano_Frame_4
+    originalName: 
+    pivot: {x: 0.18828213, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4243
+      width: 879
+      height: 1036
+    spriteID: c7e4cef59a142704babe84738fed584f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -387, y: 4243}
+  - name: final_run_piano_Frame_5
+    originalName: 
+    pivot: {x: 0.18828213, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5287
+      width: 879
+      height: 1036
+    spriteID: fa076bffb48769448bd11c5c11edd1c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -387, y: 5287}
+  - name: final_run_piano_Frame_6
+    originalName: 
+    pivot: {x: 0.31461677, y: -0.005405405}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1691
+      y: 1088
+      width: 561
+      height: 1110
+    spriteID: bd0f9639c2d0ac041a335303b92f6593
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1311, y: 1082}
+  - name: final_run_piano_Frame_7
+    originalName: 
+    pivot: {x: 0.31461677, y: -0.005405405}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1691
+      y: 2206
+      width: 561
+      height: 1110
+    spriteID: bc2244d0e89698346bc68fa50996f9ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1311, y: 2200}
+  - name: final_run_piano_Frame_8
+    originalName: 
+    pivot: {x: 0.31461677, y: -0.005405405}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1691
+      y: 3324
+      width: 561
+      height: 1110
+    spriteID: c49ac021102709a439b9d7371594d182
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1311, y: 3318}
+  - name: final_run_piano_Frame_9
+    originalName: 
+    pivot: {x: 0.5234114, y: -0.016083255}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 897
+      height: 1057
+    spriteID: b4587466d76764c448c1d4393d38581e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -83, y: -13}
+  - name: final_run_piano_Frame_10
+    originalName: 
+    pivot: {x: 0.5234114, y: -0.016083255}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1069
+      width: 897
+      height: 1057
+    spriteID: aa7600e7bfbba68438de0a697da24b06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -83, y: 1052}
+  - name: final_run_piano_Frame_11
+    originalName: 
+    pivot: {x: 0.5234114, y: -0.016083255}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2134
+      width: 897
+      height: 1057
+    spriteID: 21db536d4a2710f408c8e8dc4d1a3934
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -83, y: 2117}
+  - name: final_run_piano_Frame_12
+    originalName: 
+    pivot: {x: 0.5412518, y: -0.04327376}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 909
+      y: 2106
+      width: 703
+      height: 1063
+    spriteID: 7ea951458f567cb4ebe892c24bc834f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 733, y: 2060}
+  - name: final_run_piano_Frame_13
+    originalName: 
+    pivot: {x: 0.5412518, y: -0.04327376}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 909
+      y: 3177
+      width: 703
+      height: 1063
+    spriteID: 234ed977f69bbf044b37a74e4fa010f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 733, y: 3131}
+  - name: final_run_piano_Frame_14
+    originalName: 
+    pivot: {x: 0.5412518, y: -0.04327376}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 909
+      y: 4248
+      width: 703
+      height: 1063
+    spriteID: 65cff11b1dfaf0e4d9357ca471711bc0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 733, y: 4202}
+  - name: final_run_piano_Frame_15
+    originalName: 
+    pivot: {x: 0.41051662, y: -0.041237116}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1691
+      y: 4442
+      width: 542
+      height: 1067
+    spriteID: 126a2bd5e8b60aa4badc4b02c33c18c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1357, y: 4398}
+  - name: final_run_piano_Frame_16
+    originalName: 
+    pivot: {x: 0.41051662, y: -0.041237116}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1691
+      y: 5517
+      width: 542
+      height: 1067
+    spriteID: c5af9002964695f41ab08153931ed9d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1357, y: 5473}
+  - name: final_run_piano_Frame_17
+    originalName: 
+    pivot: {x: 0.41051662, y: -0.041237116}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1691
+      y: 6592
+      width: 542
+      height: 1067
+    spriteID: 33a2420bebcf2364d9563f231bea6a9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1357, y: 6548}
+  - name: final_run_piano_Frame_18
+    originalName: 
+    pivot: {x: 0.4581633, y: -0.04477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2375
+      y: 4
+      width: 490
+      height: 1072
+    spriteID: 8e8a04f6d841142449599f90929f7641
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2043, y: -44}
+  - name: final_run_piano_Frame_19
+    originalName: 
+    pivot: {x: 0.4581633, y: -0.04477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2375
+      y: 1084
+      width: 490
+      height: 1072
+    spriteID: 6d0b3c7e85cf9414987f638d2391c600
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2043, y: 1036}
+  - name: final_run_piano_Frame_20
+    originalName: 
+    pivot: {x: 0.4581633, y: -0.04477612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2375
+      y: 2164
+      width: 490
+      height: 1072
+    spriteID: 09b339234f6f074459ee1ae6e3c4d7bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2043, y: 2116}
+  - name: final_run_piano_Frame_21
+    originalName: 
+    pivot: {x: 0.44304737, y: -0.06784387}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 909
+      y: 5319
+      width: 676
+      height: 1076
+    spriteID: 306ff8a48e983304daa5310ac0bab742
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 652, y: 5246}
+  - name: final_run_piano_Frame_22
+    originalName: 
+    pivot: {x: 0.44304737, y: -0.06784387}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 909
+      y: 6403
+      width: 676
+      height: 1076
+    spriteID: 464f24513340ab64083115727d64b144
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 652, y: 6330}
+  - name: final_run_piano_Frame_23
+    originalName: 
+    pivot: {x: 0.44304737, y: -0.06784387}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1691
+      y: 4
+      width: 676
+      height: 1076
+    spriteID: 4a76b526c2cd14d4ba840622ab7d1b95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1434, y: -69}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -269779482
+    name: final_run_piano
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: final_run_piano_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: c7c0d6a307cc6a244b1f36ceaba07ce8
+    - name: final_run_piano_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 205a66d9ab751984180e49142ea42200
+    - name: final_run_piano_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 09478a73151ce3643967c64b0ca93384
+    - name: final_run_piano_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 54c23eefca94d7d4c85e4aa294868645
+    - name: final_run_piano_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: c7e4cef59a142704babe84738fed584f
+    - name: final_run_piano_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: fa076bffb48769448bd11c5c11edd1c9
+    - name: final_run_piano_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: bd0f9639c2d0ac041a335303b92f6593
+    - name: final_run_piano_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: bc2244d0e89698346bc68fa50996f9ed
+    - name: final_run_piano_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: c49ac021102709a439b9d7371594d182
+    - name: final_run_piano_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: b4587466d76764c448c1d4393d38581e
+    - name: final_run_piano_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: aa7600e7bfbba68438de0a697da24b06
+    - name: final_run_piano_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 21db536d4a2710f408c8e8dc4d1a3934
+    - name: final_run_piano_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 7ea951458f567cb4ebe892c24bc834f8
+    - name: final_run_piano_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 234ed977f69bbf044b37a74e4fa010f8
+    - name: final_run_piano_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 65cff11b1dfaf0e4d9357ca471711bc0
+    - name: final_run_piano_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 126a2bd5e8b60aa4badc4b02c33c18c1
+    - name: final_run_piano_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: c5af9002964695f41ab08153931ed9d5
+    - name: final_run_piano_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 33a2420bebcf2364d9563f231bea6a9c
+    - name: final_run_piano_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 8e8a04f6d841142449599f90929f7641
+    - name: final_run_piano_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 6d0b3c7e85cf9414987f638d2391c600
+    - name: final_run_piano_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 09b339234f6f074459ee1ae6e3c4d7bb
+    - name: final_run_piano_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 306ff8a48e983304daa5310ac0bab742
+    - name: final_run_piano_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 464f24513340ab64083115727d64b144
+    - name: final_run_piano_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: -45
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 4a76b526c2cd14d4ba840622ab7d1b95
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1023, y: 1163}

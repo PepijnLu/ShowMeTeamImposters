@@ -110,5 +110,11 @@ public class StateMachine
         currentAttackState.YPress(context);
     }
 
+    public void LeftTriggerPress(InputAction.CallbackContext context, bool pressed)
+    {
+        currentMovementState.LeftTriggerPress(context, pressed);
+        //currentAttackState.LeftTriggerPress(context);
+    }
+
 }
 

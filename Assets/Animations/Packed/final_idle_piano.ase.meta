@@ -1,0 +1,835 @@
+fileFormatVersion: 2
+guid: 9f7400e8598e2d94bac8646606270d60
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: final_idle_piano_Frame_0
+    originalName: 
+    pivot: {x: 0.47959185, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 869
+      y: 5234
+      width: 588
+      height: 1043
+    spriteID: 0b418a057a3e05f4a9ccc5c1583241c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 561, y: 5234}
+  - name: final_idle_piano_Frame_1
+    originalName: 
+    pivot: {x: 0.47959185, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 869
+      y: 6285
+      width: 588
+      height: 1043
+    spriteID: abef6b5298f5cea44850e27dea7556d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 561, y: 6285}
+  - name: final_idle_piano_Frame_2
+    originalName: 
+    pivot: {x: 0.47959185, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1503
+      y: 4
+      width: 588
+      height: 1043
+    spriteID: 6317ab77c2afcb048b091edde18dce41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1195, y: 4}
+  - name: final_idle_piano_Frame_3
+    originalName: 
+    pivot: {x: 0.3547258, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 857
+      height: 1148
+    spriteID: 8cbf84c7ebaf5704497674bd642e80b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -282, y: 4}
+  - name: final_idle_piano_Frame_4
+    originalName: 
+    pivot: {x: 0.3547258, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1160
+      width: 857
+      height: 1148
+    spriteID: 9cf480ab513fc6d4daa8d543fcc26dba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -282, y: 1160}
+  - name: final_idle_piano_Frame_5
+    originalName: 
+    pivot: {x: 0.3547258, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2316
+      width: 857
+      height: 1148
+    spriteID: 592e90c0d572aba4a904c5f8fe938f74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -282, y: 2316}
+  - name: final_idle_piano_Frame_6
+    originalName: 
+    pivot: {x: 0.3547258, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3472
+      width: 857
+      height: 1148
+    spriteID: f644c37207dc41d4f965e880a8e41b9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -282, y: 3472}
+  - name: final_idle_piano_Frame_7
+    originalName: 
+    pivot: {x: 0.3547258, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4628
+      width: 857
+      height: 1148
+    spriteID: 08a4e1c612fbaa543966022cea31f148
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -282, y: 4628}
+  - name: final_idle_piano_Frame_8
+    originalName: 
+    pivot: {x: 0.3547258, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5784
+      width: 857
+      height: 1148
+    spriteID: cb37a7c50f2d46848a644b6fd4bc25f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -282, y: 5784}
+  - name: final_idle_piano_Frame_9
+    originalName: 
+    pivot: {x: 0.47959185, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1503
+      y: 1055
+      width: 588
+      height: 1043
+    spriteID: b8c72285a31a4fd4e8a6019fe141f038
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1195, y: 1055}
+  - name: final_idle_piano_Frame_10
+    originalName: 
+    pivot: {x: 0.47959185, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1503
+      y: 2106
+      width: 588
+      height: 1043
+    spriteID: 7a822fd6b6cd6e74c8284c02ad1dd107
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1195, y: 2106}
+  - name: final_idle_piano_Frame_11
+    originalName: 
+    pivot: {x: 0.47959185, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1503
+      y: 3157
+      width: 588
+      height: 1043
+    spriteID: 5a09ca2799a299145aa15d2bb50ae32a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1195, y: 3157}
+  - name: final_idle_piano_Frame_12
+    originalName: 
+    pivot: {x: 0.4362292, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1503
+      y: 4208
+      width: 541
+      height: 1019
+    spriteID: a35002a6995c66e45880da3b773efd76
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1149, y: 4208}
+  - name: final_idle_piano_Frame_13
+    originalName: 
+    pivot: {x: 0.4362292, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1503
+      y: 5235
+      width: 541
+      height: 1019
+    spriteID: eb1f521a74a419d4481b5695e95a6e71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1149, y: 5235}
+  - name: final_idle_piano_Frame_14
+    originalName: 
+    pivot: {x: 0.4362292, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1503
+      y: 6262
+      width: 541
+      height: 1019
+    spriteID: 89cbc2fe4a56f404f81570fbde07460c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1149, y: 6262}
+  - name: final_idle_piano_Frame_15
+    originalName: 
+    pivot: {x: 0.4664537, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6940
+      width: 626
+      height: 1038
+    spriteID: 44d11769db91cc6428579b4eccd8a520
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -294, y: 6940}
+  - name: final_idle_piano_Frame_16
+    originalName: 
+    pivot: {x: 0.4664537, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 869
+      y: 4
+      width: 626
+      height: 1038
+    spriteID: b5ef4a2da53ede94eab83a2b67e95137
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 571, y: 4}
+  - name: final_idle_piano_Frame_17
+    originalName: 
+    pivot: {x: 0.4664537, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 869
+      y: 1050
+      width: 626
+      height: 1038
+    spriteID: d56aa6d8e2270f8419b1a4e5172e622d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 571, y: 1050}
+  - name: final_idle_piano_Frame_18
+    originalName: 
+    pivot: {x: 0.4664537, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 869
+      y: 2096
+      width: 626
+      height: 1038
+    spriteID: 5846cf1c1954eb54ca9cb8040e3d9418
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 571, y: 2096}
+  - name: final_idle_piano_Frame_19
+    originalName: 
+    pivot: {x: 0.4664537, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 869
+      y: 3142
+      width: 626
+      height: 1038
+    spriteID: 50726eccb066dbe479658fc0c4236f25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 571, y: 3142}
+  - name: final_idle_piano_Frame_20
+    originalName: 
+    pivot: {x: 0.4664537, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 869
+      y: 4188
+      width: 626
+      height: 1038
+    spriteID: fdff0dcf02a0d2b4c9078b7d441f09a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 571, y: 4188}
+  - name: final_idle_piano_Frame_21
+    originalName: 
+    pivot: {x: 0.4362292, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2099
+      y: 4
+      width: 541
+      height: 1019
+    spriteID: 479061b3ba2d1524b927d620067c52a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1745, y: 4}
+  - name: final_idle_piano_Frame_22
+    originalName: 
+    pivot: {x: 0.4362292, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2099
+      y: 1031
+      width: 541
+      height: 1019
+    spriteID: 2f416416e9af6f44c85030545e180415
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1745, y: 1031}
+  - name: final_idle_piano_Frame_23
+    originalName: 
+    pivot: {x: 0.4362292, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2099
+      y: 2058
+      width: 541
+      height: 1019
+    spriteID: 3a2bbb61cac2dcc43aede7cf93cdaf13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1745, y: 2058}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 686444089
+    name: final_idle_piano
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: final_idle_piano_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 0b418a057a3e05f4a9ccc5c1583241c1
+    - name: final_idle_piano_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: abef6b5298f5cea44850e27dea7556d7
+    - name: final_idle_piano_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 6317ab77c2afcb048b091edde18dce41
+    - name: final_idle_piano_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 8cbf84c7ebaf5704497674bd642e80b6
+    - name: final_idle_piano_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 9cf480ab513fc6d4daa8d543fcc26dba
+    - name: final_idle_piano_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 592e90c0d572aba4a904c5f8fe938f74
+    - name: final_idle_piano_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: f644c37207dc41d4f965e880a8e41b9b
+    - name: final_idle_piano_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 08a4e1c612fbaa543966022cea31f148
+    - name: final_idle_piano_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: cb37a7c50f2d46848a644b6fd4bc25f6
+    - name: final_idle_piano_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: b8c72285a31a4fd4e8a6019fe141f038
+    - name: final_idle_piano_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 7a822fd6b6cd6e74c8284c02ad1dd107
+    - name: final_idle_piano_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 5a09ca2799a299145aa15d2bb50ae32a
+    - name: final_idle_piano_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: a35002a6995c66e45880da3b773efd76
+    - name: final_idle_piano_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: eb1f521a74a419d4481b5695e95a6e71
+    - name: final_idle_piano_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 89cbc2fe4a56f404f81570fbde07460c
+    - name: final_idle_piano_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 44d11769db91cc6428579b4eccd8a520
+    - name: final_idle_piano_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: b5ef4a2da53ede94eab83a2b67e95137
+    - name: final_idle_piano_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: d56aa6d8e2270f8419b1a4e5172e622d
+    - name: final_idle_piano_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 5846cf1c1954eb54ca9cb8040e3d9418
+    - name: final_idle_piano_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 50726eccb066dbe479658fc0c4236f25
+    - name: final_idle_piano_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: fdff0dcf02a0d2b4c9078b7d441f09a0
+    - name: final_idle_piano_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 479061b3ba2d1524b927d620067c52a2
+    - name: final_idle_piano_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 2f416416e9af6f44c85030545e180415
+    - name: final_idle_piano_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: -220
+        y: 0
+        width: 1600
+        height: 1200
+      spriteId: 3a2bbb61cac2dcc43aede7cf93cdaf13
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 740, y: 1090}

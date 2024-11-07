@@ -5781,7 +5781,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 38.78789
+  m_FocalLength: 31.91135
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -5796,7 +5796,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 34.381508
+  field of view: 41.216713
   orthographic: 0
   orthographic size: 9.544478
   m_Depth: -1
@@ -6003,7 +6003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!70 &532353743
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6175,6 +6175,8 @@ MonoBehaviour:
   isRunning: 0
   inDashBack: 0
   health: 10
+  dead: 0
+  blocking: 0
   isFacingLeft: 0
   dashOnCooldown: 0
   jumpOnCooldown: 0
@@ -14819,6 +14821,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0de6bc13-c4cf-4a12-aa2b-2997da686fbd
     m_ActionName: Debug/Move[/DualShock4GamepadHID/leftStick]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e5eb7c23-9305-4624-aa38-23157b87b4a1
+    m_ActionName: Debug/LeftTrigger[/DualShock4GamepadHID/leftTrigger]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Debug
@@ -14933,6 +14939,8 @@ MonoBehaviour:
   isRunning: 0
   inDashBack: 0
   health: 10
+  dead: 0
+  blocking: 0
   isFacingLeft: 0
   dashOnCooldown: 0
   jumpOnCooldown: 0
@@ -19268,7 +19276,7 @@ MonoBehaviour:
   - target: {fileID: 7286693800523892425}
     weight: 1
     radius: 1
-  - target: {fileID: 532353746}
+  - target: {fileID: 1346749659}
     weight: 1
     radius: 1
   - target: {fileID: 1346749659}
@@ -23402,14 +23410,58 @@ PrefabInstance:
     - target: {fileID: 6216959920464743924, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: oppponent
       value: 
-      objectReference: {fileID: 532353742}
+      objectReference: {fileID: 1173465104035228840}
     - target: {fileID: 6216959920464743924, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1661628353}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      value: e5eb7c23-9305-4624-aa38-23157b87b4a1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      value: Debug/LeftTrigger[/DualShock4GamepadHID/leftTrigger]
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1346749654}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LeftTriggerPress
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PianoMan, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781121769481501640, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9089874994840205989, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.16
+      value: 3.67
       objectReference: {fileID: 0}
     - target: {fileID: 9089874994840205989, guid: db06ecd63ebecea4f85a4934cbb0a967, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23659,6 +23711,8 @@ MonoBehaviour:
   isRunning: 0
   inDashBack: 0
   health: 20
+  dead: 0
+  blocking: 0
   isFacingLeft: 0
   dashOnCooldown: 0
   jumpOnCooldown: 0
@@ -24024,6 +24078,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0de6bc13-c4cf-4a12-aa2b-2997da686fbd
     m_ActionName: Debug/Move[/DualShock4GamepadHID/leftStick]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5583659080855531928}
+        m_TargetAssemblyTypeName: PianoMan, Assembly-CSharp
+        m_MethodName: LeftTriggerPress
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e5eb7c23-9305-4624-aa38-23157b87b4a1
+    m_ActionName: Debug/LeftTrigger[/DualShock4GamepadHID/leftTrigger]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Debug

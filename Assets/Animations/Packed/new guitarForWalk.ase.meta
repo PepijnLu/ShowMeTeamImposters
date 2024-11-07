@@ -1,0 +1,835 @@
+fileFormatVersion: 2
+guid: 778b7e75005c79e46847bab223200ccd
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: new guitarForWalk_Frame_0
+    originalName: 
+    pivot: {x: 0.4878683, y: -0.03409091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 577
+      height: 968
+    spriteID: 622b848ad23f7fa4aa5e67895d2d1aea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -80, y: -29}
+  - name: new guitarForWalk_Frame_1
+    originalName: 
+    pivot: {x: 0.4878683, y: -0.03409091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 980
+      width: 577
+      height: 968
+    spriteID: d2aa9a95e5177f14a898bdd3b003ca3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -80, y: 947}
+  - name: new guitarForWalk_Frame_2
+    originalName: 
+    pivot: {x: 0.4878683, y: -0.03409091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1956
+      width: 577
+      height: 968
+    spriteID: 504ef49fb413ffa41bbbe776e62689b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -80, y: 1923}
+  - name: new guitarForWalk_Frame_3
+    originalName: 
+    pivot: {x: 0.553442, y: -0.028776977}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2932
+      width: 552
+      height: 973
+    spriteID: 1d9feed39e7f13b4ea626038d8b9e9d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -56, y: 2904}
+  - name: new guitarForWalk_Frame_4
+    originalName: 
+    pivot: {x: 0.553442, y: -0.028776977}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 589
+      y: 4
+      width: 552
+      height: 973
+    spriteID: fe5b437c5c94ba0489f84a8f74440321
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 529, y: -24}
+  - name: new guitarForWalk_Frame_5
+    originalName: 
+    pivot: {x: 0.553442, y: -0.028776977}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 589
+      y: 985
+      width: 552
+      height: 973
+    spriteID: d0349ab6935acff4cbe071a6a5b1ef0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 529, y: 957}
+  - name: new guitarForWalk_Frame_6
+    originalName: 
+    pivot: {x: 0.7389706, y: -0.015560167}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2616
+      y: 1007
+      width: 408
+      height: 964
+    spriteID: 3807fd387f3f18941943f686863497c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2552, y: 992}
+  - name: new guitarForWalk_Frame_7
+    originalName: 
+    pivot: {x: 0.7389706, y: -0.015560167}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2616
+      y: 1979
+      width: 408
+      height: 964
+    spriteID: 9b437abb1cd28554fbc111f1ef37bd1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2552, y: 1964}
+  - name: new guitarForWalk_Frame_8
+    originalName: 
+    pivot: {x: 0.7389706, y: -0.015560167}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2616
+      y: 2951
+      width: 408
+      height: 964
+    spriteID: 9db6dada62f47ce4aa7e41d66fc6b818
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2552, y: 2936}
+  - name: new guitarForWalk_Frame_9
+    originalName: 
+    pivot: {x: 0.5402174, y: -0.016410258}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1720
+      y: 4
+      width: 460
+      height: 975
+    spriteID: 30b77384fab002a41bc6f24306e2da5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1603, y: -12}
+  - name: new guitarForWalk_Frame_10
+    originalName: 
+    pivot: {x: 0.5402174, y: -0.016410258}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1720
+      y: 987
+      width: 460
+      height: 975
+    spriteID: 93eabd64b9e8178489df4073ba46366f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1603, y: 971}
+  - name: new guitarForWalk_Frame_11
+    originalName: 
+    pivot: {x: 0.5402174, y: -0.016410258}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1720
+      y: 1970
+      width: 460
+      height: 975
+    spriteID: 342c34b0bb3147744af396ac4318d953
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1603, y: 1954}
+  - name: new guitarForWalk_Frame_12
+    originalName: 
+    pivot: {x: 0.4488095, y: -0.03169734}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1720
+      y: 2953
+      width: 420
+      height: 978
+    spriteID: 9922ae43c6caabd4aa2d62f02753d3ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1543, y: 2922}
+  - name: new guitarForWalk_Frame_13
+    originalName: 
+    pivot: {x: 0.4488095, y: -0.03169734}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2188
+      y: 4
+      width: 420
+      height: 978
+    spriteID: 70c6521de3e56a142933e8f78c7e53a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2011, y: -27}
+  - name: new guitarForWalk_Frame_14
+    originalName: 
+    pivot: {x: 0.4488095, y: -0.03169734}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2188
+      y: 990
+      width: 420
+      height: 978
+    spriteID: ee716542e90d1a94e903fb10b75609f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2011, y: 959}
+  - name: new guitarForWalk_Frame_15
+    originalName: 
+    pivot: {x: 0.5106572, y: -0.03188098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1149
+      y: 4
+      width: 563
+      height: 941
+    spriteID: 95426f05b9aa95646b9c23d4bee18be9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1071, y: -26}
+  - name: new guitarForWalk_Frame_16
+    originalName: 
+    pivot: {x: 0.5106572, y: -0.03188098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1149
+      y: 953
+      width: 563
+      height: 941
+    spriteID: 95833ae489ce0cf4bba8069928f321ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1071, y: 923}
+  - name: new guitarForWalk_Frame_17
+    originalName: 
+    pivot: {x: 0.5106572, y: -0.03188098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1149
+      y: 1902
+      width: 563
+      height: 941
+    spriteID: 8f9059b0d5b549e41b087fef45b55f19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1071, y: 1872}
+  - name: new guitarForWalk_Frame_18
+    originalName: 
+    pivot: {x: 0.71471775, y: -0.017598344}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1149
+      y: 2851
+      width: 496
+      height: 966
+    spriteID: a5cc643749b13ba4eba7d1367cb26bee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1138, y: 2834}
+  - name: new guitarForWalk_Frame_19
+    originalName: 
+    pivot: {x: 0.71471775, y: -0.017598344}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 589
+      y: 1966
+      width: 496
+      height: 966
+    spriteID: d90274c4550723742ba11aaeca60e36f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 578, y: 1949}
+  - name: new guitarForWalk_Frame_20
+    originalName: 
+    pivot: {x: 0.71471775, y: -0.017598344}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 589
+      y: 2940
+      width: 496
+      height: 966
+    spriteID: 0daae9090a63c4940b0bd61251261fc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 578, y: 2923}
+  - name: new guitarForWalk_Frame_21
+    originalName: 
+    pivot: {x: 0.39731053, y: -0.010050251}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2188
+      y: 1976
+      width: 409
+      height: 995
+    spriteID: b9d7c71306a5fa04b856c827d95091c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1985, y: 1966}
+  - name: new guitarForWalk_Frame_22
+    originalName: 
+    pivot: {x: 0.39731053, y: -0.010050251}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2188
+      y: 2979
+      width: 409
+      height: 995
+    spriteID: 9c0f635f7997c8544a5362c4efbe7061
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1985, y: 2969}
+  - name: new guitarForWalk_Frame_23
+    originalName: 
+    pivot: {x: 0.39731053, y: -0.010050251}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2616
+      y: 4
+      width: 409
+      height: 995
+    spriteID: e917456e24a74ad4096eec9d3f286e81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2413, y: -6}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -837011888
+    name: new guitarForWalk
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: new guitarForWalk_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 622b848ad23f7fa4aa5e67895d2d1aea
+    - name: new guitarForWalk_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: d2aa9a95e5177f14a898bdd3b003ca3e
+    - name: new guitarForWalk_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 504ef49fb413ffa41bbbe776e62689b1
+    - name: new guitarForWalk_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 1d9feed39e7f13b4ea626038d8b9e9d8
+    - name: new guitarForWalk_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: fe5b437c5c94ba0489f84a8f74440321
+    - name: new guitarForWalk_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: d0349ab6935acff4cbe071a6a5b1ef0c
+    - name: new guitarForWalk_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 3807fd387f3f18941943f686863497c9
+    - name: new guitarForWalk_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 9b437abb1cd28554fbc111f1ef37bd1a
+    - name: new guitarForWalk_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 9db6dada62f47ce4aa7e41d66fc6b818
+    - name: new guitarForWalk_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 30b77384fab002a41bc6f24306e2da5f
+    - name: new guitarForWalk_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 93eabd64b9e8178489df4073ba46366f
+    - name: new guitarForWalk_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 342c34b0bb3147744af396ac4318d953
+    - name: new guitarForWalk_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 9922ae43c6caabd4aa2d62f02753d3ca
+    - name: new guitarForWalk_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 70c6521de3e56a142933e8f78c7e53a7
+    - name: new guitarForWalk_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: ee716542e90d1a94e903fb10b75609f8
+    - name: new guitarForWalk_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 95426f05b9aa95646b9c23d4bee18be9
+    - name: new guitarForWalk_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 95833ae489ce0cf4bba8069928f321ab
+    - name: new guitarForWalk_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 8f9059b0d5b549e41b087fef45b55f19
+    - name: new guitarForWalk_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: a5cc643749b13ba4eba7d1367cb26bee
+    - name: new guitarForWalk_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: d90274c4550723742ba11aaeca60e36f
+    - name: new guitarForWalk_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 0daae9090a63c4940b0bd61251261fc8
+    - name: new guitarForWalk_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: b9d7c71306a5fa04b856c827d95091c0
+    - name: new guitarForWalk_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: 9c0f635f7997c8544a5362c4efbe7061
+    - name: new guitarForWalk_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 731
+        height: 1080
+      spriteId: e917456e24a74ad4096eec9d3f286e81
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 731, y: 1080}

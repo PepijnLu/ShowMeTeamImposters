@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: afdbc257274f0fd4698061762dacf8b7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: PianoJumpUpFinal_Frame_0
+    originalName: 
+    pivot: {x: 0.5795247, y: -0.06165703}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1138
+      y: 4
+      width: 547
+      height: 519
+    spriteID: 09eadaa94b3bdeb4e9bd450a20eab8df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 495, y: -28}
+  - name: PianoJumpUpFinal_Frame_1
+    originalName: 
+    pivot: {x: 0.5795247, y: -0.06165703}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1138
+      y: 531
+      width: 547
+      height: 519
+    spriteID: 0eab1d41ad124d24f89274ad39f2b43c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 495, y: 499}
+  - name: PianoJumpUpFinal_Frame_2
+    originalName: 
+    pivot: {x: 0.5795247, y: -0.06165703}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1138
+      y: 1058
+      width: 547
+      height: 519
+    spriteID: 2cc0a909ae8313744a0f3592ab65d40a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 495, y: 1026}
+  - name: PianoJumpUpFinal_Frame_3
+    originalName: 
+    pivot: {x: 0.40828404, y: -0.17454955}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 676
+      height: 888
+    spriteID: 774d808480de7fa438c0cb432ce96aec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -680, y: -151}
+  - name: PianoJumpUpFinal_Frame_4
+    originalName: 
+    pivot: {x: 0.40828404, y: -0.17454955}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 900
+      width: 676
+      height: 888
+    spriteID: a1d7cdb01a82e6741b71493bfb6fcd9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -680, y: 745}
+  - name: PianoJumpUpFinal_Frame_5
+    originalName: 
+    pivot: {x: 0.40828404, y: -0.17454955}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1796
+      width: 676
+      height: 888
+    spriteID: b5b323adeb105d646aea67ff5f3b104c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -680, y: 1641}
+  - name: PianoJumpUpFinal_Frame_6
+    originalName: 
+    pivot: {x: 0.40497735, y: -0.4834835}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2692
+      width: 442
+      height: 666
+    spriteID: 0a632edac27053e4c9dbfb4eba8a01f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -777, y: 2370}
+  - name: PianoJumpUpFinal_Frame_7
+    originalName: 
+    pivot: {x: 0.40497735, y: -0.4834835}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3366
+      width: 442
+      height: 666
+    spriteID: 279d41426526608449a8fd793541d85c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -777, y: 3044}
+  - name: PianoJumpUpFinal_Frame_8
+    originalName: 
+    pivot: {x: 0.40497735, y: -0.4834835}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 688
+      y: 4
+      width: 442
+      height: 666
+    spriteID: 471f6cfaf6a0106499c6f93fb1cf859b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -93, y: -318}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 191488738
+    name: PianoJumpUpFinal
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: PianoJumpUpFinal_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: -420
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 09eadaa94b3bdeb4e9bd450a20eab8df
+    - name: PianoJumpUpFinal_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: -420
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 0eab1d41ad124d24f89274ad39f2b43c
+    - name: PianoJumpUpFinal_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: -420
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 2cc0a909ae8313744a0f3592ab65d40a
+    - name: PianoJumpUpFinal_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: -420
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 774d808480de7fa438c0cb432ce96aec
+    - name: PianoJumpUpFinal_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: -420
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: a1d7cdb01a82e6741b71493bfb6fcd9b
+    - name: PianoJumpUpFinal_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: -420
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: b5b323adeb105d646aea67ff5f3b104c
+    - name: PianoJumpUpFinal_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: -420
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 0a632edac27053e4c9dbfb4eba8a01f7
+    - name: PianoJumpUpFinal_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: -420
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 279d41426526608449a8fd793541d85c
+    - name: PianoJumpUpFinal_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: -420
+        y: 0
+        width: 1920
+        height: 1080
+      spriteId: 471f6cfaf6a0106499c6f93fb1cf859b
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1080, y: 1080}
