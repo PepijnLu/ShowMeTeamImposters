@@ -19,7 +19,7 @@
                 {
                     "name": "",
                     "id": "5e1b2c96-a569-4669-bae9-865badde1165",
-                    "path": "<Keyboard>/space",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -37,6 +37,17 @@
             "devices": [
                 {
                     "devicePath": "<Keyboard>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Controller",
+            "bindingGroup": "Controller",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
                     "isOptional": true,
                     "isOR": false
                 }

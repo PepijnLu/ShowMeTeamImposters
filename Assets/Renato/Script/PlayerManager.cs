@@ -7,6 +7,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private int HP = 400; // (100 per bar) (can do something like increased damage intake at each new bar layer)
     [SerializeField] private int damage = 5;
     [SerializeField] private float layerHP = 100f; // Initialize with full layer capacity
+    [SerializeField] private string playerName = "";
     
     // ComboManagement
     public ComboManagement comboManagement;
@@ -16,13 +17,16 @@ public class PlayerManager : MonoBehaviour
     
     void Start() 
     {
-        playerUIManagement.InstantiatePlayerUI(UIManager.instance.UIPrefab, UIManager.instance.player1_UI);
+        if(playerName == "Player1") 
+        {
+            playerUIManagement.InstantiatePlayerUI(UIManager.instance.UIPrefabPlayer1, UIManager.instance.player1_UI);
+        }
+        
+        if(playerName == "Player2") 
+        {
+            playerUIManagement.InstantiatePlayerUI(UIManager.instance.UIPrefabPlayer2, UIManager.instance.player2_UI);
+        }
     }
-
-    // void Update()
-    // {
-    //     comboManagement.CheckComboKeyPress(playerUIManagement, HP, layerHP, damage);
-    // }
 
     public void Attack(InputAction.CallbackContext ctx) 
     {

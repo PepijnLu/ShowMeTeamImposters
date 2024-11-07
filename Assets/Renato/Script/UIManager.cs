@@ -3,7 +3,7 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
-    public GameObject UIPrefab;
+    public GameObject UIPrefabPlayer1, UIPrefabPlayer2;
     public Transform player1_UI, player2_UI;
 
     void Awake() 
