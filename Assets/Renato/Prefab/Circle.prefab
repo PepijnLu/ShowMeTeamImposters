@@ -115,7 +115,7 @@ MonoBehaviour:
     m_ActionId: 71b5fcd5-f382-4053-ad64-2717fad9824b
     m_ActionName: Attack/New action[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Keyboard
+  m_DefaultControlScheme: Controller
   m_DefaultActionMap: Attack
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
